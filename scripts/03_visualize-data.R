@@ -1,9 +1,10 @@
 #### Packages used ####
 #install packages
-install.packages("circlize")
+#install.packages("circlize")
 
 #load libraries
 library(circlize)
+library(reshape2)
 
 #### Initialize circular migration flow diagram ####
 
@@ -39,7 +40,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          
                          #plot subregion names
                          circos.text(x = mean(xlim), #position text at middle of sector
-                                     y = 2, #distance from circle
+                                     y = 2.5, #distance from circle
                                      labels = name, #name of subregion
                                      facing = "clockwise", 
                                      niceFacing = TRUE,
@@ -58,7 +59,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          #distinguish between immigrants and emigrants in each subregion
                          circos.rect(xleft = xlim[1], 
                                      ybottom = ylim[1], 
-                                     xright = xlim[2] - rowSums(flow_matrix)[i], #i.e., total - immigrants
+                                     xright = xlim[2] - rowSums(flow_matrix)[i], #i.e., total - emigrants
                                      ytop = ylim[1] + 0.3,
                                      col = "white", 
                                      border = "white"
@@ -75,5 +76,56 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                       
                        }
 )
+
+
+#### Plot links ####
+
+#transform flow_matrix into its long form and sort it 
+flow_matrix_long = melt(flow_matrix,
+                        value.name = "number"
+)
+
+colnames(flow_matrix_long) = c("subregion_from",
+                               "subregion_to",
+                               "number") #rename columns for consistency
+
+#sort descendently according to the number of migrants
+flow_matrix_long = flow_matrix_long %>%
+  arrange(desc(number)) 
+
+#keep only the largest flows to increase readability
+flow_matrix_long = subset(flow_matrix_long, 
+                          number > quantile(number, 0.75)
+)
+
+
+subregion_details$sum1 <- colSums(flow_matrix) #number of immigrants
+subregion_details$sum2 <- numeric(nrow(subregion_details)) #number of subregions
+
+#not yet clear why this is needed, but it prevents links from being plotted outside of range
+circos.par(track.margin = c(0,0)) 
+
+#plot links for each combination of regions
+for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
+  i = match(flow_matrix_long$subregion_from[k],
+            subregion_details$subregion) #get plotting details for subregion of origin
+  j = match(flow_matrix_long$subregion_to[k],
+            subregion_details$subregion) #get plotting details for destination subregion
+  
+  circos.link(sector.index1 = subregion_details$subregion[i], #need to identify indices to identify 
+              point1 = c(subregion_details$sum1[i], 
+                         subregion_details$sum1[i] + abs(flow_matrix[i, j])), #starting point of link
+              
+              sector.index2 = subregion_details$subregion[j], 
+              point2=c(subregion_details$sum2[j], 
+                       subregion_details$sum2[j] + abs(flow_matrix[i, j])), #endpoint of link
+              
+              col = subregion_details$lcol[i]) #use the more transparent collor to increase visibility
+  
+  #update sum1 and sum2 for use when plotting the next link
+  subregion_details$sum1[i] = subregion_details$sum1[i] + abs(flow_matrix[i, j]) 
+  subregion_details$sum2[j] = subregion_details$sum2[j] + abs(flow_matrix[i, j])
+}
+
 
 
