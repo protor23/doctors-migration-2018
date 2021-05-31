@@ -44,14 +44,14 @@ colnames(sub_reg) = c('country', "subregion") #rename columns
 #prepare to join wf_mig and sub_reg to get subregions for origin and destination countries
 #check whether all countries in wf_mig are also present in sub_reg to allow the join
 
-#find countries in wf_mig not included in sub_reg
+#find countries in wf_mig not included in sub_reg or vice versa
 diff = data.frame(country = unique(c(setdiff(wf_mig$to, sub_reg$country), 
                                      setdiff(wf_mig$from, sub_reg$country)
                                   )
                   )
 )
 
-length(diff$country) #only 17 countries
+length(diff$country) #17 countries
 
 #look for countries in sub_reg like the ones in diff - check why misidentification occurs
 missing_countries = c("Bolivia", "Macedonia", "Laos", "Moldova", 
