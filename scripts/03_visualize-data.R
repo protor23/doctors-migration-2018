@@ -10,6 +10,13 @@ library(reshape2)
 
 #this code is an adaptation of the instructions of Sander et al. (2014)
 
+png(here("figs/migration-flow-1.png"),
+    width = 10,
+    height = 10,
+    units = "cm",
+    pointsize = 3,
+    res = 2048) #open graphics device to save the plot later
+
 circos.clear() #reset circular layout parameters
 
 par(mar = rep(0 , 4)) #set margins to 0 
@@ -44,7 +51,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                                      labels = name, #name of subregion
                                      facing = "clockwise", 
                                      niceFacing = TRUE,
-                                     cex = 0.5 #scale text
+                                     cex = 1.5 #scale text
                          )
                          
                          #plot a sector for each subregion
@@ -120,12 +127,16 @@ for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
               point2=c(subregion_details$sum2[j], 
                        subregion_details$sum2[j] + abs(flow_matrix[i, j])), #endpoint of link
               
-              col = subregion_details$lcol[i]) #use the more transparent collor to increase visibility
+              col = subregion_details$lcol[i], #use the more transparent collor to increase visibility
+              border = subregion_details$lcol[i]
+  )
   
   #update sum1 and sum2 for use when plotting the next link
   subregion_details$sum1[i] = subregion_details$sum1[i] + abs(flow_matrix[i, j]) 
   subregion_details$sum2[j] = subregion_details$sum2[j] + abs(flow_matrix[i, j])
 }
 
+#save plot
 
+dev.off() #close graphing device
 

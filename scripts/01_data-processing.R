@@ -1,16 +1,16 @@
 #### Packages used ####
 
-packrat::init()
+#packrat::init()
 
-install.packages("here")
-install.packages("readr")
-install.packages("dplyr")
-install.packages("data.table")
-install.packages("stringr")
-install.packages("circlize")
-install.packages("tibble")
+#install.packages("here")
+#install.packages("readr")
+#install.packages("dplyr")
+#install.packages("data.table")
+#install.packages("stringr")
+#install.packages("circlize")
+#install.packages("tibble")
 
-packrat::snapshot()
+#packrat::snapshot()
 
 library(here)
 library(readr)
@@ -144,3 +144,8 @@ sapply(data,
 
 #keep only relevant columns
 data = data[c("to", "from", "number", "subregion_to", "subregion_from")]
+
+#save final datafile
+write_csv(data,
+          here("data-processed/data.csv")
+)
