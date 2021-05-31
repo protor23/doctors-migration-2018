@@ -3,9 +3,7 @@ title: Healthcare Workers' Interregional Migration
 subtitle: "PSY6422 Assessment"
 author: "Ruri Proto"
 date: "31/05/2021"
-output: 
-  html_document:
-    theme: united
+output: github_document
 ---
 
 ## **Research Questions**
