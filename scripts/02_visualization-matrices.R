@@ -28,7 +28,7 @@ factors = unique(c(unique(data$subregion_to),
                    )
 )
 
-#initialise flow matrix as a quadratic matrix with all values of 0 x = rep(0, 16*16)
+#initialise flow matrix as a quadratic matrix with all values of 0 
 x = rep(0, length(factors)^2)
 row_n = factors #row names for matrix
 col_n = factors #column names for matrix
@@ -40,11 +40,13 @@ flow_matrix = matrix(x,
 ) #create matrix
 
 #get number of immigrants and emigrants per subregion 
-subregions = data[ ,3:5] #retrieve subregions and number of migrants from dataset
+subregions = data[ , 3:5] #retrieve subregions and number of migrants from dataset
 
 subregions = subregions %>%
   group_by(subregion_from, subregion_to) %>%
   summarize(no = sum(number)) #number of total migrants per subregion
+
+subregions
 
 #convert subregions dataframe into wide format
 
@@ -133,7 +135,7 @@ subregion_details$rcol = rgb(subregion_details$r,
 subregion_details$lcol = rgb(subregion_details$r, 
                              subregion_details$g, 
                              subregion_details$b, 
-                             alpha=200, 
+                             alpha=200, #transparency index
                              max = 255
 )
 
