@@ -5,17 +5,14 @@
 #install.packages("here")
 #install.packages("readr")
 #install.packages("dplyr")
-#install.packages("data.table")
 #install.packages("stringr")
-#install.packages("circlize")
-#install.packages("tibble")
-
-#packrat::snapshot()
 
 library(here)
 library(readr)
 library(dplyr)
 library(stringr)
+
+#packrat::snapshot()
 
 #### Load data ####
 
@@ -149,3 +146,5 @@ data = data[c("to", "from", "number", "subregion_to", "subregion_from")]
 write_csv(data,
           here("data-processed/data.csv")
 )
+
+#packrat::status()
