@@ -1,11 +1,16 @@
 #### Packages used ####
-#install packages
-#install.packages("reshape2")
+install.packages("stringr")
+install.packages("reshape2")
+
+#packrat::init()
 
 #load libraries
 library(readr)
+library(here)
 library(stringr)
 library(reshape2)
+
+#packrat::snapshot()
 
 #### Create the migration flow matrix ####
 
@@ -152,3 +157,5 @@ subregion_details$subregion = factor(subregion_details$subregion, #treat subregi
 
 flow_matrix = flow_matrix[levels(subregion_details$subregion), #order rows by total flow
                           levels(subregion_details$subregion)] #order columns by total flow
+
+#packrat::status()
