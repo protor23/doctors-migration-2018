@@ -51,11 +51,11 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          
                          #plot subregion names
                          circos.text(x = mean(xlim), #position text at middle of sector
-                                     y = 2.5, #distance from circle
+                                     y = 3, #distance from circle
                                      labels = name, #name of subregion
                                      facing = "clockwise", 
                                      niceFacing = TRUE,
-                                     cex = 1.5 #scale text
+                                     cex = 1 #scale text
                          )
                          
                          #plot a sector for each subregion
@@ -84,6 +84,12 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                                      col = "white", 
                                      border = "white"
                          )
+                         
+                         circos.axis(labels.cex = 1,
+                                     lwd = 0.4,
+                                     labels.niceFacing = TRUE,
+                                     major.tick.length = 0.1,
+                                     minor.ticks = 4)
                       
                        }
 )
@@ -131,8 +137,8 @@ for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
               point2=c(subregion_details$sum2[j], 
                        subregion_details$sum2[j] + abs(flow_matrix[i, j])), #endpoint of link
               
-              col = subregion_details$lcol[i], #use the more transparent collor to increase visibility
-              border = subregion_details$lcol[i]
+              border = subregion_details$lcol[i],
+              col = subregion_details$lcol[i], #use the more transparent colour to increase visibility
   )
   
   #update sum1 and sum2 for use when plotting the next link

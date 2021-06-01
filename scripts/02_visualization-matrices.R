@@ -135,7 +135,7 @@ subregion_details$rcol = rgb(subregion_details$r,
 subregion_details$lcol = rgb(subregion_details$r, 
                              subregion_details$g, 
                              subregion_details$b, 
-                             alpha=200, #transparency index
+                             alpha = 150, #transparency index
                              max = 255
 )
 
