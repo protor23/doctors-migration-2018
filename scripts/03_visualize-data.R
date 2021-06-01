@@ -1,10 +1,14 @@
 #### Packages used ####
-#install packages
+
+#packrat::init()
+
 #install.packages("circlize")
 
 #load libraries
 library(circlize)
 library(reshape2)
+
+#packrat::snapshot()
 
 #### Initialize circular migration flow diagram ####
 
@@ -102,7 +106,7 @@ flow_matrix_long = flow_matrix_long %>%
 
 #keep only the largest flows to increase readability
 flow_matrix_long = subset(flow_matrix_long, 
-                          number > quantile(number, 0.75)
+                          number > quantile(number, 0.70)
 )
 
 
@@ -137,6 +141,6 @@ for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
 }
 
 #save plot
-
 dev.off() #close graphing device
 
+#packrat::status()
