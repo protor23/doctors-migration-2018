@@ -1,8 +1,9 @@
 #### Packages used ####
-install.packages("stringr")
-install.packages("reshape2")
 
 #packrat::init()
+
+#install.packages("stringr")
+#install.packages("reshape2")
 
 #load libraries
 library(readr)
