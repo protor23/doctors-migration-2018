@@ -25,7 +25,7 @@ data = read_csv(here("data-processed/data.csv"))
 #find all subregions in the dataset
 factors = unique(c(unique(data$subregion_to), 
                    unique(data$subregion_from)
-                   )
+)
 )
 
 #initialise flow matrix as a quadratic matrix with all values of 0 
@@ -98,7 +98,7 @@ subregion_details = left_join(df_from,
 colnames(subregion_details) = c("subregion", "outer", "inner") #rename columns
 
 subregion_details$total = rowSums(subregion_details[ ,c("outer", "inner")], 
-                                 na.rm = TRUE) #add total migrants to datframe
+                                  na.rm = TRUE) #add total migrants to datframe
 
 #Add rgb codes to each subregion for sectors and links
 
@@ -115,7 +115,7 @@ n = nrow(subregion_details)
 subregion_details = cbind(subregion_details, #split codes and treat them as numbers
                           matrix(as.numeric(unlist(strsplit(subregion_details$rgb, split = ","))), 
                                  nrow = n, byrow = TRUE 
-                                 ) #arrange them in n columns in a matrix
+                          ) #arrange them in n columns in a matrix
 )
 
 subregion_details = subregion_details %>%

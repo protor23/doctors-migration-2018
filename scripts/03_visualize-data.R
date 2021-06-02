@@ -8,18 +8,21 @@
 library(circlize)
 library(reshape2)
 
+#run previous script to bring objects in the environment
+source(here("scripts/02_visualization-matrices.R"))
+
 #packrat::snapshot()
 
 #### Initialize circular migration flow diagram ####
 
 #this code is an adaptation of the instructions of Sander et al. (2014)
 
-png(here("figs/migration-flow-1.png"),
-    width = 10,
-    height = 10,
-    units = "cm",
-    pointsize = 3,
-    res = 2048) #open graphics device to save the plot later
+#png(here("figs/01_migration-flow.png"),
+    #width = 10,
+    #height = 10,
+    #units = "cm",
+    #pointsize = 3,
+    #res = 2048) #open graphics device to save the plot later
 
 circos.clear() #reset circular layout parameters
 
@@ -85,12 +88,14 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                                      border = "white"
                          )
                          
+                         #add axis to indicate migrant numbers
                          circos.axis(labels.cex = 1,
                                      lwd = 0.4,
                                      labels.niceFacing = TRUE,
                                      major.tick.length = 0.1,
-                                     minor.ticks = 4)
-                      
+                                     minor.ticks = 4
+                        )
+                         
                        }
 )
 
@@ -120,7 +125,7 @@ subregion_details$sum1 <- colSums(flow_matrix) #number of immigrants
 subregion_details$sum2 <- numeric(nrow(subregion_details)) #number of subregions
 
 #not yet clear why this is needed, but it prevents links from being plotted outside of range
-circos.par(track.margin = c(0,0)) 
+circos.par(track.margin = c(0, 0)) 
 
 #plot links for each combination of regions
 for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
