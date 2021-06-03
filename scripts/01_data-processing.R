@@ -1,6 +1,6 @@
 #### Packages used ####
 
-#packrat::init()
+#renv::init()
 
 #install.packages("here")
 #install.packages("readr")
@@ -12,7 +12,7 @@ library(readr)
 library(dplyr)
 library(stringr)
 
-#packrat::snapshot()
+#renv::snapshot()
 
 #### Load data ####
 
@@ -35,6 +35,14 @@ wf_mig = wf_mig %>%
 
 sub_reg = sub_reg[ ,c("name", "sub-region")] #select relevant columns
 colnames(sub_reg) = c('country', "subregion") #rename columns
+
+#capitalise E in South-eastern Asia
+sub_reg$subregion = ifelse(sub_reg$subregion == "South-eastern Asia", 
+                           "South-Eastern Asia", 
+                           sub_reg$subregion
+)
+
+unique(sub_reg$subregion)
 
 #### Data cleaning - joining datasets ####
 
@@ -117,7 +125,7 @@ unique(data$from[is.na(data$country.y)]) #find which countries prevent the join
 data = mutate(data, 
               subregion_to = case_when(
                 to %in% c("Swaziland") ~ "Sub-Saharan Africa",
-                to %in% c("Laos") ~ "South-eastern Asia",
+                to %in% c("Laos") ~ "South-Eastern Asia",
                 to %in% c("Chinese Taipei") ~ "Eastern Asia",
                 to %in% c("The former Yugoslav Republic of Macedonia") ~ "Southern Europe",
                 TRUE ~ subregion_to
@@ -127,7 +135,7 @@ data = mutate(data,
 data = mutate(data, 
               subregion_from = case_when(
                 from %in% c("Swaziland") ~ "Sub-Saharan Africa",
-                from %in% c("Laos") ~ "South-eastern Asia",
+                from %in% c("Laos") ~ "South-Eastern Asia",
                 from %in% c("Chinese Taipei") ~ "Eastern Asia",
                 from %in% c("The former Yugoslav Republic of Macedonia") ~ "Southern Europe",
                 TRUE ~ subregion_from
@@ -146,5 +154,3 @@ data = data[c("to", "from", "number", "subregion_to", "subregion_from")]
 write_csv(data,
           here("data-processed/data.csv")
 )
-
-#packrat::status()

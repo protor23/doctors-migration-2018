@@ -1,39 +1,40 @@
 #### Packages used ####
 
-#packrat::init()
-
 #install.packages("circlize")
 
+#renv::snapshot()
+
 #load libraries
+library(dplyr)
+library(here)
 library(circlize)
 library(reshape2)
+library(stringr)
 
 #run previous script to bring objects in the environment
 source(here("scripts/02_visualization-matrices.R"))
-
-#packrat::snapshot()
 
 #### Initialize circular migration flow diagram ####
 
 #this code is an adaptation of the instructions of Sander et al. (2014)
 
-#png(here("figs/01_migration-flow.png"),
-    #width = 10,
-    #height = 10,
-    #units = "cm",
-    #pointsize = 3,
-    #res = 2048) #open graphics device to save the plot later
+png(here("figs/01_migration-flow.png"),
+    width = 10,
+    height = 10,
+    units = "cm",
+    pointsize = 3,
+    res = 2048) #open graphics device to save the plot later
 
 circos.clear() #reset circular layout parameters
 
-par(mar = rep(0 , 4)) #set margins to 0 
+par(mar = c(0, 0, 0, 0)) #set margin values 
 circos.par(cell.padding = c(0, 0, 0, 0), 
            track.margin = c(0, 0.1), 
            start.degree = 90, #start plotting at 12 o'clock
            gap.degree = 2, #gap between circle sectors
            points.overflow.warning = FALSE, 
-           canvas.xlim = c(-1.5, 1.5), 
-           canvas.ylim = c(-1.5, 1.5) 
+           canvas.xlim = c(-1.7, 1.7), 
+           canvas.ylim = c(-1.7, 1.7) 
 )
 
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
@@ -54,11 +55,11 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          
                          #plot subregion names
                          circos.text(x = mean(xlim), #position text at middle of sector
-                                     y = 3, #distance from circle
+                                     y = ifelse(str_length(name) > 20, 3.5, 3),
                                      labels = name, #name of subregion
                                      facing = "clockwise", 
                                      niceFacing = TRUE,
-                                     cex = 1 #scale text
+                                     cex = 1.3 #scale text
                          )
                          
                          #plot a sector for each subregion
@@ -93,7 +94,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                                      lwd = 0.4,
                                      labels.niceFacing = TRUE,
                                      major.tick.length = 0.1,
-                                     minor.ticks = 4
+                                     minor.ticks = 3
                         )
                          
                        }
@@ -153,5 +154,3 @@ for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
 
 #save plot
 dev.off() #close graphing device
-
-#packrat::status()

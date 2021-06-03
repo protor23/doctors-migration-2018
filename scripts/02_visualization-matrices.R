@@ -1,7 +1,5 @@
 #### Packages used ####
 
-#packrat::init()
-
 #install.packages("stringr")
 #install.packages("reshape2")
 
@@ -11,7 +9,7 @@ library(here)
 library(stringr)
 library(reshape2)
 
-#packrat::snapshot()
+#renv::snapshot()
 
 #### Create the migration flow matrix ####
 
@@ -45,8 +43,6 @@ subregions = data[ , 3:5] #retrieve subregions and number of migrants from datas
 subregions = subregions %>%
   group_by(subregion_from, subregion_to) %>%
   summarize(no = sum(number)) #number of total migrants per subregion
-
-subregions
 
 #convert subregions dataframe into wide format
 
@@ -98,17 +94,17 @@ subregion_details = left_join(df_from,
 colnames(subregion_details) = c("subregion", "outer", "inner") #rename columns
 
 subregion_details$total = rowSums(subregion_details[ ,c("outer", "inner")], 
-                                  na.rm = TRUE) #add total migrants to datframe
+                                  na.rm = TRUE) #add total migrants to datfram
 
-#Add rgb codes to each subregion for sectors and links
 
+#Add rgb codes to each subregion
 subregion_details$rgb = c("255,0,0", "0,255,0", "0,0,255", 
                           "255,255,0", "0,255,255", "255,0,255",
                           "128,128,128", "128,0,0", "128,128,0", 
                           "0,128,0", "128,0,128", "0,128,128",
                           "0,0,128", "152,251,152", "30,144,255", 
                           "138,43,226"
-) #thank you Google
+) 
 
 #Split rgb codes into 3 variables - adapted from Sander et al. (2014)
 n = nrow(subregion_details)
@@ -160,5 +156,3 @@ subregion_details$subregion = factor(subregion_details$subregion, #treat subregi
 
 flow_matrix = flow_matrix[levels(subregion_details$subregion), #order rows by total flow
                           levels(subregion_details$subregion)] #order columns by total flow
-
-#packrat::status()

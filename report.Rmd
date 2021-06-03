@@ -1,0 +1,582 @@
+---
+title: "Healthcare Workers' Migration in 2018"
+author: "Ruri Proto"
+date: "03/06/2021"
+output:
+  html_document:
+    toc: TRUE
+    toc_depth: 3
+    highlight: tango
+---
+
+```{css echo = FALSE}
+pre code, pre, code {
+  max-height: 350px !important;
+  white-space: pre !important;
+  overflow-y: scroll !important;
+  word-break: keep-all !important;
+}
+```
+
+## **Research Questions**
+
+* To which geographical regions do healthcare workers migrate?
+
+* From which geographical regions do healthcare workers emigrate?
+
+* Are there any distinguishable patterns? For example:
+  + do healthcare workers from a certain region emigrate to a select few other regions?
+  + are there any regions to which healthcare workers do not emigrate?
+
+## **Data Origin**
+
+I retrieved data from the [OECD website](https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_WFMI), where I downloaded migration information from all OECD countries in 2018. I subsequently retrieved a dataset linking countries with grographical subregions from [github](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv).
+
+```{r eval = TRUE, results = "hide", message = FALSE}
+library(readr)
+library(here)
+
+wf_mig = read_csv(here("data-raw/workforce-migration.csv")) #migration data
+sub_reg = read_csv(here("data-raw/subregions.csv")) #subregions data
+```
+
+The healthcare workforce migration data set includes the number of healthcare workers (doctors and nurses) who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications. 
+
+```{r messages = FALSE}
+head(wf_mig)
+```
+
+The subregions dataset links countries with their respective geographical regions and subregions. I focused on subregions in my analysis because their number is more manageable than that of countries (far too many!) or regions (far too few!), which will enhance the readability of the plot. 
+
+```{r}
+head(sub_reg)
+```
+
+## **Data Processing**
+
+You can see the full script [here](https://github.com/protor23/healthcare-workers-migration/blob/main/scripts/01_data-processing.R) for a detailed explanation of all data processing steps taken. Here I outline the major steps:
+
+I wanted my final dataset to include subregions of origin, subregions of destination, and number of migrants. Therefore, each observation would indicate the number of emigrants from one subregion to another. This required me to join `wf_mig` and `sub_reg` by a variable storing country names.
+
+### **Removing unnecessary data**
+I removed:
+
+* flows between identical countries (not interested in domestic migration)
+* cases where the number of migrants was 0 (they did not cover all combinations of countries which included 0 migration, which would have interfered with my code later on)
+* unnecessary columns such as the year of migration (since data is solely from 2018) 
+* information about regions (since I was only interested in subregions)
+* other irrelevant rows (e.g., countries grouped in an "Others" category)
+
+I also gave columns new suggestive ones to eliminate blanks. 
+
+```{r eval = TRUE, results = "hide", message = FALSE}
+library(dplyr)
+
+wf_mig = wf_mig[, -3] #eliminate year column
+colnames(wf_mig) = c("to", "from", "number") #rename columns
+
+wf_mig = wf_mig %>%
+  filter(to != from) %>%
+  filter(number != 0) #remove domestic migration cases and cases with 0 migrants
+
+sub_reg = sub_reg[ ,c("name", "sub-region")] #select relevant columns
+colnames(sub_reg) = c('country', "subregion") #rename columns
+
+wf_mig = wf_mig %>%
+  filter(!(from %in% c("Total", "Others (not elsewhere classified)"))) #remove irrelevant columns
+```
+
+### **Filling in missing data**
+
+Yes, this involved manual insertion of data, and all my attempts at fancy string parsing loops resulted in erroneous replacements, perhaps because there was no obvious rule to guide an automated replacement mechanism. There were only a few cases where I had to do this, so I thought it made sense.
+
+I stated by looking for countries found in `sub_reg` and not in `wf_mig`:
+
+```{r eval = TRUE, warnings = FALSE}
+data.frame(country = unique(c(setdiff(wf_mig$to, sub_reg$country), 
+                                     setdiff(wf_mig$from, sub_reg$country)
+                              )
+          )
+)
+```
+
+I susbequently included keywords of these countries (e.g., Moldova for Republic of Moldova) in a vector (`missing_countries`) and looked for these in `sub_reg` to understand whether they had a different name or were completely absent. The code below showed me that the culprit for most cases was just a difference in how the countries were named in the two data sets, but the similarities highlighted the different names referred mostly to the same countries. 
+
+```{r include = FALSE}
+source(here("scripts/01_data-processing.R"))
+```
+
+```{r message = FALSE}
+library(stringr)
+
+for(i in 1:length(missing_countries)) { #for every missing country
+  for (j in 1:length(unique(sub_reg)$country)) #check all unique countries in sub_reg
+    if(str_detect(unique(sub_reg)$country[j], missing_countries[i])) { #find similarities
+      print(c(unique(sub_reg)$country[j], missing_countries[i])) #print similarities
+    }
+}
+```
+Therefore, I replaced these country names in `sub_reg` to match their `wf_mig` equivalent into a new column called `country_join`. 
+
+### **Joining data frames**
+
+I then allocated subregions to each country by joining `wf_mig` and `sub_reg` by `country_join` and provided helpful names to distinguish between origin and destination subregions.
+
+```{r eval = FALSE}
+data = left_join(wf_mig, sub_reg, by = c("to" = "country_join"))
+
+data = rename(data, subregion_to =  subregion)
+
+data = left_join(data, sub_reg, by = c("from" = "country_join"))
+
+data = rename(data, subregion_from = subregion)
+```
+
+I then discovered some countries were still missing from `sub_reg`, so I added subregions for them manually to the final data set. More geopolitical googling. 
+
+```{r eval = FALSE}
+unique(data$from[is.na(data$country.y)]) #find which countries prevent the join
+#Laos, Swaziland, Chinese Taipei, The former Yugoslav Republic of Macedonia
+```
+
+_Side note:_ It was surprising to learn that people disagree over whether Central Europe is a thing, or whether we should just split Europe into Western, Eastern, Southern, Northern. This data set follows the latter logic.
+
+### **Evaluating the final dataset**
+
+The final dataset had no missing values.
+
+```{r include = FALSE}
+source(here("scripts/01_data-processing.R"))
+```
+
+```{r eval = TRUE}
+sapply(data, 
+       function(x) sum(is.na(x))
+)
+
+head(data)
+```
+
+## **Intermediate data transformations**
+
+The code for this work is [here](https://github.com/protor23/healthcare-workers-migration/blob/main/scripts/02_visualization-matrices.R).
+
+The visualization I planned required two objects. 
+
+* `flow_matrix`  - the number of emigrants for all combinations of subregions 
+
+* `subregion_details` - a data frame showing plotting details (e.g., colours) for each subregion. 
+
+### **The flow matrix** 
+
+I started by computing the total number of migrants per subregion of origin and destination, irrespective of country, and stored that in the `subregions` data frame:
+
+```{r include = FALSE}
+library(dplyr)
+options(dplyr.summarise.inform = FALSE)
+```
+
+
+```{r eval = TRUE}
+library(dplyr)
+
+subregions = data[ , 3:5] #retrieve subregions and number of migrants from dataset
+
+subregions = subregions %>%
+  group_by(subregion_from, subregion_to) %>%
+  summarize(no = sum(number)) #number of total migrants per subregion
+
+head(subregions)
+```
+I subsequently created a flow matrix with all subregions as rows and columns which contained only 0s. I treated rows as origin subregions and columns as destination subregions. I updated the values in the `flow_matrix` with the ones in `subregions`. This approach ensured that all possible combinations of subregions were present in `flow_matrix`, rather than only those where the number of migrants was different from 0.
+
+```{r include = FALSE}
+#find all subregions in the dataset
+factors = unique(c(unique(data$subregion_to), 
+                   unique(data$subregion_from)
+                   )
+)
+
+library(reshape2)
+
+subregions = dcast(subregions,
+                   subregion_from ~ subregion_to, #origin subregions as rows
+                   value.var = "no"
+) #convert into wide format
+
+#set rownames to subregion_from to facilitate indexing
+rownames(subregions) = subregions$subregion_from 
+
+#initialise flow matrix as a quadratic matrix with all values of 0 
+x = rep(0, length(factors)^2)
+row_n = factors #row names for matrix
+col_n = factors #column names for matrix
+
+flow_matrix = matrix(x, 
+                     nrow = length(factors), 
+                     byrow = TRUE,
+                     dimnames = list(row_n, col_n)
+) #create matrix
+```
+
+```{r eval = TRUE, results = "hide"}
+#find all subregions in the dataset
+factors = unique(c(unique(data$subregion_to), 
+                   unique(data$subregion_from)
+                   )
+)
+
+for(i in factors) { #take each unique subregion
+  for(j in factors) { #combine it with all subregions
+    flow_matrix[i, j] = ifelse( #for each combination
+      (flow_matrix[i, j] != subregions[i, j] && #if subregions value is different from flow_matrix value
+         !(is.na(subregions[i, j]))),  #providing subregions value is not missing
+      subregions[i, j], #replace value in flow_matrix with subregions value 
+      0 #otherwise keep 0 in flow_matrix
+    )
+  }
+}
+```
+
+At the end, the flow matrix looked like this:
+```{r echo = FALSE, results = "hide", message = FALSE}
+source(here("scripts/02_visualization-matrices.R"))
+```
+
+```{r eval = TRUE}
+head(flow_matrix)
+```
+
+### **The subregion details data frame** 
+
+This data frame included colours for circle sectors, circle links, and the total flow of migrants (immigrants + emigrants) in each country. Code for this section has been largely adapted from [Sander et al. (2014)](http://download.gsb.bund.de/BIB/global_flow/VID%20WP%20Visualising%20Migration%20Flow%20Data%20with%20Circular%20Plots.pdf). 
+
+I googled 16 rgb codes (as this is the number of unique subregions) and selected colours to enhance contrast.
+
+```{r eval = FALSE}
+subregion_details$rgb = c("255,0,0", "0,255,0", "0,0,255", 
+                          "255,255,0", "0,255,255", "255,0,255",
+                          "128,128,128", "128,0,0", "128,128,0", 
+                          "0,128,0", "128,0,128", "0,128,128",
+                          "0,0,128", "152,251,152", "30,144,255", 
+                          "138,43,226")
+```
+
+I then stored two versions of these colours, one of which had increased transparency. To accomplish this, I split colour codes into individual variables, and then used the `rgb` function to increase transparency.
+
+```{r eval = FALSE}
+#Split rgb codes into 3 variables - adapted from Sander et al. (2014)
+n = nrow(subregion_details)
+subregion_details = cbind(subregion_details, #split codes and treat them as numbers
+                          matrix(as.numeric(unlist(strsplit(subregion_details$rgb, split = ","))), 
+                                 nrow = n, byrow = TRUE 
+                                 ) #arrange them in n columns in a matrix
+)
+
+subregion_details = subregion_details %>%
+  rename( #rename columns according to the colour index
+    r = '1',
+    g = '2',
+    b = '3',
+  )
+
+#add two similar colours varying in transparency per subregion
+subregion_details$rcol = rgb(subregion_details$r, 
+                             subregion_details$g, 
+                             subregion_details$b, 
+                             max = 255
+)
+
+subregion_details$lcol = rgb(subregion_details$r, 
+                             subregion_details$g, 
+                             subregion_details$b, 
+                             alpha = 200, #transparency index
+                             max = 255
+)
+
+```
+
+I finally included the total number of migrants by adding the number of immigrants (`inner`) and emigrants (`outer`). I am aware I could have done this by summing the rows and columns of `flow_matrix`, but I wanted to do things this way so that I could compare the two outputs and hopefully find they are identical as a way to check my work (they were!). 
+
+```{r eval = FALSE}
+#Compute number of emigrants per region
+df_from = data %>%
+  group_by(subregion_from) %>%
+  summarize(sum(number))
+
+#Compute number of immigrants per region
+df_to = data %>%
+  group_by(subregion_to) %>%
+  summarize(sum(number))
+
+#Create subregion_details data frame with info about migrants and emigrants
+subregion_details = left_join(df_from, 
+                              df_to, 
+                              by = c("subregion_from" = "subregion_to")
+) #join data frames
+
+colnames(subregion_details) = c("subregion", "outer", "inner") #rename columns
+
+subregion_details$total = rowSums(subregion_details[ ,c("outer", "inner")], 
+                                 na.rm = TRUE) #add total migrants to datframe
+```
+
+I also added an `xmin` column with all values of 0, and its use will become apparent in the next section. At the end, the `subregion_details` data frame looked like this:
+
+```{r echo=FALSE, message=FALSE, results="hide"}
+source(here("scripts/02_visualization-matrices.R"))
+```
+
+```{r eval = TRUE}
+head(subregion_details)
+```
+
+## **Data visualization**
+The data visualization I have selected is a circular plot diagram and you can find the code [here](https://github.com/protor23/healthcare-workers-migration/blob/main/scripts/03_visualize-data.R).
+
+### **Background about circular plots**
+
+The plot is not intuitive (to me, at least?), but once the eye is trained, it becomes a really nice way of condensing a lot of relevant information in a visually interesting, colourful, neat way. 
+
+The code for the visualization is quite complex. Readers who are interested in the inner workings of the code should consult [Sander et al. (2014)](http://download.gsb.bund.de/BIB/global_flow/VID%20WP%20Visualising%20Migration%20Flow%20Data%20with%20Circular%20Plots.pdf), and [Gu (2020)](https://jokergoo.github.io/circlize_book/book/). I used both of these resources to understand and adapt the code of [Sander et al. (2014)](http://download.gsb.bund.de/BIB/global_flow/VID%20WP%20Visualising%20Migration%20Flow%20Data%20with%20Circular%20Plots.pdf), but I prefer the latter because it offers an in-depth explanation of the `circlize` package.
+
+Essentially, this plot draws tracks on circles and splits them into sectors to reflect differences between subregions in migrant numbers. It also plotts links to illustrate the flow of migrants between subregions. 
+
+### **Preliminary circular plots**
+
+I started by setting some plotting parameters related to the size of the circle, padding, sector gaps, and the starting plotting point. Please note these are different from the code in the script, as I have changed them to allow some readability on github.
+
+```{r eval = TRUE, messages = FALSE}
+suppressPackageStartupMessages(library(circlize))
+
+circos.clear() #reset circular layout parameters
+
+par(mar = rep(0 , 4)) #set margins to 0 
+circos.par(cell.padding = c(0, 0, 0, 0), 
+           track.margin = c(0, 0.1), 
+           start.degree = 90, #start plotting at 12 o'clock
+           gap.degree = 2, #gap between circle sectors
+           points.overflow.warning = FALSE, 
+           canvas.xlim = c(-1.5, 1.5), 
+           canvas.ylim = c(-1.5, 1.5) 
+)
+```
+
+I then initialized the layout to allocate subregions into sectors whose sizes are bounded by `xmin` and the `total` flow of migrants for that subregion. Remember `xmin`? I set it at 0 originally, and alongside `total`, it will become just a variable that guides plotting. This approach ensures the relative size of sectors matches the relative migration flows for each subregion. 
+
+```{r eval = FALSE}
+circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
+                  xlim = cbind(subregion_details$xmin, 
+                               subregion_details$total) 
+                  #set limits of the x axis for each sector between 0 and total flow
+)
+```
+
+The next step involved creating a plotting region to which I added graphics.
+
+```{r include = FALSE}
+circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
+                  xlim = cbind(subregion_details$xmin, 
+                               subregion_details$total) 
+                  #set limits of the x axis for each sector between 0 and total flow
+)
+```
+
+* I plotted subregion names using `circos.text()`
+* I plotted a first track using `circos.rect()` which was split into one sector per subregion reflecting the total amount of migrans (emigrants + immigrants).
+
+This initial work resulted in:
+
+```{r eval = TRUE}
+circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
+                  xlim = cbind(subregion_details$xmin, 
+                               subregion_details$total) 
+                  #set limits of the x axis for each sector between 0 and total flow
+)
+
+circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
+                       factors = subregion_details$subregion, 
+                       track.height = 0.2, 
+                       panel.fun = function(x, y) { #for each new cell (i.e., intersection between sector and track)
+                         name = get.cell.meta.data("sector.index") #retrieve cell meta data
+                         i = get.cell.meta.data("sector.numeric.index")
+                         xlim = get.cell.meta.data("xlim")
+                         ylim = get.cell.meta.data("ylim")
+                         
+                         #plot subregion names
+                         circos.text(x = mean(xlim), #position text at middle of sector
+                                     y = 3.3, #distance from circle
+                                     labels = name, #name of subregion
+                                     facing = "clockwise", 
+                                     niceFacing = TRUE, #adjust positions to make it readable by humans
+                                     cex = 0.5 #scale text
+                         )
+                         
+                         #plot a sector for each subregion
+                         circos.rect(xleft = xlim[1], 
+                                     ybottom = ylim[1], 
+                                     xright = xlim[2], 
+                                     ytop = ylim[2], 
+                                     col = subregion_details$rcol[i], #use less transparent colours
+                                     border = subregion_details$rcol[i]
+                         )
+                       }
+)
+```
+
+This plot shows the relative number of total migrants (immigrants + emigrants) for each subregion. I next added another track where:
+
+* the coloured portions represent relative numbers of emigrants per subregion
+* the white portions represent relative numbers of immigrants per subregion
+
+```{r eval = FALSE}
+ #distinguish between immigrants and emigrants in each subregion
+                         circos.rect(xleft = xlim[1], 
+                                     ybottom = ylim[1], 
+                                     xright = xlim[2] - rowSums(flow_matrix)[i], #i.e., total - emigrants
+                                     ytop = ylim[1] + 0.3,
+                                     col = "white", 
+                                     border = "white"
+                         ) 
+                         
+                         #add a white contour to separate the previous two rectangles
+                         circos.rect(xleft = xlim[1], 
+                                     ybottom = 0.3, 
+                                     xright = xlim[2], 
+                                     ytop = 0.32, 
+                                     col = "white", 
+                                     border = "white"
+                         )
+```
+
+```{r echo = FALSE}
+
+circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
+                  xlim = cbind(subregion_details$xmin, 
+                               subregion_details$total) 
+                  #set limits of the x axis for each sector between 0 and total flow
+)
+
+circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
+                       factors = subregion_details$subregion, 
+                       track.height = 0.2, 
+                       panel.fun = function(x, y) { #for each new cell (i.e., intersection between sector and track)
+                         name = get.cell.meta.data("sector.index") #retrieve cell meta data
+                         i = get.cell.meta.data("sector.numeric.index")
+                         xlim = get.cell.meta.data("xlim")
+                         ylim = get.cell.meta.data("ylim")
+                         
+                         #plot subregion names
+                         circos.text(x = mean(xlim), #position text at middle of sector
+                                     y = 3.3, #distance from circle
+                                     labels = name, #name of subregion
+                                     facing = "clockwise", 
+                                     niceFacing = TRUE, #adjust positions to make it readable by humans
+                                     cex = 0.5 #scale text
+                         )
+                         
+                         #plot a sector for each subregion
+                         circos.rect(xleft = xlim[1], 
+                                     ybottom = ylim[1], 
+                                     xright = xlim[2], 
+                                     ytop = ylim[2], 
+                                     col = subregion_details$rcol[i], #use less transparent colours
+                                     border = subregion_details$rcol[i]
+                         )
+                         
+                         #distinguish between immigrants and emigrants in each subregion
+                         circos.rect(xleft = xlim[1], 
+                                     ybottom = ylim[1], 
+                                     xright = xlim[2] - rowSums(flow_matrix)[i], #i.e., total - emigrants
+                                     ytop = ylim[1] + 0.3,
+                                     col = "white", 
+                                     border = "white"
+                         ) 
+                         
+                         #add a white contour to separate the previous two rectangles
+                         circos.rect(xleft = xlim[1], 
+                                     ybottom = 0.3, 
+                                     xright = xlim[2], 
+                                     ytop = 0.32, 
+                                     col = "white", 
+                                     border = "white"
+                         )
+                       }
+)
+
+```
+
+### **Final plot** 
+Next, I included links between origin subregions and destination subregions, in order to show migration patterns, and an axis to give an indication of actual migrant numbers. This required some further data processing to transform `flow_matrix` into its long format and add parameters to guide the position of links, `sums1` and `sums2`. This is explained in depth in the full script. 
+
+```{r eval = FALSE}
+#plot links for each combination of regions
+for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
+  i = match(flow_matrix_long$subregion_from[k],
+            subregion_details$subregion) #get plotting details for subregion of origin
+  j = match(flow_matrix_long$subregion_to[k],
+            subregion_details$subregion) #get plotting details for destination subregion
+  
+  circos.link(sector.index1 = subregion_details$subregion[i], #need to identify indices
+              point1 = c(subregion_details$sum1[i], 
+                         subregion_details$sum1[i] + abs(flow_matrix[i, j])), #starting point of link
+              
+              sector.index2 = subregion_details$subregion[j], 
+              point2=c(subregion_details$sum2[j], 
+                       subregion_details$sum2[j] + abs(flow_matrix[i, j])), #endpoint of link
+              
+              border = subregion_details$lcol[i],
+              col = subregion_details$lcol[i], #use the more transparent colour to increase visibility
+  )
+  
+  #update sum1 and sum2 for use when plotting the next link
+  subregion_details$sum1[i] = subregion_details$sum1[i] + abs(flow_matrix[i, j]) 
+  subregion_details$sum2[j] = subregion_details$sum2[j] + abs(flow_matrix[i, j])
+}
+```
+
+As a result, I produced this plot - which is linked here as a png file because R output in this package looks horrendous. 
+
+The colour of links suggests their origin. Notice that immigration patterns are plotted through links starting in the emigrants section of the subregion (the second coloured arc inwards), and end up in the immigrants section of another (or the same) subregion (the white arc in continuation of the emigrant arc). The size of the link gives the amount of migrants moving from one subregion to another. 
+
+For example, the migration flow in Southern Asia consists exclusively of emigrants, most of whom tend to go to Northern Europe, with far fewer going to Australia and New Zealand and Northern America. As we can see, immigrants from Southern Asia make up a sizeable chunk of the total amount of immigrants in Northern Europe (the green ribbon corresponds to about 24,000 immigrants in Northern Europe out of a total of about 72,000, as demarcated by the white stripe of the sector). 
+
+```{r pressure, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("figs/01_migration-flow.png", error = FALSE)
+```
+
+## **Summary**
+
+Findings show that:
+
+* Western Europe has the most migrants, closely followed by Norther Europe and Eastern Europe. 
+
+* Whilst Western and Northern Europe have relatively low proportions of emigrants and high proportions of immigrants, this is completely the opposite in Eastern Europe. 
+
+* Northern America and Western Europe are the most common immigration destinations. 
+
+* Most individuals in Latin America and the Caribbean emigrate to countries within the same region. 
+
+* Very few healthcare workers emigrate to Eastern Europe. 
+
+If I had more time to spend on this project:
+
+* I would attempt to fix the issue that causes some links to go ever so slightly beyond the borders for emigrants - yes, Northern Africa, I'm looking at you! I am still not sure what the reason for this is, but the `circlize` package still receives updates, so I will keep an eye on it.
+
+* I would try to figure out how to automatically adjust the distance between text and plot depending on the length of the string to avoid having to include such large distances between some subregion names and the plot.
+
+* I would extend this project beyond this plot to understand why healthcare workers migrate to specific subregions - Is it better pay? Is it the chance to work in specific areas of medicine? So much to know, and OECD data is out there.
+
+* I would evaluate how migration flow patterns change over time, and perhaps visualise this with an interactive plot. There are some nice integrations available with JavaScript that can make this possible. 
+
+* I would try to replicate this plot with a recent addition to the `circlize` package, `chordDiagram()`. This function simplifies the process greatly (as I happily found out when I was almost done with this project). 
+
+## **References**
+
+To complete this project, I used several resources:
+
+* [Sander et al. (2014)](http://download.gsb.bund.de/BIB/global_flow/VID%20WP%20Visualising%20Migration%20Flow%20Data%20with%20Circular%20Plots.pdf)
+
+* [Gu (2020)](https://jokergoo.github.io/circlize_book/book/)
+
+* random fantastic strangers on stackoverflow - I am gradeful to you for helping me fix my code errors and learn new ways of doing things.
