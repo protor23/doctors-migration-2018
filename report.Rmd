@@ -316,7 +316,7 @@ head(subregion_details)
 ```
 
 ## **Data visualization**
-The data visualization I have selected is a circular plot diagram and you can find the code [here](https://github.com/protor23/doctors-migration-2018/blob/main/scripts/03_visualize-data.R).
+The data visualization I have selected is a circular plot diagram and you can find the code [here](https://github.com/protor23/doctors-migration-2018/blob/main/scripts/03_data-visualization.R).
 
 ### **Background information**
 
@@ -561,6 +561,6 @@ To complete this project, I used several resources:
 
 * [Gu (2020)](https://jokergoo.github.io/circlize_book/book/) - in-reasonable-depth resource for th `circlize` package
 
-* [](https://stackoverflow.com/) - I am gradeful to random skilled strangers for helping me learn new ways of doing things
+* [stackoverflow.com](https://stackoverflow.com/) - I am gradeful to random skilled strangers for helping me learn new ways of doing things
 
 You can find my repository [here](https://github.com/protor23/doctors-migration-2018).
