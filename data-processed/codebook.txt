@@ -1,11 +1,16 @@
-Processed data:
+code_to - ISO Alpha-3 code for the destination country (internationally recognised unique country identifiers - see https://www.nationsonline.org/oneworld/country_code_list.htm)
 
-to - country of origin
+country_to - destination country
 
-from - destination country
+code_from - ISO Alpha-3 code for the destination country (internationally recognised unique country identifiers - see https://www.nationsonline.org/oneworld/country_code_list.htm)
 
-number* - the number of foreignly trained doctors who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications - this includes medical interns and residents.
+country_from - destination country
+
+number - the number of foreignly trained doctors who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications - this includes medical interns and residents
 
 subregion_to - the subregion corresponding to the country of origin
 
 subregion_from - the subregion corresponding to the destination country
+
+
+

@@ -1,4 +1,4 @@
-Raw data: workforce-migration (
+workforce-migration:
 
 Country - destination country
 
@@ -10,4 +10,26 @@ Value* - the number of foreignly trained doctors who, in 2018, were registered o
 
 NB. To replicate my data search, go to https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_WFMI#, and select var = foreign-trained-doctors-stock, year = 2018, in all OECD countries.
 
-Raw data: subregions - details at: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes
+
+
+-----
+
+subregions: 
+Credits for this dataset go to @Luke Duncalfe (https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes), who has collected and maintained this data set.
+Recent updates to this dataset were made on 8 December 2020 using information from UN Statistical data (https://unstats.un.org/unsd/methodology/m49/overview) and Wikipedia data (https://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements)
+
+name - name of country
+
+alpha-2 - ISO alpha-2 country code (standardized unique identifier of countries)
+
+alpha-3 - ISO alpha-3 country code (standardized unique identifier of countries)
+
+region, sub-region, intermediate-region - self-explanatory, various granularity of geographical region mapping (e.g., region = Africa, sub-region = Sub-Saharan Africa, intermediate-region = Middle Africa)
+
+region-code, sub-region-code, intermediate-region-code country code - M49 numerical codes for geographic regions based on the UN Statistics classification
+
+iso_3166-2 - ISO-3166-2 subdivision codes for the representation of countries and their subdivisions (https://en.wikipedia.org/wiki/ISO_3166-2)
+
+
+
+
