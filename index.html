@@ -280,6 +280,7 @@ pre code {
 </ul>
 </div>
 
+<!-- Please do not change the location of the file, as this will prevent R from finding the path to the png visualization  -->
 <style type="text/css">
 pre code, pre, code {
   max-height: 350px !important;
@@ -291,12 +292,12 @@ pre code, pre, code {
 <div id="research-questions" class="section level2">
 <h2><strong>Research Questions</strong></h2>
 <ul>
-<li><p>To which geographical regions do healthcare workers migrate?</p></li>
-<li><p>From which geographical regions do healthcare workers emigrate?</p></li>
+<li><p>To which geographical regions do foreign-trained doctors migrate?</p></li>
+<li><p>From which geographical regions do foreign-trained doctors emigrate?</p></li>
 <li><p>Are there any distinguishable patterns? For example:</p>
 <ul>
-<li>do healthcare workers from a certain region emigrate to a select few other regions?</li>
-<li>are there any regions to which healthcare workers do not emigrate?</li>
+<li>do doctors from a certain region emigrate to a select few other regions?</li>
+<li>are there any regions to which doctors do not emigrate?</li>
 </ul></li>
 </ul>
 </div>
@@ -308,7 +309,7 @@ pre code, pre, code {
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>wf_mig <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">&quot;data-raw/workforce-migration.csv&quot;</span>)) <span class="co">#migration data</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>sub_reg <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">&quot;data-raw/subregions.csv&quot;</span>)) <span class="co">#subregions data</span></span></code></pre></div>
-<p>The healthcare workforce migration data set includes the number of healthcare workers (doctors and nurses) who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications.</p>
+<p>The healthcare workforce migration data set includes the number of foreignly trained doctors who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications - this includes medical interns and residents.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(wf_mig)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 4
 ##   Country     `Country of origin`  Year Value
