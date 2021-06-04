@@ -8,6 +8,7 @@ library(readr)
 library(here)
 library(stringr)
 library(reshape2)
+library(dplyr)
 
 #renv::snapshot()
 
@@ -18,8 +19,6 @@ library(reshape2)
 
 #load data
 data = read_csv(here("data-processed/data.csv"))
-
-unique(data$subregion_to) == unique(data$subregion_from) #origin and destination subregions are different
 
 #find all subregions in the dataset
 unique_subreg = unique(c(unique(data$subregion_to), unique(data$subregion_from)))
