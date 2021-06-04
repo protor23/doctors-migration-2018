@@ -1,1454 +1,1575 @@
-to,from,number,subregion_to,subregion_from
-Canada,Afghanistan,5,Northern America,Southern Asia
-France,Afghanistan,12,Western Europe,Southern Asia
-Germany,Afghanistan,153,Western Europe,Southern Asia
-Norway,Afghanistan,22,Northern Europe,Southern Asia
-Switzerland,Afghanistan,6,Western Europe,Southern Asia
-United Kingdom,Afghanistan,53,Northern Europe,Southern Asia
-Belgium,Albania,2,Western Europe,Southern Europe
-Canada,Albania,24,Northern America,Southern Europe
-France,Albania,15,Western Europe,Southern Europe
-Germany,Albania,570,Western Europe,Southern Europe
-Ireland,Albania,2,Northern Europe,Southern Europe
-New Zealand,Albania,1,Australia and New Zealand,Southern Europe
-Norway,Albania,1,Northern Europe,Southern Europe
-Switzerland,Albania,13,Western Europe,Southern Europe
-United Kingdom,Albania,27,Northern Europe,Southern Europe
-Slovenia,Albania,3,Southern Europe,Southern Europe
-Belgium,Algeria,34,Western Europe,Northern Africa
-Canada,Algeria,107,Northern America,Northern Africa
-France,Algeria,3824,Western Europe,Northern Africa
-Germany,Algeria,90,Western Europe,Northern Africa
-Ireland,Algeria,2,Northern Europe,Northern Africa
-Norway,Algeria,6,Northern Europe,Northern Africa
-Switzerland,Algeria,110,Western Europe,Northern Africa
-United Kingdom,Algeria,39,Northern Europe,Northern Africa
-Israel,Algeria,6,Western Asia,Northern Africa
-Germany,Angola,3,Western Europe,Sub-Saharan Africa
-United Kingdom,Angola,1,Northern Europe,Sub-Saharan Africa
-Canada,Antigua and Barbuda,40,Northern America,Latin America and the Caribbean
-United Kingdom,Antigua and Barbuda,12,Northern Europe,Latin America and the Caribbean
-Belgium,Argentina,20,Western Europe,Latin America and the Caribbean
-Canada,Argentina,137,Northern America,Latin America and the Caribbean
-France,Argentina,199,Western Europe,Latin America and the Caribbean
-Germany,Argentina,40,Western Europe,Latin America and the Caribbean
-Hungary,Argentina,3,Eastern Europe,Latin America and the Caribbean
-Ireland,Argentina,12,Northern Europe,Latin America and the Caribbean
-New Zealand,Argentina,10,Australia and New Zealand,Latin America and the Caribbean
-Norway,Argentina,5,Northern Europe,Latin America and the Caribbean
-Switzerland,Argentina,64,Western Europe,Latin America and the Caribbean
-United Kingdom,Argentina,70,Northern Europe,Latin America and the Caribbean
-Chile,Argentina,582,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Argentina,349,Western Asia,Latin America and the Caribbean
-Slovenia,Argentina,5,Southern Europe,Latin America and the Caribbean
-Belgium,Armenia,4,Western Europe,Western Asia
-Canada,Armenia,13,Northern America,Western Asia
-Czech Republic,Armenia,1,Eastern Europe,Western Asia
-France,Armenia,37,Western Europe,Western Asia
-Germany,Armenia,216,Western Europe,Western Asia
-Hungary,Armenia,1,Eastern Europe,Western Asia
-Ireland,Armenia,1,Northern Europe,Western Asia
-Norway,Armenia,2,Northern Europe,Western Asia
-Switzerland,Armenia,4,Western Europe,Western Asia
-United Kingdom,Armenia,28,Northern Europe,Western Asia
-Estonia,Armenia,1,Northern Europe,Western Asia
-Belgium,Australia,5,Western Europe,Australia and New Zealand
-Canada,Australia,590,Northern America,Australia and New Zealand
-France,Australia,3,Western Europe,Australia and New Zealand
-Germany,Australia,20,Western Europe,Australia and New Zealand
-Ireland,Australia,119,Northern Europe,Australia and New Zealand
-New Zealand,Australia,533,Australia and New Zealand,Australia and New Zealand
-Norway,Australia,87,Northern Europe,Australia and New Zealand
-Switzerland,Australia,11,Western Europe,Australia and New Zealand
-United Kingdom,Australia,522,Northern Europe,Australia and New Zealand
-Israel,Australia,80,Western Asia,Australia and New Zealand
-Belgium,Austria,27,Western Europe,Western Europe
-Canada,Austria,33,Northern America,Western Europe
-Czech Republic,Austria,4,Eastern Europe,Western Europe
-France,Austria,34,Western Europe,Western Europe
-Germany,Austria,2012,Western Europe,Western Europe
-Hungary,Austria,5,Eastern Europe,Western Europe
-Ireland,Austria,7,Northern Europe,Western Europe
-New Zealand,Austria,13,Australia and New Zealand,Western Europe
-Norway,Austria,74,Northern Europe,Western Europe
-Switzerland,Austria,815,Western Europe,Western Europe
-United Kingdom,Austria,91,Northern Europe,Western Europe
-Chile,Austria,1,Latin America and the Caribbean,Western Europe
-Israel,Austria,20,Western Asia,Western Europe
-Slovenia,Austria,18,Southern Europe,Western Europe
-Canada,Azerbaijan,2,Northern America,Western Asia
-Czech Republic,Azerbaijan,4,Eastern Europe,Western Asia
-France,Azerbaijan,3,Western Europe,Western Asia
-Germany,Azerbaijan,646,Western Europe,Western Asia
-Hungary,Azerbaijan,1,Eastern Europe,Western Asia
-Norway,Azerbaijan,5,Northern Europe,Western Asia
-Switzerland,Azerbaijan,2,Western Europe,Western Asia
-United Kingdom,Azerbaijan,16,Northern Europe,Western Asia
-Estonia,Azerbaijan,4,Northern Europe,Western Asia
-Israel,Azerbaijan,6,Western Asia,Western Asia
-Canada,Bahamas,1,Northern America,Latin America and the Caribbean
-Canada,Bahrain,21,Northern America,Western Asia
-Germany,Bahrain,8,Western Europe,Western Asia
-Ireland,Bahrain,21,Northern Europe,Western Asia
-United Kingdom,Bahrain,55,Northern Europe,Western Asia
-Canada,Bangladesh,138,Northern America,Southern Asia
-France,Bangladesh,3,Western Europe,Southern Asia
-Germany,Bangladesh,9,Western Europe,Southern Asia
-Ireland,Bangladesh,44,Northern Europe,Southern Asia
-New Zealand,Bangladesh,43,Australia and New Zealand,Southern Asia
-Norway,Bangladesh,16,Northern Europe,Southern Asia
-United Kingdom,Bangladesh,654,Northern Europe,Southern Asia
-Canada,Barbados,7,Northern America,Latin America and the Caribbean
-New Zealand,Barbados,3,Australia and New Zealand,Latin America and the Caribbean
-Belgium,Belarus,1,Western Europe,Eastern Europe
-Canada,Belarus,33,Northern America,Eastern Europe
-Czech Republic,Belarus,34,Eastern Europe,Eastern Europe
-France,Belarus,30,Western Europe,Eastern Europe
-Germany,Belarus,438,Western Europe,Eastern Europe
-Ireland,Belarus,17,Northern Europe,Eastern Europe
-New Zealand,Belarus,2,Australia and New Zealand,Eastern Europe
-Norway,Belarus,22,Northern Europe,Eastern Europe
-Switzerland,Belarus,8,Western Europe,Eastern Europe
-United Kingdom,Belarus,62,Northern Europe,Eastern Europe
-Estonia,Belarus,7,Northern Europe,Eastern Europe
-Israel,Belarus,5,Western Asia,Eastern Europe
-Slovenia,Belarus,3,Southern Europe,Eastern Europe
-Austria,Belgium,3,Western Europe,Western Europe
-Canada,Belgium,110,Northern America,Western Europe
-France,Belgium,1821,Western Europe,Western Europe
-Germany,Belgium,274,Western Europe,Western Europe
-Ireland,Belgium,16,Northern Europe,Western Europe
-New Zealand,Belgium,27,Australia and New Zealand,Western Europe
-Norway,Belgium,40,Northern Europe,Western Europe
-Switzerland,Belgium,194,Western Europe,Western Europe
-United Kingdom,Belgium,129,Northern Europe,Western Europe
-Chile,Belgium,9,Latin America and the Caribbean,Western Europe
-Israel,Belgium,47,Western Asia,Western Europe
-Canada,Belize,12,Northern America,Latin America and the Caribbean
-Norway,Belize,2,Northern Europe,Latin America and the Caribbean
-United Kingdom,Belize,1,Northern Europe,Latin America and the Caribbean
-Belgium,Benin,1,Western Europe,Sub-Saharan Africa
-Canada,Benin,3,Northern America,Sub-Saharan Africa
-France,Benin,101,Western Europe,Sub-Saharan Africa
-Germany,Benin,4,Western Europe,Sub-Saharan Africa
-United Kingdom,Benin,1,Northern Europe,Sub-Saharan Africa
-Switzerland,Bhutan,1,Western Europe,Southern Asia
-Belgium,Bolivia,4,Western Europe,Latin America and the Caribbean
-Canada,Bolivia,3,Northern America,Latin America and the Caribbean
-France,Bolivia,7,Western Europe,Latin America and the Caribbean
-Germany,Bolivia,47,Western Europe,Latin America and the Caribbean
-Ireland,Bolivia,4,Northern Europe,Latin America and the Caribbean
-Norway,Bolivia,7,Northern Europe,Latin America and the Caribbean
-Switzerland,Bolivia,9,Western Europe,Latin America and the Caribbean
-United Kingdom,Bolivia,6,Northern Europe,Latin America and the Caribbean
-Chile,Bolivia,580,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Bolivia,6,Western Asia,Latin America and the Caribbean
-Belgium,Bosnia and Herzegovina,2,Western Europe,Southern Europe
-Canada,Bosnia and Herzegovina,38,Northern America,Southern Europe
-Czech Republic,Bosnia and Herzegovina,6,Eastern Europe,Southern Europe
-France,Bosnia and Herzegovina,9,Western Europe,Southern Europe
-Germany,Bosnia and Herzegovina,470,Western Europe,Southern Europe
-Hungary,Bosnia and Herzegovina,2,Eastern Europe,Southern Europe
-New Zealand,Bosnia and Herzegovina,2,Australia and New Zealand,Southern Europe
-Norway,Bosnia and Herzegovina,60,Northern Europe,Southern Europe
-Switzerland,Bosnia and Herzegovina,59,Western Europe,Southern Europe
-United Kingdom,Bosnia and Herzegovina,28,Northern Europe,Southern Europe
-Slovenia,Bosnia and Herzegovina,92,Southern Europe,Southern Europe
-Belgium,Brazil,17,Western Europe,Latin America and the Caribbean
-Canada,Brazil,194,Northern America,Latin America and the Caribbean
-France,Brazil,71,Western Europe,Latin America and the Caribbean
-Germany,Brazil,126,Western Europe,Latin America and the Caribbean
-Ireland,Brazil,13,Northern Europe,Latin America and the Caribbean
-New Zealand,Brazil,8,Australia and New Zealand,Latin America and the Caribbean
-Norway,Brazil,16,Northern Europe,Latin America and the Caribbean
-Switzerland,Brazil,43,Western Europe,Latin America and the Caribbean
-United Kingdom,Brazil,109,Northern Europe,Latin America and the Caribbean
-Chile,Brazil,61,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Brazil,98,Western Asia,Latin America and the Caribbean
-Germany,Brunei Darussalam,3,Western Europe,South-Eastern Asia
-Austria,Bulgaria,26,Western Europe,Eastern Europe
-Belgium,Bulgaria,105,Western Europe,Eastern Europe
-Canada,Bulgaria,66,Northern America,Eastern Europe
-Czech Republic,Bulgaria,19,Eastern Europe,Eastern Europe
-France,Bulgaria,455,Western Europe,Eastern Europe
-Germany,Bulgaria,1497,Western Europe,Eastern Europe
-Hungary,Bulgaria,8,Eastern Europe,Eastern Europe
-Ireland,Bulgaria,127,Northern Europe,Eastern Europe
-New Zealand,Bulgaria,12,Australia and New Zealand,Eastern Europe
-Norway,Bulgaria,61,Northern Europe,Eastern Europe
-Switzerland,Bulgaria,92,Western Europe,Eastern Europe
-United Kingdom,Bulgaria,352,Northern Europe,Eastern Europe
-Chile,Bulgaria,6,Latin America and the Caribbean,Eastern Europe
-Israel,Bulgaria,64,Western Asia,Eastern Europe
-Slovenia,Bulgaria,38,Southern Europe,Eastern Europe
-Belgium,Burkina Faso,1,Western Europe,Sub-Saharan Africa
-Canada,Burkina Faso,1,Northern America,Sub-Saharan Africa
-France,Burkina Faso,15,Western Europe,Sub-Saharan Africa
-Germany,Burkina Faso,4,Western Europe,Sub-Saharan Africa
-Belgium,Burundi,3,Western Europe,Sub-Saharan Africa
-Canada,Burundi,2,Northern America,Sub-Saharan Africa
-France,Burundi,40,Western Europe,Sub-Saharan Africa
-Germany,Burundi,3,Western Europe,Sub-Saharan Africa
-United Kingdom,Burundi,5,Northern Europe,Sub-Saharan Africa
-Canada,Cambodia,1,Northern America,South-Eastern Asia
-France,Cambodia,35,Western Europe,South-Eastern Asia
-New Zealand,Cambodia,2,Australia and New Zealand,South-Eastern Asia
-Belgium,Cameroon,2,Western Europe,Sub-Saharan Africa
-Canada,Cameroon,8,Northern America,Sub-Saharan Africa
-France,Cameroon,65,Western Europe,Sub-Saharan Africa
-Germany,Cameroon,179,Western Europe,Sub-Saharan Africa
-Ireland,Cameroon,1,Northern Europe,Sub-Saharan Africa
-Switzerland,Cameroon,8,Western Europe,Sub-Saharan Africa
-United Kingdom,Cameroon,12,Northern Europe,Sub-Saharan Africa
-Australia,Canada,125,Australia and New Zealand,Northern America
-Belgium,Canada,3,Western Europe,Northern America
-France,Canada,36,Western Europe,Northern America
-Germany,Canada,74,Western Europe,Northern America
-Ireland,Canada,7,Northern Europe,Northern America
-New Zealand,Canada,86,Australia and New Zealand,Northern America
-Norway,Canada,3,Northern Europe,Northern America
-Switzerland,Canada,8,Western Europe,Northern America
-United Kingdom,Canada,42,Northern Europe,Northern America
-Chile,Canada,3,Latin America and the Caribbean,Northern America
-Israel,Canada,53,Western Asia,Northern America
-France,Central African Republic,15,Western Europe,Sub-Saharan Africa
-Germany,Central African Republic,3,Western Europe,Sub-Saharan Africa
-Germany,Chad,1,Western Europe,Sub-Saharan Africa
-Belgium,Chile,8,Western Europe,Latin America and the Caribbean
-Canada,Chile,40,Northern America,Latin America and the Caribbean
-France,Chile,14,Western Europe,Latin America and the Caribbean
-Germany,Chile,43,Western Europe,Latin America and the Caribbean
-New Zealand,Chile,4,Australia and New Zealand,Latin America and the Caribbean
-Norway,Chile,1,Northern Europe,Latin America and the Caribbean
-Switzerland,Chile,6,Western Europe,Latin America and the Caribbean
-United Kingdom,Chile,24,Northern Europe,Latin America and the Caribbean
-Estonia,Chile,1,Northern Europe,Latin America and the Caribbean
-Israel,Chile,25,Western Asia,Latin America and the Caribbean
-Australia,China,673,Australia and New Zealand,Eastern Asia
-Belgium,China,2,Western Europe,Eastern Asia
-Canada,China,414,Northern America,Eastern Asia
-France,China,56,Western Europe,Eastern Asia
-Germany,China,223,Western Europe,Eastern Asia
-Hungary,China,1,Eastern Europe,Eastern Asia
-Ireland,China,53,Northern Europe,Eastern Asia
-New Zealand,China,74,Australia and New Zealand,Eastern Asia
-Norway,China,23,Northern Europe,Eastern Asia
-Switzerland,China,16,Western Europe,Eastern Asia
-United Kingdom,China,229,Northern Europe,Eastern Asia
-Belgium,Colombia,20,Western Europe,Latin America and the Caribbean
-Canada,Colombia,170,Northern America,Latin America and the Caribbean
-France,Colombia,61,Western Europe,Latin America and the Caribbean
-Germany,Colombia,248,Western Europe,Latin America and the Caribbean
-Ireland,Colombia,15,Northern Europe,Latin America and the Caribbean
-New Zealand,Colombia,6,Australia and New Zealand,Latin America and the Caribbean
-Norway,Colombia,3,Northern Europe,Latin America and the Caribbean
-Switzerland,Colombia,38,Western Europe,Latin America and the Caribbean
-United Kingdom,Colombia,80,Northern Europe,Latin America and the Caribbean
-Chile,Colombia,2107,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Colombia,28,Western Asia,Latin America and the Caribbean
-Switzerland,Comoros,1,Western Europe,Sub-Saharan Africa
-Canada,Congo,3,Northern America,Sub-Saharan Africa
-France,Congo,125,Western Europe,Sub-Saharan Africa
-Germany,Congo,4,Western Europe,Sub-Saharan Africa
-Ireland,Congo,1,Northern Europe,Sub-Saharan Africa
-Norway,Congo,1,Northern Europe,Sub-Saharan Africa
-Switzerland,Congo,3,Western Europe,Sub-Saharan Africa
-United Kingdom,Congo,3,Northern Europe,Sub-Saharan Africa
-United Kingdom,Cook Islands,1,Northern Europe,Polynesia
-Belgium,Costa Rica,1,Western Europe,Latin America and the Caribbean
-Canada,Costa Rica,14,Northern America,Latin America and the Caribbean
-France,Costa Rica,1,Western Europe,Latin America and the Caribbean
-Ireland,Costa Rica,1,Northern Europe,Latin America and the Caribbean
-New Zealand,Costa Rica,1,Australia and New Zealand,Latin America and the Caribbean
-Switzerland,Costa Rica,2,Western Europe,Latin America and the Caribbean
-United Kingdom,Costa Rica,2,Northern Europe,Latin America and the Caribbean
-Chile,Costa Rica,9,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Costa Rica,6,Western Asia,Latin America and the Caribbean
-Belgium,Côte d'Ivoire,1,Western Europe,Sub-Saharan Africa
-Canada,Côte d'Ivoire,1,Northern America,Sub-Saharan Africa
-France,Côte d'Ivoire,121,Western Europe,Sub-Saharan Africa
-Germany,Côte d'Ivoire,3,Western Europe,Sub-Saharan Africa
-Norway,Côte d'Ivoire,2,Northern Europe,Sub-Saharan Africa
-Switzerland,Côte d'Ivoire,2,Western Europe,Sub-Saharan Africa
-United Kingdom,Côte d'Ivoire,3,Northern Europe,Sub-Saharan Africa
-Austria,Croatia,58,Western Europe,Southern Europe
-Belgium,Croatia,12,Western Europe,Southern Europe
-Canada,Croatia,40,Northern America,Southern Europe
-France,Croatia,20,Western Europe,Southern Europe
-Germany,Croatia,412,Western Europe,Southern Europe
-Hungary,Croatia,4,Eastern Europe,Southern Europe
-Ireland,Croatia,82,Northern Europe,Southern Europe
-New Zealand,Croatia,9,Australia and New Zealand,Southern Europe
-Norway,Croatia,29,Northern Europe,Southern Europe
-Switzerland,Croatia,85,Western Europe,Southern Europe
-United Kingdom,Croatia,89,Northern Europe,Southern Europe
-Chile,Croatia,1,Latin America and the Caribbean,Southern Europe
-Estonia,Croatia,1,Northern Europe,Southern Europe
-Slovenia,Croatia,322,Southern Europe,Southern Europe
-Belgium,Cuba,30,Western Europe,Latin America and the Caribbean
-Canada,Cuba,57,Northern America,Latin America and the Caribbean
-France,Cuba,55,Western Europe,Latin America and the Caribbean
-Germany,Cuba,13,Western Europe,Latin America and the Caribbean
-Ireland,Cuba,23,Northern Europe,Latin America and the Caribbean
-New Zealand,Cuba,5,Australia and New Zealand,Latin America and the Caribbean
-Norway,Cuba,24,Northern Europe,Latin America and the Caribbean
-Switzerland,Cuba,17,Western Europe,Latin America and the Caribbean
-United Kingdom,Cuba,41,Northern Europe,Latin America and the Caribbean
-Chile,Cuba,1455,Latin America and the Caribbean,Latin America and the Caribbean
-Germany,Cyprus,246,Western Europe,Western Asia
-Austria,Czech Republic,74,Western Europe,Eastern Europe
-Belgium,Czech Republic,50,Western Europe,Eastern Europe
-Canada,Czech Republic,125,Northern America,Eastern Europe
-France,Czech Republic,83,Western Europe,Eastern Europe
-Germany,Czech Republic,908,Western Europe,Eastern Europe
-Hungary,Czech Republic,17,Eastern Europe,Eastern Europe
-Ireland,Czech Republic,122,Northern Europe,Eastern Europe
-New Zealand,Czech Republic,16,Australia and New Zealand,Eastern Europe
-Norway,Czech Republic,307,Northern Europe,Eastern Europe
-Switzerland,Czech Republic,113,Western Europe,Eastern Europe
-United Kingdom,Czech Republic,708,Northern Europe,Eastern Europe
-Israel,Czech Republic,29,Western Asia,Eastern Europe
-Slovenia,Czech Republic,6,Southern Europe,Eastern Europe
-Canada,Democratic People's Republic of Korea,20,Northern America,Eastern Asia
-Germany,Democratic People's Republic of Korea,10,Western Europe,Eastern Asia
-Canada,Democratic Republic of the Congo,61,Northern America,Sub-Saharan Africa
-France,Democratic Republic of the Congo,104,Western Europe,Sub-Saharan Africa
-Germany,Democratic Republic of the Congo,2,Western Europe,Sub-Saharan Africa
-Ireland,Democratic Republic of the Congo,1,Northern Europe,Sub-Saharan Africa
-New Zealand,Democratic Republic of the Congo,1,Australia and New Zealand,Sub-Saharan Africa
-Norway,Democratic Republic of the Congo,1,Northern Europe,Sub-Saharan Africa
-United Kingdom,Democratic Republic of the Congo,7,Northern Europe,Sub-Saharan Africa
-Austria,Denmark,3,Western Europe,Northern Europe
-Belgium,Denmark,15,Western Europe,Northern Europe
-Canada,Denmark,3,Northern America,Northern Europe
-France,Denmark,8,Western Europe,Northern Europe
-Germany,Denmark,41,Western Europe,Northern Europe
-Ireland,Denmark,3,Northern Europe,Northern Europe
-New Zealand,Denmark,15,Australia and New Zealand,Northern Europe
-Norway,Denmark,1081,Northern Europe,Northern Europe
-Switzerland,Denmark,12,Western Europe,Northern Europe
-United Kingdom,Denmark,41,Northern Europe,Northern Europe
-Chile,Denmark,2,Latin America and the Caribbean,Northern Europe
-Israel,Denmark,5,Western Asia,Northern Europe
-Canada,Dominica,142,Northern America,Latin America and the Caribbean
-New Zealand,Dominica,4,Australia and New Zealand,Latin America and the Caribbean
-United Kingdom,Dominica,7,Northern Europe,Latin America and the Caribbean
-Belgium,Dominican Republic,3,Western Europe,Latin America and the Caribbean
-Canada,Dominican Republic,39,Northern America,Latin America and the Caribbean
-France,Dominican Republic,13,Western Europe,Latin America and the Caribbean
-Germany,Dominican Republic,22,Western Europe,Latin America and the Caribbean
-Ireland,Dominican Republic,5,Northern Europe,Latin America and the Caribbean
-New Zealand,Dominican Republic,3,Australia and New Zealand,Latin America and the Caribbean
-Switzerland,Dominican Republic,5,Western Europe,Latin America and the Caribbean
-United Kingdom,Dominican Republic,19,Northern Europe,Latin America and the Caribbean
-Chile,Dominican Republic,42,Latin America and the Caribbean,Latin America and the Caribbean
-Belgium,Ecuador,5,Western Europe,Latin America and the Caribbean
-Canada,Ecuador,7,Northern America,Latin America and the Caribbean
-France,Ecuador,12,Western Europe,Latin America and the Caribbean
-Germany,Ecuador,41,Western Europe,Latin America and the Caribbean
-New Zealand,Ecuador,1,Australia and New Zealand,Latin America and the Caribbean
-Switzerland,Ecuador,14,Western Europe,Latin America and the Caribbean
-United Kingdom,Ecuador,12,Northern Europe,Latin America and the Caribbean
-Chile,Ecuador,2767,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Ecuador,4,Western Asia,Latin America and the Caribbean
-Belgium,Egypt,11,Western Europe,Northern Africa
-Canada,Egypt,1145,Northern America,Northern Africa
-Czech Republic,Egypt,2,Eastern Europe,Northern Africa
-France,Egypt,132,Western Europe,Northern Africa
-Germany,Egypt,1221,Western Europe,Northern Africa
-Ireland,Egypt,557,Northern Europe,Northern Africa
-New Zealand,Egypt,45,Australia and New Zealand,Northern Africa
-Norway,Egypt,12,Northern Europe,Northern Africa
-Switzerland,Egypt,25,Western Europe,Northern Africa
-United Kingdom,Egypt,2268,Northern Europe,Northern Africa
-Estonia,Egypt,1,Northern Europe,Northern Africa
-Israel,Egypt,207,Western Asia,Northern Africa
-Belgium,El Salvador,5,Western Europe,Latin America and the Caribbean
-Canada,El Salvador,27,Northern America,Latin America and the Caribbean
-Czech Republic,El Salvador,1,Eastern Europe,Latin America and the Caribbean
-France,El Salvador,5,Western Europe,Latin America and the Caribbean
-Ireland,El Salvador,3,Northern Europe,Latin America and the Caribbean
-Norway,El Salvador,1,Northern Europe,Latin America and the Caribbean
-United Kingdom,El Salvador,1,Northern Europe,Latin America and the Caribbean
-Chile,El Salvador,5,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,El Salvador,1,Western Asia,Latin America and the Caribbean
-Canada,Estonia,5,Northern America,Northern Europe
-Czech Republic,Estonia,2,Eastern Europe,Northern Europe
-France,Estonia,6,Western Europe,Northern Europe
-Germany,Estonia,42,Western Europe,Northern Europe
-Hungary,Estonia,12,Eastern Europe,Northern Europe
-Norway,Estonia,15,Northern Europe,Northern Europe
-Switzerland,Estonia,5,Western Europe,Northern Europe
-United Kingdom,Estonia,25,Northern Europe,Northern Europe
-Israel,Estonia,30,Western Asia,Northern Europe
-Canada,Ethiopia,32,Northern America,Sub-Saharan Africa
-Germany,Ethiopia,30,Western Europe,Sub-Saharan Africa
-Ireland,Ethiopia,7,Northern Europe,Sub-Saharan Africa
-New Zealand,Ethiopia,1,Australia and New Zealand,Sub-Saharan Africa
-Norway,Ethiopia,12,Northern Europe,Sub-Saharan Africa
-Switzerland,Ethiopia,5,Western Europe,Sub-Saharan Africa
-United Kingdom,Ethiopia,20,Northern Europe,Sub-Saharan Africa
-Israel,Ethiopia,2,Western Asia,Sub-Saharan Africa
-Canada,Fiji,4,Northern America,Melanesia
-New Zealand,Fiji,61,Australia and New Zealand,Melanesia
-United Kingdom,Fiji,2,Northern Europe,Melanesia
-Austria,Finland,2,Western Europe,Northern Europe
-Belgium,Finland,8,Western Europe,Northern Europe
-Canada,Finland,3,Northern America,Northern Europe
-France,Finland,5,Western Europe,Northern Europe
-Germany,Finland,61,Western Europe,Northern Europe
-Ireland,Finland,4,Northern Europe,Northern Europe
-New Zealand,Finland,5,Australia and New Zealand,Northern Europe
-Norway,Finland,26,Northern Europe,Northern Europe
-Switzerland,Finland,6,Western Europe,Northern Europe
-United Kingdom,Finland,20,Northern Europe,Northern Europe
-Estonia,Finland,25,Northern Europe,Northern Europe
-Canada,The former Yugoslav Republic of Macedonia,12,Northern America,Southern Europe
-Czech Republic,The former Yugoslav Republic of Macedonia,1,Eastern Europe,Southern Europe
-France,The former Yugoslav Republic of Macedonia,34,Western Europe,Southern Europe
-Germany,The former Yugoslav Republic of Macedonia,421,Western Europe,Southern Europe
-Hungary,The former Yugoslav Republic of Macedonia,1,Eastern Europe,Southern Europe
-Ireland,The former Yugoslav Republic of Macedonia,1,Northern Europe,Southern Europe
-New Zealand,The former Yugoslav Republic of Macedonia,5,Australia and New Zealand,Southern Europe
-Norway,The former Yugoslav Republic of Macedonia,7,Northern Europe,Southern Europe
-Switzerland,The former Yugoslav Republic of Macedonia,19,Western Europe,Southern Europe
-United Kingdom,The former Yugoslav Republic of Macedonia,13,Northern Europe,Southern Europe
-Slovenia,The former Yugoslav Republic of Macedonia,75,Southern Europe,Southern Europe
-Austria,France,3,Western Europe,Western Europe
-Belgium,France,1393,Western Europe,Western Europe
-Canada,France,431,Northern America,Western Europe
-Germany,France,360,Western Europe,Western Europe
-Hungary,France,1,Eastern Europe,Western Europe
-Ireland,France,26,Northern Europe,Western Europe
-New Zealand,France,18,Australia and New Zealand,Western Europe
-Norway,France,35,Northern Europe,Western Europe
-Switzerland,France,892,Western Europe,Western Europe
-United Kingdom,France,116,Northern Europe,Western Europe
-Chile,France,12,Latin America and the Caribbean,Western Europe
-Israel,France,500,Western Asia,Western Europe
-Slovenia,France,2,Southern Europe,Western Europe
-France,Gabon,28,Western Europe,Sub-Saharan Africa
-Germany,Gabon,10,Western Europe,Sub-Saharan Africa
-Germany,Gambia,1,Western Europe,Sub-Saharan Africa
-Belgium,Georgia,1,Western Europe,Western Asia
-Canada,Georgia,2,Northern America,Western Asia
-Czech Republic,Georgia,3,Eastern Europe,Western Asia
-Germany,Georgia,394,Western Europe,Western Asia
-Ireland,Georgia,1,Northern Europe,Western Asia
-New Zealand,Georgia,3,Australia and New Zealand,Western Asia
-Switzerland,Georgia,2,Western Europe,Western Asia
-United Kingdom,Georgia,27,Northern Europe,Western Asia
-Estonia,Georgia,3,Northern Europe,Western Asia
-Israel,Georgia,16,Western Asia,Western Asia
-Austria,Germany,1460,Western Europe,Western Europe
-Belgium,Germany,447,Western Europe,Western Europe
-Canada,Germany,233,Northern America,Western Europe
-Czech Republic,Germany,11,Eastern Europe,Western Europe
-France,Germany,769,Western Europe,Western Europe
-Hungary,Germany,21,Eastern Europe,Western Europe
-Ireland,Germany,95,Northern Europe,Western Europe
-New Zealand,Germany,194,Australia and New Zealand,Western Europe
-Norway,Germany,1589,Northern Europe,Western Europe
-Switzerland,Germany,7136,Western Europe,Western Europe
-United Kingdom,Germany,1175,Northern Europe,Western Europe
-Chile,Germany,52,Latin America and the Caribbean,Western Europe
-Estonia,Germany,6,Northern Europe,Western Europe
-Israel,Germany,500,Western Asia,Western Europe
-Slovenia,Germany,5,Southern Europe,Western Europe
-Canada,Ghana,52,Northern America,Sub-Saharan Africa
-Germany,Ghana,42,Western Europe,Sub-Saharan Africa
-Ireland,Ghana,2,Northern Europe,Sub-Saharan Africa
-New Zealand,Ghana,3,Australia and New Zealand,Sub-Saharan Africa
-United Kingdom,Ghana,231,Northern Europe,Sub-Saharan Africa
-Austria,Greece,16,Western Europe,Southern Europe
-Belgium,Greece,342,Western Europe,Southern Europe
-Canada,Greece,49,Northern America,Southern Europe
-France,Greece,257,Western Europe,Southern Europe
-Germany,Greece,2580,Western Europe,Southern Europe
-Hungary,Greece,2,Eastern Europe,Southern Europe
-Ireland,Greece,55,Northern Europe,Southern Europe
-New Zealand,Greece,2,Australia and New Zealand,Southern Europe
-Norway,Greece,20,Northern Europe,Southern Europe
-Switzerland,Greece,217,Western Europe,Southern Europe
-United Kingdom,Greece,1395,Northern Europe,Southern Europe
-Israel,Greece,22,Western Asia,Southern Europe
-Canada,Grenada,368,Northern America,Latin America and the Caribbean
-Ireland,Grenada,5,Northern Europe,Latin America and the Caribbean
-New Zealand,Grenada,4,Australia and New Zealand,Latin America and the Caribbean
-United Kingdom,Grenada,82,Northern Europe,Latin America and the Caribbean
-Canada,Guatemala,9,Northern America,Latin America and the Caribbean
-France,Guatemala,5,Western Europe,Latin America and the Caribbean
-Germany,Guatemala,26,Western Europe,Latin America and the Caribbean
-Norway,Guatemala,3,Northern Europe,Latin America and the Caribbean
-Switzerland,Guatemala,5,Western Europe,Latin America and the Caribbean
-United Kingdom,Guatemala,4,Northern Europe,Latin America and the Caribbean
-Chile,Guatemala,11,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Guatemala,2,Western Asia,Latin America and the Caribbean
-Belgium,Guinea,1,Western Europe,Sub-Saharan Africa
-Canada,Guinea,1,Northern America,Sub-Saharan Africa
-France,Guinea,71,Western Europe,Sub-Saharan Africa
-Germany,Guinea,3,Western Europe,Sub-Saharan Africa
-Switzerland,Guinea,3,Western Europe,Sub-Saharan Africa
-United Kingdom,Guinea,1,Northern Europe,Sub-Saharan Africa
-Germany,Guinea-Bissau,1,Western Europe,Sub-Saharan Africa
-Canada,Guyana,13,Northern America,Latin America and the Caribbean
-Norway,Guyana,2,Northern Europe,Latin America and the Caribbean
-Switzerland,Guyana,1,Western Europe,Latin America and the Caribbean
-United Kingdom,Guyana,16,Northern Europe,Latin America and the Caribbean
-Belgium,Haiti,1,Western Europe,Latin America and the Caribbean
-Canada,Haiti,69,Northern America,Latin America and the Caribbean
-France,Haiti,48,Western Europe,Latin America and the Caribbean
-Germany,Haiti,5,Western Europe,Latin America and the Caribbean
-Ireland,Haiti,8,Northern Europe,Latin America and the Caribbean
-Switzerland,Haiti,1,Western Europe,Latin America and the Caribbean
-United Kingdom,Haiti,1,Northern Europe,Latin America and the Caribbean
-Canada,Honduras,3,Northern America,Latin America and the Caribbean
-France,Honduras,2,Western Europe,Latin America and the Caribbean
-Germany,Honduras,22,Western Europe,Latin America and the Caribbean
-Norway,Honduras,1,Northern Europe,Latin America and the Caribbean
-United Kingdom,Honduras,3,Northern Europe,Latin America and the Caribbean
-Chile,Honduras,13,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Honduras,5,Western Asia,Latin America and the Caribbean
-Austria,Hungary,234,Western Europe,Eastern Europe
-Belgium,Hungary,60,Western Europe,Eastern Europe
-Canada,Hungary,96,Northern America,Eastern Europe
-Czech Republic,Hungary,2,Eastern Europe,Eastern Europe
-France,Hungary,91,Western Europe,Eastern Europe
-Germany,Hungary,1443,Western Europe,Eastern Europe
-Ireland,Hungary,271,Northern Europe,Eastern Europe
-New Zealand,Hungary,22,Australia and New Zealand,Eastern Europe
-Norway,Hungary,1196,Northern Europe,Eastern Europe
-Switzerland,Hungary,185,Western Europe,Eastern Europe
-United Kingdom,Hungary,531,Northern Europe,Eastern Europe
-Chile,Hungary,7,Latin America and the Caribbean,Eastern Europe
-Israel,Hungary,1251,Western Asia,Eastern Europe
-Slovenia,Hungary,20,Southern Europe,Eastern Europe
-Canada,Iceland,4,Northern America,Northern Europe
-France,Iceland,1,Western Europe,Northern Europe
-Germany,Iceland,8,Western Europe,Northern Europe
-Ireland,Iceland,1,Northern Europe,Northern Europe
-New Zealand,Iceland,1,Australia and New Zealand,Northern Europe
-Norway,Iceland,98,Northern Europe,Northern Europe
-Switzerland,Iceland,1,Western Europe,Northern Europe
-United Kingdom,Iceland,12,Northern Europe,Northern Europe
-Australia,India,5336,Australia and New Zealand,Southern Asia
-Belgium,India,4,Western Europe,Southern Asia
-Canada,India,2163,Northern America,Southern Asia
-Czech Republic,India,2,Eastern Europe,Southern Asia
-France,India,13,Western Europe,Southern Asia
-Germany,India,576,Western Europe,Southern Asia
-Hungary,India,1,Eastern Europe,Southern Asia
-Ireland,India,443,Northern Europe,Southern Asia
-New Zealand,India,490,Australia and New Zealand,Southern Asia
-Norway,India,45,Northern Europe,Southern Asia
-Switzerland,India,11,Western Europe,Southern Asia
-United Kingdom,India,15870,Northern Europe,Southern Asia
-Israel,India,5,Western Asia,Southern Asia
-Belgium,Indonesia,1,Western Europe,South-Eastern Asia
-Canada,Indonesia,11,Northern America,South-Eastern Asia
-Czech Republic,Indonesia,1,Eastern Europe,South-Eastern Asia
-Germany,Indonesia,325,Western Europe,South-Eastern Asia
-New Zealand,Indonesia,3,Australia and New Zealand,South-Eastern Asia
-Norway,Indonesia,1,Northern Europe,South-Eastern Asia
-United Kingdom,Indonesia,7,Northern Europe,South-Eastern Asia
-Belgium,Iran,4,Western Europe,Southern Asia
-Canada,Iran,802,Northern America,Southern Asia
-France,Iran,73,Western Europe,Southern Asia
-Germany,Iran,1003,Western Europe,Southern Asia
-Hungary,Iran,1,Eastern Europe,Southern Asia
-Ireland,Iran,12,Northern Europe,Southern Asia
-New Zealand,Iran,9,Australia and New Zealand,Southern Asia
-Norway,Iran,40,Northern Europe,Southern Asia
-Switzerland,Iran,24,Western Europe,Southern Asia
-United Kingdom,Iran,331,Northern Europe,Southern Asia
-Israel,Iran,16,Western Asia,Southern Asia
-Belgium,Iraq,18,Western Europe,Western Asia
-Canada,Iraq,464,Northern America,Western Asia
-Czech Republic,Iraq,1,Eastern Europe,Western Asia
-France,Iraq,18,Western Europe,Western Asia
-Germany,Iraq,398,Western Europe,Western Asia
-Ireland,Iraq,168,Northern Europe,Western Asia
-New Zealand,Iraq,106,Australia and New Zealand,Western Asia
-Norway,Iraq,119,Northern Europe,Western Asia
-Switzerland,Iraq,7,Western Europe,Western Asia
-United Kingdom,Iraq,1236,Northern Europe,Western Asia
-Israel,Iraq,7,Western Asia,Western Asia
-Slovenia,Iraq,1,Southern Europe,Western Asia
-Australia,Ireland,1236,Australia and New Zealand,Northern Europe
-Belgium,Ireland,13,Western Europe,Northern Europe
-Canada,Ireland,1884,Northern America,Northern Europe
-France,Ireland,26,Western Europe,Northern Europe
-Germany,Ireland,35,Western Europe,Northern Europe
-New Zealand,Ireland,298,Australia and New Zealand,Northern Europe
-Norway,Ireland,261,Northern Europe,Northern Europe
-Switzerland,Ireland,8,Western Europe,Northern Europe
-United Kingdom,Ireland,1755,Northern Europe,Northern Europe
-Israel,Ireland,3,Western Asia,Northern Europe
-Belgium,Israel,1,Western Europe,Western Asia
-Canada,Israel,178,Northern America,Western Asia
-Germany,Israel,277,Western Europe,Western Asia
-New Zealand,Israel,15,Australia and New Zealand,Western Asia
-Norway,Israel,1,Northern Europe,Western Asia
-Switzerland,Israel,6,Western Europe,Western Asia
-United Kingdom,Israel,37,Northern Europe,Western Asia
-Chile,Israel,1,Latin America and the Caribbean,Western Asia
-Austria,Italy,48,Western Europe,Southern Europe
-Belgium,Italy,880,Western Europe,Southern Europe
-Canada,Italy,126,Northern America,Southern Europe
-Czech Republic,Italy,4,Eastern Europe,Southern Europe
-France,Italy,1620,Western Europe,Southern Europe
-Germany,Italy,1184,Western Europe,Southern Europe
-Hungary,Italy,2,Eastern Europe,Southern Europe
-Ireland,Italy,113,Northern Europe,Southern Europe
-New Zealand,Italy,22,Australia and New Zealand,Southern Europe
-Norway,Italy,43,Northern Europe,Southern Europe
-Switzerland,Italy,1165,Western Europe,Southern Europe
-United Kingdom,Italy,1152,Northern Europe,Southern Europe
-Chile,Italy,13,Latin America and the Caribbean,Southern Europe
-Estonia,Italy,3,Northern Europe,Southern Europe
-Israel,Italy,1439,Western Asia,Southern Europe
-Slovenia,Italy,46,Southern Europe,Southern Europe
-Canada,Jamaica,192,Northern America,Latin America and the Caribbean
-New Zealand,Jamaica,2,Australia and New Zealand,Latin America and the Caribbean
-Belgium,Japan,3,Western Europe,Eastern Asia
-Canada,Japan,22,Northern America,Eastern Asia
-France,Japan,1,Western Europe,Eastern Asia
-Germany,Japan,56,Western Europe,Eastern Asia
-New Zealand,Japan,6,Australia and New Zealand,Eastern Asia
-Norway,Japan,1,Northern Europe,Eastern Asia
-United Kingdom,Japan,21,Northern Europe,Eastern Asia
-Canada,Jordan,58,Northern America,Western Asia
-France,Jordan,3,Western Europe,Western Asia
-Germany,Jordan,726,Western Europe,Western Asia
-Ireland,Jordan,21,Northern Europe,Western Asia
-New Zealand,Jordan,3,Australia and New Zealand,Western Asia
-Norway,Jordan,1,Northern Europe,Western Asia
-United Kingdom,Jordan,181,Northern Europe,Western Asia
-Estonia,Jordan,1,Northern Europe,Western Asia
-Israel,Jordan,529,Western Asia,Western Asia
-Canada,Kazakhstan,11,Northern America,Central Asia
-Czech Republic,Kazakhstan,19,Eastern Europe,Central Asia
-Germany,Kazakhstan,198,Western Europe,Central Asia
-Ireland,Kazakhstan,4,Northern Europe,Central Asia
-New Zealand,Kazakhstan,3,Australia and New Zealand,Central Asia
-Norway,Kazakhstan,8,Northern Europe,Central Asia
-Switzerland,Kazakhstan,7,Western Europe,Central Asia
-United Kingdom,Kazakhstan,21,Northern Europe,Central Asia
-Estonia,Kazakhstan,2,Northern Europe,Central Asia
-Israel,Kazakhstan,17,Western Asia,Central Asia
-Canada,Kenya,28,Northern America,Sub-Saharan Africa
-Germany,Kenya,44,Western Europe,Sub-Saharan Africa
-Ireland,Kenya,4,Northern Europe,Sub-Saharan Africa
-New Zealand,Kenya,4,Australia and New Zealand,Sub-Saharan Africa
-United Kingdom,Kenya,77,Northern Europe,Sub-Saharan Africa
-Canada,Kuwait,22,Northern America,Western Asia
-Germany,Kuwait,11,Western Europe,Western Asia
-Ireland,Kuwait,12,Northern Europe,Western Asia
-New Zealand,Kuwait,1,Australia and New Zealand,Western Asia
-United Kingdom,Kuwait,4,Northern Europe,Western Asia
-Canada,Kyrgyzstan,6,Northern America,Central Asia
-Czech Republic,Kyrgyzstan,8,Eastern Europe,Central Asia
-Germany,Kyrgyzstan,66,Western Europe,Central Asia
-Hungary,Kyrgyzstan,1,Eastern Europe,Central Asia
-Ireland,Kyrgyzstan,3,Northern Europe,Central Asia
-Norway,Kyrgyzstan,3,Northern Europe,Central Asia
-Switzerland,Kyrgyzstan,2,Western Europe,Central Asia
-United Kingdom,Kyrgyzstan,3,Northern Europe,Central Asia
-Slovenia,Kyrgyzstan,2,Southern Europe,Central Asia
-France,Laos,3,Western Europe,South-Eastern Asia
-Germany,Laos,1,Western Europe,South-Eastern Asia
-Belgium,Latvia,18,Western Europe,Northern Europe
-Canada,Latvia,12,Northern America,Northern Europe
-France,Latvia,39,Western Europe,Northern Europe
-Germany,Latvia,300,Western Europe,Northern Europe
-Ireland,Latvia,61,Northern Europe,Northern Europe
-New Zealand,Latvia,1,Australia and New Zealand,Northern Europe
-Norway,Latvia,108,Northern Europe,Northern Europe
-Switzerland,Latvia,11,Western Europe,Northern Europe
-United Kingdom,Latvia,112,Northern Europe,Northern Europe
-Chile,Latvia,1,Latin America and the Caribbean,Northern Europe
-Estonia,Latvia,12,Northern Europe,Northern Europe
-Israel,Latvia,86,Western Asia,Northern Europe
-Belgium,Lebanon,10,Western Europe,Western Asia
-Canada,Lebanon,182,Northern America,Western Asia
-France,Lebanon,248,Western Europe,Western Asia
-Germany,Lebanon,243,Western Europe,Western Asia
-Ireland,Lebanon,6,Northern Europe,Western Asia
-New Zealand,Lebanon,1,Australia and New Zealand,Western Asia
-Norway,Lebanon,2,Northern Europe,Western Asia
-Switzerland,Lebanon,8,Western Europe,Western Asia
-United Kingdom,Lebanon,40,Northern Europe,Western Asia
-Canada,Liberia,3,Northern America,Sub-Saharan Africa
-Germany,Liberia,1,Western Europe,Sub-Saharan Africa
-United Kingdom,Liberia,4,Northern Europe,Sub-Saharan Africa
-Canada,Libya,480,Northern America,Northern Africa
-France,Libya,5,Western Europe,Northern Africa
-Germany,Libya,815,Western Europe,Northern Africa
-Ireland,Libya,124,Northern Europe,Northern Africa
-New Zealand,Libya,8,Australia and New Zealand,Northern Africa
-Norway,Libya,5,Northern Europe,Northern Africa
-Switzerland,Libya,4,Western Europe,Northern Africa
-United Kingdom,Libya,345,Northern Europe,Northern Africa
-Austria,Lithuania,2,Western Europe,Northern Europe
-Belgium,Lithuania,37,Western Europe,Northern Europe
-Canada,Lithuania,12,Northern America,Northern Europe
-France,Lithuania,51,Western Europe,Northern Europe
-Germany,Lithuania,409,Western Europe,Northern Europe
-Hungary,Lithuania,1,Eastern Europe,Northern Europe
-Ireland,Lithuania,67,Northern Europe,Northern Europe
-New Zealand,Lithuania,2,Australia and New Zealand,Northern Europe
-Norway,Lithuania,136,Northern Europe,Northern Europe
-Switzerland,Lithuania,30,Western Europe,Northern Europe
-United Kingdom,Lithuania,171,Northern Europe,Northern Europe
-Estonia,Lithuania,3,Northern Europe,Northern Europe
-Israel,Lithuania,152,Western Asia,Northern Europe
-Belgium,Luxembourg,5,Western Europe,Western Europe
-France,Luxembourg,2,Western Europe,Western Europe
-Germany,Luxembourg,292,Western Europe,Western Europe
-Switzerland,Luxembourg,1,Western Europe,Western Europe
-Canada,Madagascar,8,Northern America,Sub-Saharan Africa
-France,Madagascar,370,Western Europe,Sub-Saharan Africa
-Switzerland,Madagascar,7,Western Europe,Sub-Saharan Africa
-Canada,Malawi,2,Northern America,Sub-Saharan Africa
-Ireland,Malawi,1,Northern Europe,Sub-Saharan Africa
-United Kingdom,Malawi,26,Northern Europe,Sub-Saharan Africa
-Australia,Malaysia,359,Australia and New Zealand,South-Eastern Asia
-Canada,Malaysia,15,Northern America,South-Eastern Asia
-Germany,Malaysia,24,Western Europe,South-Eastern Asia
-Ireland,Malaysia,18,Northern Europe,South-Eastern Asia
-New Zealand,Malaysia,20,Australia and New Zealand,South-Eastern Asia
-United Kingdom,Malaysia,99,Northern Europe,South-Eastern Asia
-Israel,Maldives,5,Western Asia,Southern Asia
-Canada,Mali,1,Northern America,Sub-Saharan Africa
-France,Mali,78,Western Europe,Sub-Saharan Africa
-Germany,Mali,3,Western Europe,Sub-Saharan Africa
-Norway,Mali,1,Northern Europe,Sub-Saharan Africa
-Switzerland,Mali,2,Western Europe,Sub-Saharan Africa
-United Kingdom,Mali,1,Northern Europe,Sub-Saharan Africa
-Belgium,Malta,6,Western Europe,Southern Europe
-Canada,Malta,3,Northern America,Southern Europe
-France,Malta,1,Western Europe,Southern Europe
-Germany,Malta,5,Western Europe,Southern Europe
-Ireland,Malta,9,Northern Europe,Southern Europe
-New Zealand,Malta,4,Australia and New Zealand,Southern Europe
-Norway,Malta,14,Northern Europe,Southern Europe
-United Kingdom,Malta,311,Northern Europe,Southern Europe
-Germany,Mauritania,2,Western Europe,Sub-Saharan Africa
-Canada,Mauritius,1,Northern America,Sub-Saharan Africa
-Germany,Mauritius,65,Western Europe,Sub-Saharan Africa
-New Zealand,Mauritius,3,Australia and New Zealand,Sub-Saharan Africa
-United Kingdom,Mauritius,23,Northern Europe,Sub-Saharan Africa
-Belgium,Mexico,4,Western Europe,Latin America and the Caribbean
-Canada,Mexico,187,Northern America,Latin America and the Caribbean
-France,Mexico,26,Western Europe,Latin America and the Caribbean
-Germany,Mexico,185,Western Europe,Latin America and the Caribbean
-Hungary,Mexico,1,Eastern Europe,Latin America and the Caribbean
-Ireland,Mexico,18,Northern Europe,Latin America and the Caribbean
-New Zealand,Mexico,5,Australia and New Zealand,Latin America and the Caribbean
-Norway,Mexico,7,Northern Europe,Latin America and the Caribbean
-Switzerland,Mexico,34,Western Europe,Latin America and the Caribbean
-United Kingdom,Mexico,37,Northern Europe,Latin America and the Caribbean
-Chile,Mexico,36,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Mexico,49,Western Asia,Latin America and the Caribbean
-France,Mongolia,3,Western Europe,Eastern Asia
-Germany,Mongolia,54,Western Europe,Eastern Asia
-Norway,Mongolia,1,Northern Europe,Eastern Asia
-United Kingdom,Mongolia,3,Northern Europe,Eastern Asia
-Germany,Montenegro,37,Western Europe,Southern Europe
-Norway,Montenegro,1,Northern Europe,Southern Europe
-Slovenia,Montenegro,6,Southern Europe,Southern Europe
-Belgium,Morocco,13,Western Europe,Northern Africa
-Canada,Morocco,45,Northern America,Northern Africa
-France,Morocco,916,Western Europe,Northern Africa
-Germany,Morocco,161,Western Europe,Northern Africa
-Ireland,Morocco,1,Northern Europe,Northern Africa
-Switzerland,Morocco,21,Western Europe,Northern Africa
-United Kingdom,Morocco,5,Northern Europe,Northern Africa
-Israel,Morocco,1,Western Asia,Northern Africa
-Canada,Mozambique,1,Northern America,Sub-Saharan Africa
-Germany,Mozambique,2,Western Europe,Sub-Saharan Africa
-Switzerland,Mozambique,1,Western Europe,Sub-Saharan Africa
-United Kingdom,Mozambique,2,Northern Europe,Sub-Saharan Africa
-Canada,Myanmar,22,Northern America,South-Eastern Asia
-Germany,Myanmar,1,Western Europe,South-Eastern Asia
-Ireland,Myanmar,5,Northern Europe,South-Eastern Asia
-New Zealand,Myanmar,16,Australia and New Zealand,South-Eastern Asia
-Switzerland,Myanmar,1,Western Europe,South-Eastern Asia
-United Kingdom,Myanmar,528,Northern Europe,South-Eastern Asia
-Germany,Namibia,2,Western Europe,Sub-Saharan Africa
-Canada,Nepal,8,Northern America,Southern Asia
-Germany,Nepal,68,Western Europe,Southern Asia
-New Zealand,Nepal,6,Australia and New Zealand,Southern Asia
-Norway,Nepal,1,Northern Europe,Southern Asia
-Switzerland,Nepal,2,Western Europe,Southern Asia
-United Kingdom,Nepal,235,Northern Europe,Southern Asia
-Austria,Netherlands,8,Western Europe,Western Europe
-Belgium,Netherlands,1296,Western Europe,Western Europe
-Canada,Netherlands,508,Northern America,Western Europe
-France,Netherlands,111,Western Europe,Western Europe
-Germany,Netherlands,636,Western Europe,Western Europe
-Hungary,Netherlands,1,Eastern Europe,Western Europe
-Ireland,Netherlands,33,Northern Europe,Western Europe
-New Zealand,Netherlands,114,Australia and New Zealand,Western Europe
-Norway,Netherlands,184,Northern Europe,Western Europe
-Switzerland,Netherlands,65,Western Europe,Western Europe
-United Kingdom,Netherlands,359,Northern Europe,Western Europe
-Chile,Netherlands,3,Latin America and the Caribbean,Western Europe
-Israel,Netherlands,33,Western Asia,Western Europe
-Australia,New Zealand,2156,Australia and New Zealand,Australia and New Zealand
-Canada,New Zealand,107,Northern America,Australia and New Zealand
-Germany,New Zealand,4,Western Europe,Australia and New Zealand
-Ireland,New Zealand,27,Northern Europe,Australia and New Zealand
-Switzerland,New Zealand,1,Western Europe,Australia and New Zealand
-United Kingdom,New Zealand,186,Northern Europe,Australia and New Zealand
-Chile,New Zealand,1,Latin America and the Caribbean,Australia and New Zealand
-Israel,New Zealand,5,Western Asia,Australia and New Zealand
-Canada,Nicaragua,6,Northern America,Latin America and the Caribbean
-France,Nicaragua,3,Western Europe,Latin America and the Caribbean
-Germany,Nicaragua,16,Western Europe,Latin America and the Caribbean
-Norway,Nicaragua,3,Northern Europe,Latin America and the Caribbean
-Switzerland,Nicaragua,1,Western Europe,Latin America and the Caribbean
-United Kingdom,Nicaragua,1,Northern Europe,Latin America and the Caribbean
-Chile,Nicaragua,9,Latin America and the Caribbean,Latin America and the Caribbean
-Belgium,Niger,1,Western Europe,Sub-Saharan Africa
-France,Niger,15,Western Europe,Sub-Saharan Africa
-Germany,Niger,1,Western Europe,Sub-Saharan Africa
-United Kingdom,Niger,1,Northern Europe,Sub-Saharan Africa
-Belgium,Nigeria,1,Western Europe,Sub-Saharan Africa
-Canada,Nigeria,825,Northern America,Sub-Saharan Africa
-France,Nigeria,3,Western Europe,Sub-Saharan Africa
-Germany,Nigeria,93,Western Europe,Sub-Saharan Africa
-Ireland,Nigeria,265,Northern Europe,Sub-Saharan Africa
-New Zealand,Nigeria,12,Australia and New Zealand,Sub-Saharan Africa
-Norway,Nigeria,3,Northern Europe,Sub-Saharan Africa
-Switzerland,Nigeria,2,Western Europe,Sub-Saharan Africa
-United Kingdom,Nigeria,2831,Northern Europe,Sub-Saharan Africa
-Israel,Nigeria,2,Western Asia,Sub-Saharan Africa
-Austria,Norway,4,Western Europe,Northern Europe
-Belgium,Norway,1,Western Europe,Northern Europe
-Canada,Norway,4,Northern America,Northern Europe
-France,Norway,3,Western Europe,Northern Europe
-Germany,Norway,69,Western Europe,Northern Europe
-New Zealand,Norway,6,Australia and New Zealand,Northern Europe
-Switzerland,Norway,4,Western Europe,Northern Europe
-United Kingdom,Norway,10,Northern Europe,Northern Europe
-Chile,Norway,1,Latin America and the Caribbean,Northern Europe
-Israel,Norway,2,Western Asia,Northern Europe
-Canada,Oman,9,Northern America,Western Asia
-Germany,Oman,4,Western Europe,Western Asia
-Ireland,Oman,25,Northern Europe,Western Asia
-New Zealand,Oman,1,Australia and New Zealand,Western Asia
-United Kingdom,Oman,10,Northern Europe,Western Asia
-Belgium,Pakistan,4,Western Europe,Southern Asia
-Canada,Pakistan,1023,Northern America,Southern Asia
-France,Pakistan,4,Western Europe,Southern Asia
-Germany,Pakistan,67,Western Europe,Southern Asia
-Ireland,Pakistan,2037,Northern Europe,Southern Asia
-New Zealand,Pakistan,79,Australia and New Zealand,Southern Asia
-Norway,Pakistan,74,Northern Europe,Southern Asia
-Switzerland,Pakistan,9,Western Europe,Southern Asia
-United Kingdom,Pakistan,5922,Northern Europe,Southern Asia
-Canada,Panama,3,Northern America,Latin America and the Caribbean
-Ireland,Panama,1,Northern Europe,Latin America and the Caribbean
-Norway,Panama,1,Northern Europe,Latin America and the Caribbean
-United Kingdom,Panama,2,Northern Europe,Latin America and the Caribbean
-Chile,Panama,4,Latin America and the Caribbean,Latin America and the Caribbean
-New Zealand,Papua New Guinea,6,Australia and New Zealand,Melanesia
-United Kingdom,Papua New Guinea,3,Northern Europe,Melanesia
-Canada,Paraguay,5,Northern America,Latin America and the Caribbean
-France,Paraguay,19,Western Europe,Latin America and the Caribbean
-Germany,Paraguay,69,Western Europe,Latin America and the Caribbean
-Norway,Paraguay,1,Northern Europe,Latin America and the Caribbean
-Switzerland,Paraguay,2,Western Europe,Latin America and the Caribbean
-United Kingdom,Paraguay,2,Northern Europe,Latin America and the Caribbean
-Chile,Paraguay,12,Latin America and the Caribbean,Latin America and the Caribbean
-Belgium,Peru,13,Western Europe,Latin America and the Caribbean
-Canada,Peru,37,Northern America,Latin America and the Caribbean
-France,Peru,45,Western Europe,Latin America and the Caribbean
-Germany,Peru,100,Western Europe,Latin America and the Caribbean
-Ireland,Peru,14,Northern Europe,Latin America and the Caribbean
-New Zealand,Peru,5,Australia and New Zealand,Latin America and the Caribbean
-Norway,Peru,5,Northern Europe,Latin America and the Caribbean
-Switzerland,Peru,23,Western Europe,Latin America and the Caribbean
-United Kingdom,Peru,25,Northern Europe,Latin America and the Caribbean
-Chile,Peru,154,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Peru,12,Western Asia,Latin America and the Caribbean
-Australia,Philippines,614,Australia and New Zealand,South-Eastern Asia
-Belgium,Philippines,2,Western Europe,South-Eastern Asia
-Canada,Philippines,263,Northern America,South-Eastern Asia
-Germany,Philippines,25,Western Europe,South-Eastern Asia
-Ireland,Philippines,14,Northern Europe,South-Eastern Asia
-New Zealand,Philippines,43,Australia and New Zealand,South-Eastern Asia
-Norway,Philippines,16,Northern Europe,South-Eastern Asia
-Switzerland,Philippines,3,Western Europe,South-Eastern Asia
-United Kingdom,Philippines,90,Northern Europe,South-Eastern Asia
-Chile,Philippines,1,Latin America and the Caribbean,South-Eastern Asia
-Israel,Philippines,2,Western Asia,South-Eastern Asia
-Austria,Poland,20,Western Europe,Eastern Europe
-Belgium,Poland,88,Western Europe,Eastern Europe
-Canada,Poland,569,Northern America,Eastern Europe
-Czech Republic,Poland,37,Eastern Europe,Eastern Europe
-France,Poland,256,Western Europe,Eastern Europe
-Germany,Poland,1781,Western Europe,Eastern Europe
-Hungary,Poland,8,Eastern Europe,Eastern Europe
-Ireland,Poland,282,Northern Europe,Eastern Europe
-New Zealand,Poland,36,Australia and New Zealand,Eastern Europe
-Norway,Poland,2110,Northern Europe,Eastern Europe
-Switzerland,Poland,188,Western Europe,Eastern Europe
-United Kingdom,Poland,914,Northern Europe,Eastern Europe
-Estonia,Poland,1,Northern Europe,Eastern Europe
-Israel,Poland,203,Western Asia,Eastern Europe
-Slovenia,Poland,5,Southern Europe,Eastern Europe
-Austria,Portugal,1,Western Europe,Southern Europe
-Belgium,Portugal,102,Western Europe,Southern Europe
-Canada,Portugal,15,Northern America,Southern Europe
-France,Portugal,114,Western Europe,Southern Europe
-Germany,Portugal,194,Western Europe,Southern Europe
-Ireland,Portugal,15,Northern Europe,Southern Europe
-Norway,Portugal,8,Northern Europe,Southern Europe
-Switzerland,Portugal,69,Western Europe,Southern Europe
-United Kingdom,Portugal,127,Northern Europe,Southern Europe
-Chile,Portugal,2,Latin America and the Caribbean,Southern Europe
-Germany,Qatar,2,Western Europe,Western Asia
-Canada,Republic of Korea,5,Northern America,Eastern Asia
-Germany,Republic of Korea,95,Western Europe,Eastern Asia
-Norway,Republic of Korea,3,Northern Europe,Eastern Asia
-Switzerland,Republic of Korea,1,Western Europe,Eastern Asia
-United Kingdom,Republic of Korea,2,Northern Europe,Eastern Asia
-Belgium,Republic of Moldova,11,Western Europe,Eastern Europe
-Canada,Republic of Moldova,19,Northern America,Eastern Europe
-Czech Republic,Republic of Moldova,3,Eastern Europe,Eastern Europe
-France,Republic of Moldova,101,Western Europe,Eastern Europe
-Germany,Republic of Moldova,128,Western Europe,Eastern Europe
-Ireland,Republic of Moldova,10,Northern Europe,Eastern Europe
-Norway,Republic of Moldova,4,Northern Europe,Eastern Europe
-Switzerland,Republic of Moldova,9,Western Europe,Eastern Europe
-United Kingdom,Republic of Moldova,36,Northern Europe,Eastern Europe
-Estonia,Republic of Moldova,4,Northern Europe,Eastern Europe
-Israel,Republic of Moldova,421,Western Asia,Eastern Europe
-Austria,Romania,62,Western Europe,Eastern Europe
-Belgium,Romania,1319,Western Europe,Eastern Europe
-Canada,Romania,333,Northern America,Eastern Europe
-Czech Republic,Romania,8,Eastern Europe,Eastern Europe
-France,Romania,4764,Western Europe,Eastern Europe
-Germany,Romania,3978,Western Europe,Eastern Europe
-Hungary,Romania,1870,Eastern Europe,Eastern Europe
-Ireland,Romania,715,Northern Europe,Eastern Europe
-New Zealand,Romania,19,Australia and New Zealand,Eastern Europe
-Norway,Romania,169,Northern Europe,Eastern Europe
-Switzerland,Romania,334,Western Europe,Eastern Europe
-United Kingdom,Romania,1129,Northern Europe,Eastern Europe
-Chile,Romania,12,Latin America and the Caribbean,Eastern Europe
-Israel,Romania,1636,Western Asia,Eastern Europe
-Slovenia,Romania,3,Southern Europe,Eastern Europe
-Austria,Russian Federation,1,Western Europe,Eastern Europe
-Belgium,Russian Federation,22,Western Europe,Eastern Europe
-Canada,Russian Federation,254,Northern America,Eastern Europe
-Czech Republic,Russian Federation,234,Eastern Europe,Eastern Europe
-France,Russian Federation,301,Western Europe,Eastern Europe
-Germany,Russian Federation,2091,Western Europe,Eastern Europe
-Hungary,Russian Federation,213,Eastern Europe,Eastern Europe
-Ireland,Russian Federation,49,Northern Europe,Eastern Europe
-New Zealand,Russian Federation,53,Australia and New Zealand,Eastern Europe
-Norway,Russian Federation,255,Northern Europe,Eastern Europe
-Switzerland,Russian Federation,106,Western Europe,Eastern Europe
-United Kingdom,Russian Federation,453,Northern Europe,Eastern Europe
-Chile,Russian Federation,73,Latin America and the Caribbean,Eastern Europe
-Estonia,Russian Federation,97,Northern Europe,Eastern Europe
-Israel,Russian Federation,5896,Western Asia,Eastern Europe
-Slovenia,Russian Federation,9,Southern Europe,Eastern Europe
-Belgium,Rwanda,3,Western Europe,Sub-Saharan Africa
-Canada,Rwanda,4,Northern America,Sub-Saharan Africa
-France,Rwanda,11,Western Europe,Sub-Saharan Africa
-Germany,Rwanda,4,Western Europe,Sub-Saharan Africa
-Canada,Saint Kitts and Nevis,175,Northern America,Latin America and the Caribbean
-United Kingdom,Saint Kitts and Nevis,23,Northern Europe,Latin America and the Caribbean
-Canada,Saint Lucia,28,Northern America,Latin America and the Caribbean
-United Kingdom,Saint Lucia,9,Northern Europe,Latin America and the Caribbean
-Canada,Saint Vincent and the Grenadines,13,Northern America,Latin America and the Caribbean
-New Zealand,Samoa,1,Australia and New Zealand,Polynesia
-Belgium,Saudi Arabia,4,Western Europe,Western Asia
-Canada,Saudi Arabia,348,Northern America,Western Asia
-France,Saudi Arabia,1,Western Europe,Western Asia
-Germany,Saudi Arabia,411,Western Europe,Western Asia
-Ireland,Saudi Arabia,25,Northern Europe,Western Asia
-United Kingdom,Saudi Arabia,19,Northern Europe,Western Asia
-Canada,Senegal,5,Northern America,Sub-Saharan Africa
-France,Senegal,89,Western Europe,Sub-Saharan Africa
-Germany,Senegal,1,Western Europe,Sub-Saharan Africa
-Switzerland,Senegal,1,Western Europe,Sub-Saharan Africa
-United Kingdom,Senegal,2,Northern Europe,Sub-Saharan Africa
-New Zealand,Seychelles,2,Australia and New Zealand,Sub-Saharan Africa
-Germany,Sierra Leone,9,Western Europe,Sub-Saharan Africa
-New Zealand,Sierra Leone,1,Australia and New Zealand,Sub-Saharan Africa
-Switzerland,Sierra Leone,3,Western Europe,Sub-Saharan Africa
-United Kingdom,Sierra Leone,19,Northern Europe,Sub-Saharan Africa
-Belgium,Serbia,9,Western Europe,Southern Europe
-Canada,Serbia,82,Northern America,Southern Europe
-Czech Republic,Serbia,3,Eastern Europe,Southern Europe
-Germany,Serbia,1364,Western Europe,Southern Europe
-Hungary,Serbia,53,Eastern Europe,Southern Europe
-Ireland,Serbia,6,Northern Europe,Southern Europe
-New Zealand,Serbia,22,Australia and New Zealand,Southern Europe
-Norway,Serbia,149,Northern Europe,Southern Europe
-Switzerland,Serbia,63,Western Europe,Southern Europe
-United Kingdom,Serbia,104,Northern Europe,Southern Europe
-Slovenia,Serbia,412,Southern Europe,Southern Europe
-Canada,Singapore,26,Northern America,South-Eastern Asia
-France,Singapore,1,Western Europe,South-Eastern Asia
-Germany,Singapore,6,Western Europe,South-Eastern Asia
-New Zealand,Singapore,29,Australia and New Zealand,South-Eastern Asia
-United Kingdom,Singapore,26,Northern Europe,South-Eastern Asia
-Austria,Slovak Republic,105,Western Europe,Eastern Europe
-Belgium,Slovak Republic,21,Western Europe,Eastern Europe
-Canada,Slovak Republic,62,Northern America,Eastern Europe
-Czech Republic,Slovak Republic,2218,Eastern Europe,Eastern Europe
-France,Slovak Republic,49,Western Europe,Eastern Europe
-Germany,Slovak Republic,1036,Western Europe,Eastern Europe
-Hungary,Slovak Republic,51,Eastern Europe,Eastern Europe
-Ireland,Slovak Republic,74,Northern Europe,Eastern Europe
-New Zealand,Slovak Republic,5,Australia and New Zealand,Eastern Europe
-Norway,Slovak Republic,407,Northern Europe,Eastern Europe
-Switzerland,Slovak Republic,45,Western Europe,Eastern Europe
-United Kingdom,Slovak Republic,184,Northern Europe,Eastern Europe
-Slovenia,Slovak Republic,4,Southern Europe,Eastern Europe
-Austria,Slovenia,50,Western Europe,Southern Europe
-Belgium,Slovenia,5,Western Europe,Southern Europe
-Canada,Slovenia,1,Northern America,Southern Europe
-Germany,Slovenia,67,Western Europe,Southern Europe
-Hungary,Slovenia,1,Eastern Europe,Southern Europe
-Ireland,Slovenia,3,Northern Europe,Southern Europe
-Norway,Slovenia,7,Northern Europe,Southern Europe
-Switzerland,Slovenia,18,Western Europe,Southern Europe
-United Kingdom,Slovenia,24,Northern Europe,Southern Europe
-Israel,Slovenia,44,Western Asia,Southern Europe
-Canada,Somalia,6,Northern America,Sub-Saharan Africa
-Germany,Somalia,4,Western Europe,Sub-Saharan Africa
-Norway,Somalia,1,Northern Europe,Sub-Saharan Africa
-United Kingdom,Somalia,2,Northern Europe,Sub-Saharan Africa
-Australia,South Africa,1846,Australia and New Zealand,Sub-Saharan Africa
-Belgium,South Africa,59,Western Europe,Sub-Saharan Africa
-Canada,South Africa,2651,Northern America,Sub-Saharan Africa
-France,South Africa,2,Western Europe,Sub-Saharan Africa
-Germany,South Africa,19,Western Europe,Sub-Saharan Africa
-Ireland,South Africa,734,Northern Europe,Sub-Saharan Africa
-New Zealand,South Africa,717,Australia and New Zealand,Sub-Saharan Africa
-Norway,South Africa,4,Northern Europe,Sub-Saharan Africa
-Switzerland,South Africa,15,Western Europe,Sub-Saharan Africa
-United Kingdom,South Africa,1298,Northern Europe,Sub-Saharan Africa
-Chile,South Africa,1,Latin America and the Caribbean,Sub-Saharan Africa
-Israel,South Africa,121,Western Asia,Sub-Saharan Africa
-Austria,Spain,13,Western Europe,Southern Europe
-Belgium,Spain,313,Western Europe,Southern Europe
-Canada,Spain,69,Northern America,Southern Europe
-France,Spain,713,Western Europe,Southern Europe
-Germany,Spain,531,Western Europe,Southern Europe
-Ireland,Spain,108,Northern Europe,Southern Europe
-New Zealand,Spain,26,Australia and New Zealand,Southern Europe
-Norway,Spain,54,Northern Europe,Southern Europe
-Switzerland,Spain,180,Western Europe,Southern Europe
-United Kingdom,Spain,736,Northern Europe,Southern Europe
-Chile,Spain,111,Latin America and the Caribbean,Southern Europe
-Estonia,Spain,1,Northern Europe,Southern Europe
-Israel,Spain,61,Western Asia,Southern Europe
-Australia,Sri Lanka,1659,Australia and New Zealand,Southern Asia
-Canada,Sri Lanka,238,Northern America,Southern Asia
-Germany,Sri Lanka,27,Western Europe,Southern Asia
-Ireland,Sri Lanka,7,Northern Europe,Southern Asia
-New Zealand,Sri Lanka,121,Australia and New Zealand,Southern Asia
-Norway,Sri Lanka,13,Northern Europe,Southern Asia
-United Kingdom,Sri Lanka,1200,Northern Europe,Southern Asia
-Belgium,Sudan,4,Western Europe,Northern Africa
-Canada,Sudan,64,Northern America,Northern Africa
-France,Sudan,3,Western Europe,Northern Africa
-Germany,Sudan,76,Western Europe,Northern Africa
-Ireland,Sudan,1295,Northern Europe,Northern Africa
-New Zealand,Sudan,14,Australia and New Zealand,Northern Africa
-Norway,Sudan,8,Northern Europe,Northern Africa
-United Kingdom,Sudan,936,Northern Europe,Northern Africa
-Belgium,Suriname,6,Western Europe,Latin America and the Caribbean
-Switzerland,Suriname,1,Western Europe,Latin America and the Caribbean
-Canada,Swaziland,1,Northern America,Sub-Saharan Africa
-Austria,Sweden,9,Western Europe,Northern Europe
-Belgium,Sweden,9,Western Europe,Northern Europe
-Canada,Sweden,13,Northern America,Northern Europe
-France,Sweden,22,Western Europe,Northern Europe
-Germany,Sweden,80,Western Europe,Northern Europe
-Ireland,Sweden,4,Northern Europe,Northern Europe
-New Zealand,Sweden,23,Australia and New Zealand,Northern Europe
-Norway,Sweden,587,Northern Europe,Northern Europe
-Switzerland,Sweden,23,Western Europe,Northern Europe
-United Kingdom,Sweden,47,Northern Europe,Northern Europe
-Chile,Sweden,4,Latin America and the Caribbean,Northern Europe
-Estonia,Sweden,6,Northern Europe,Northern Europe
-Israel,Sweden,7,Western Asia,Northern Europe
-Austria,Switzerland,57,Western Europe,Western Europe
-Belgium,Switzerland,61,Western Europe,Western Europe
-Canada,Switzerland,77,Northern America,Western Europe
-France,Switzerland,102,Western Europe,Western Europe
-Germany,Switzerland,208,Western Europe,Western Europe
-Hungary,Switzerland,1,Eastern Europe,Western Europe
-Ireland,Switzerland,7,Northern Europe,Western Europe
-New Zealand,Switzerland,13,Australia and New Zealand,Western Europe
-Norway,Switzerland,25,Northern Europe,Western Europe
-United Kingdom,Switzerland,54,Northern Europe,Western Europe
-Chile,Switzerland,7,Latin America and the Caribbean,Western Europe
-Israel,Switzerland,30,Western Asia,Western Europe
-Belgium,Syria,16,Western Europe,Western Asia
-Canada,Syria,147,Northern America,Western Asia
-Czech Republic,Syria,6,Eastern Europe,Western Asia
-France,Syria,1000,Western Europe,Western Asia
-Germany,Syria,3647,Western Europe,Western Asia
-Hungary,Syria,2,Eastern Europe,Western Asia
-Ireland,Syria,67,Northern Europe,Western Asia
-New Zealand,Syria,7,Australia and New Zealand,Western Asia
-Norway,Syria,19,Northern Europe,Western Asia
-Switzerland,Syria,31,Western Europe,Western Asia
-United Kingdom,Syria,391,Northern Europe,Western Asia
-Chile,Syria,4,Latin America and the Caribbean,Western Asia
-Israel,Syria,182,Western Asia,Western Asia
-Canada,Tajikistan,1,Northern America,Central Asia
-Czech Republic,Tajikistan,2,Eastern Europe,Central Asia
-Germany,Tajikistan,25,Western Europe,Central Asia
-Norway,Tajikistan,2,Northern Europe,Central Asia
-United Kingdom,Tajikistan,6,Northern Europe,Central Asia
-Israel,Tajikistan,32,Western Asia,Central Asia
-Canada,Thailand,9,Northern America,South-Eastern Asia
-Germany,Thailand,10,Western Europe,South-Eastern Asia
-United Kingdom,Thailand,7,Northern Europe,South-Eastern Asia
-Belgium,Togo,3,Western Europe,Sub-Saharan Africa
-Canada,Togo,1,Northern America,Sub-Saharan Africa
-France,Togo,140,Western Europe,Sub-Saharan Africa
-Germany,Togo,4,Western Europe,Sub-Saharan Africa
-Switzerland,Togo,2,Western Europe,Sub-Saharan Africa
-Canada,Trinidad and Tobago,29,Northern America,Latin America and the Caribbean
-Ireland,Trinidad and Tobago,7,Northern Europe,Latin America and the Caribbean
-New Zealand,Trinidad and Tobago,2,Australia and New Zealand,Latin America and the Caribbean
-Norway,Trinidad and Tobago,1,Northern Europe,Latin America and the Caribbean
-Belgium,Tunisia,11,Western Europe,Northern Africa
-Canada,Tunisia,54,Northern America,Northern Africa
-France,Tunisia,834,Western Europe,Northern Africa
-Germany,Tunisia,428,Western Europe,Northern Africa
-Switzerland,Tunisia,33,Western Europe,Northern Africa
-United Kingdom,Tunisia,16,Northern Europe,Northern Africa
-Israel,Tunisia,6,Western Asia,Northern Africa
-Belgium,Turkey,13,Western Europe,Western Asia
-Canada,Turkey,56,Northern America,Western Asia
-France,Turkey,29,Western Europe,Western Asia
-Germany,Turkey,986,Western Europe,Western Asia
-Hungary,Turkey,4,Eastern Europe,Western Asia
-Ireland,Turkey,5,Northern Europe,Western Asia
-New Zealand,Turkey,5,Australia and New Zealand,Western Asia
-Norway,Turkey,14,Northern Europe,Western Asia
-Switzerland,Turkey,58,Western Europe,Western Asia
-United Kingdom,Turkey,107,Northern Europe,Western Asia
-Israel,Turkey,38,Western Asia,Western Asia
-Germany,Turkmenistan,16,Western Europe,Central Asia
-United Kingdom,Turkmenistan,4,Northern Europe,Central Asia
-Canada,Uganda,70,Northern America,Sub-Saharan Africa
-Germany,Uganda,13,Western Europe,Sub-Saharan Africa
-Switzerland,Uganda,1,Western Europe,Sub-Saharan Africa
-United Kingdom,Uganda,52,Northern Europe,Sub-Saharan Africa
-Belgium,Ukraine,7,Western Europe,Eastern Europe
-Canada,Ukraine,142,Northern America,Eastern Europe
-Czech Republic,Ukraine,564,Eastern Europe,Eastern Europe
-France,Ukraine,95,Western Europe,Eastern Europe
-Germany,Ukraine,1397,Western Europe,Eastern Europe
-Hungary,Ukraine,374,Eastern Europe,Eastern Europe
-Ireland,Ukraine,45,Northern Europe,Eastern Europe
-New Zealand,Ukraine,17,Australia and New Zealand,Eastern Europe
-Norway,Ukraine,100,Northern Europe,Eastern Europe
-Switzerland,Ukraine,36,Western Europe,Eastern Europe
-United Kingdom,Ukraine,330,Northern Europe,Eastern Europe
-Chile,Ukraine,12,Latin America and the Caribbean,Eastern Europe
-Estonia,Ukraine,75,Northern Europe,Eastern Europe
-Israel,Ukraine,1387,Western Asia,Eastern Europe
-Slovenia,Ukraine,4,Southern Europe,Eastern Europe
-Canada,United Arab Emirates,34,Northern America,Western Asia
-Germany,United Arab Emirates,37,Western Europe,Western Asia
-Ireland,United Arab Emirates,15,Northern Europe,Western Asia
-United Kingdom,United Arab Emirates,92,Northern Europe,Western Asia
-Australia,United Kingdom,5892,Australia and New Zealand,Northern Europe
-Austria,United Kingdom,15,Western Europe,Northern Europe
-Belgium,United Kingdom,91,Western Europe,Northern Europe
-Canada,United Kingdom,2118,Northern America,Northern Europe
-France,United Kingdom,81,Western Europe,Northern Europe
-Germany,United Kingdom,194,Western Europe,Northern Europe
-Ireland,United Kingdom,766,Northern Europe,Northern Europe
-New Zealand,United Kingdom,3092,Australia and New Zealand,Northern Europe
-Norway,United Kingdom,143,Northern Europe,Northern Europe
-Switzerland,United Kingdom,48,Western Europe,Northern Europe
-Chile,United Kingdom,10,Latin America and the Caribbean,Northern Europe
-Estonia,United Kingdom,3,Northern Europe,Northern Europe
-Israel,United Kingdom,209,Western Asia,Northern Europe
-Canada,United Republic of Tanzania,14,Northern America,Sub-Saharan Africa
-Germany,United Republic of Tanzania,4,Western Europe,Sub-Saharan Africa
-Ireland,United Republic of Tanzania,5,Northern Europe,Sub-Saharan Africa
-New Zealand,United Republic of Tanzania,3,Australia and New Zealand,Sub-Saharan Africa
-Norway,United Republic of Tanzania,1,Northern Europe,Sub-Saharan Africa
-United Kingdom,United Republic of Tanzania,37,Northern Europe,Sub-Saharan Africa
-Australia,United States,165,Australia and New Zealand,Northern America
-Austria,United States,2,Western Europe,Northern America
-Belgium,United States,4,Western Europe,Northern America
-Canada,United States,1218,Northern America,Northern America
-France,United States,7,Western Europe,Northern America
-Germany,United States,243,Western Europe,Northern America
-Hungary,United States,2,Eastern Europe,Northern America
-Ireland,United States,41,Northern Europe,Northern America
-New Zealand,United States,408,Australia and New Zealand,Northern America
-Norway,United States,11,Northern Europe,Northern America
-Switzerland,United States,86,Western Europe,Northern America
-United Kingdom,United States,64,Northern Europe,Northern America
-Chile,United States,5,Latin America and the Caribbean,Northern America
-Estonia,United States,1,Northern Europe,Northern America
-Israel,United States,481,Western Asia,Northern America
-Belgium,Uruguay,2,Western Europe,Latin America and the Caribbean
-Canada,Uruguay,6,Northern America,Latin America and the Caribbean
-France,Uruguay,12,Western Europe,Latin America and the Caribbean
-Germany,Uruguay,3,Western Europe,Latin America and the Caribbean
-Ireland,Uruguay,2,Northern Europe,Latin America and the Caribbean
-New Zealand,Uruguay,3,Australia and New Zealand,Latin America and the Caribbean
-Norway,Uruguay,2,Northern Europe,Latin America and the Caribbean
-Switzerland,Uruguay,7,Western Europe,Latin America and the Caribbean
-United Kingdom,Uruguay,3,Northern Europe,Latin America and the Caribbean
-Chile,Uruguay,347,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Uruguay,39,Western Asia,Latin America and the Caribbean
-Canada,Uzbekistan,8,Northern America,Central Asia
-Czech Republic,Uzbekistan,17,Eastern Europe,Central Asia
-Germany,Uzbekistan,119,Western Europe,Central Asia
-Ireland,Uzbekistan,1,Northern Europe,Central Asia
-Norway,Uzbekistan,6,Northern Europe,Central Asia
-Switzerland,Uzbekistan,4,Western Europe,Central Asia
-United Kingdom,Uzbekistan,20,Northern Europe,Central Asia
-Israel,Uzbekistan,15,Western Asia,Central Asia
-Belgium,Venezuela,12,Western Europe,Latin America and the Caribbean
-Canada,Venezuela,31,Northern America,Latin America and the Caribbean
-France,Venezuela,31,Western Europe,Latin America and the Caribbean
-Germany,Venezuela,84,Western Europe,Latin America and the Caribbean
-Ireland,Venezuela,12,Northern Europe,Latin America and the Caribbean
-New Zealand,Venezuela,3,Australia and New Zealand,Latin America and the Caribbean
-Norway,Venezuela,4,Northern Europe,Latin America and the Caribbean
-Switzerland,Venezuela,11,Western Europe,Latin America and the Caribbean
-United Kingdom,Venezuela,38,Northern Europe,Latin America and the Caribbean
-Chile,Venezuela,2480,Latin America and the Caribbean,Latin America and the Caribbean
-Israel,Venezuela,22,Western Asia,Latin America and the Caribbean
-Belgium,Viet Nam,1,Western Europe,South-Eastern Asia
-Canada,Viet Nam,141,Northern America,South-Eastern Asia
-France,Viet Nam,63,Western Europe,South-Eastern Asia
-Germany,Viet Nam,58,Western Europe,South-Eastern Asia
-Hungary,Viet Nam,1,Eastern Europe,South-Eastern Asia
-Norway,Viet Nam,4,Northern Europe,South-Eastern Asia
-Switzerland,Viet Nam,5,Western Europe,South-Eastern Asia
-United Kingdom,Viet Nam,2,Northern Europe,South-Eastern Asia
-Belgium,Yemen,1,Western Europe,Western Asia
-Canada,Yemen,12,Northern America,Western Asia
-Czech Republic,Yemen,1,Eastern Europe,Western Asia
-Germany,Yemen,248,Western Europe,Western Asia
-Ireland,Yemen,19,Northern Europe,Western Asia
-Norway,Yemen,2,Northern Europe,Western Asia
-United Kingdom,Yemen,53,Northern Europe,Western Asia
-Canada,Zambia,19,Northern America,Sub-Saharan Africa
-Ireland,Zambia,1,Northern Europe,Sub-Saharan Africa
-New Zealand,Zambia,9,Australia and New Zealand,Sub-Saharan Africa
-United Kingdom,Zambia,47,Northern Europe,Sub-Saharan Africa
-Australia,Zimbabwe,190,Australia and New Zealand,Sub-Saharan Africa
-Canada,Zimbabwe,45,Northern America,Sub-Saharan Africa
-Germany,Zimbabwe,6,Western Europe,Sub-Saharan Africa
-Ireland,Zimbabwe,7,Northern Europe,Sub-Saharan Africa
-New Zealand,Zimbabwe,36,Australia and New Zealand,Sub-Saharan Africa
-Switzerland,Zimbabwe,1,Western Europe,Sub-Saharan Africa
-United Kingdom,Zimbabwe,164,Northern Europe,Sub-Saharan Africa
-France,Georgia,13,Western Europe,Western Asia
-United Kingdom,Barbados,1,Northern Europe,Latin America and the Caribbean
-Israel,Croatia,3,Western Asia,Southern Europe
-France,Cyprus,1,Western Europe,Western Asia
-United Kingdom,Gambia,2,Northern Europe,Sub-Saharan Africa
-United Kingdom,Jamaica,25,Northern Europe,Latin America and the Caribbean
-Hungary,Kazakhstan,1,Eastern Europe,Central Asia
-Israel,Kuwait,1,Western Asia,Western Asia
-France,Kyrgyzstan,1,Western Europe,Central Asia
-Canada,Mongolia,1,Northern America,Eastern Asia
-Israel,Pakistan,3,Western Asia,Southern Asia
-Israel,Panama,1,Western Asia,Latin America and the Caribbean
-Israel,Paraguay,5,Western Asia,Latin America and the Caribbean
-United Kingdom,Rwanda,2,Northern Europe,Sub-Saharan Africa
-Canada,Samoa,1,Northern America,Polynesia
-Israel,Sudan,8,Western Asia,Northern Africa
-United Kingdom,Trinidad and Tobago,1,Northern Europe,Latin America and the Caribbean
-Israel,Turkmenistan,5,Western Asia,Central Asia
-Hungary,United Kingdom,2,Eastern Europe,Northern Europe
-Israel,Yemen,2,Western Asia,Western Asia
-Lithuania,Belarus,26,Northern Europe,Eastern Europe
-Lithuania,Canada,1,Northern Europe,Northern America
-Lithuania,Estonia,6,Northern Europe,Northern Europe
-Lithuania,Kazakhstan,2,Northern Europe,Central Asia
-Lithuania,Latvia,1,Northern Europe,Northern Europe
-Lithuania,Russian Federation,19,Northern Europe,Eastern Europe
-Lithuania,Ukraine,10,Northern Europe,Eastern Europe
-Lithuania,United States,2,Northern Europe,Northern America
-Belgium,Afghanistan,6,Western Europe,Southern Asia
-Czech Republic,Afghanistan,3,Eastern Europe,Southern Asia
-Poland,Afghanistan,1,Eastern Europe,Southern Asia
-Poland,Argentina,1,Eastern Europe,Latin America and the Caribbean
-Poland,Armenia,8,Eastern Europe,Western Asia
-Israel,Armenia,22,Western Asia,Western Asia
-Latvia,Armenia,1,Northern Europe,Western Asia
-Poland,Australia,1,Eastern Europe,Australia and New Zealand
-Poland,Austria,15,Eastern Europe,Western Europe
-Poland,Azerbaijan,2,Eastern Europe,Western Asia
-Latvia,Azerbaijan,1,Northern Europe,Western Asia
-Lithuania,Azerbaijan,1,Northern Europe,Western Asia
-Hungary,Belarus,2,Eastern Europe,Eastern Europe
-Poland,Belarus,299,Eastern Europe,Eastern Europe
-Latvia,Belarus,55,Northern Europe,Eastern Europe
-Poland,Belgium,3,Eastern Europe,Western Europe
-Slovenia,Brazil,1,Southern Europe,Latin America and the Caribbean
-Poland,Bulgaria,57,Eastern Europe,Eastern Europe
-Poland,Burundi,2,Eastern Europe,Sub-Saharan Africa
-Belgium,Cambodia,1,Western Europe,South-Eastern Asia
-Poland,Cambodia,1,Eastern Europe,South-Eastern Asia
-Poland,Canada,3,Eastern Europe,Northern America
-France,Chad,1,Western Europe,Sub-Saharan Africa
-Czech Republic,Chile,1,Eastern Europe,Latin America and the Caribbean
-Poland,Chile,1,Eastern Europe,Latin America and the Caribbean
-Poland,China,1,Eastern Europe,Eastern Asia
-Chile,China,1,Latin America and the Caribbean,Eastern Asia
-Poland,Colombia,1,Eastern Europe,Latin America and the Caribbean
-Poland,Cuba,1,Eastern Europe,Latin America and the Caribbean
-Poland,Czech Republic,55,Eastern Europe,Eastern Europe
-Poland,Denmark,2,Eastern Europe,Northern Europe
-Belgium,Dominica,1,Western Europe,Latin America and the Caribbean
-Poland,Egypt,5,Eastern Europe,Northern Africa
-Belgium,Estonia,3,Western Europe,Northern Europe
-New Zealand,Estonia,1,Australia and New Zealand,Northern Europe
-Poland,Estonia,1,Eastern Europe,Northern Europe
-Latvia,Estonia,44,Northern Europe,Northern Europe
-Poland,Finland,1,Eastern Europe,Northern Europe
-Belgium,The former Yugoslav Republic of Macedonia,2,Western Europe,Southern Europe
-Poland,France,8,Eastern Europe,Western Europe
-Poland,Georgia,4,Eastern Europe,Western Asia
-Latvia,Georgia,2,Northern Europe,Western Asia
-Poland,Germany,58,Eastern Europe,Western Europe
-Poland,Greece,1,Eastern Europe,Southern Europe
-Estonia,Greece,1,Northern Europe,Southern Europe
-Belgium,Guatemala,2,Western Europe,Latin America and the Caribbean
-Poland,Hungary,20,Eastern Europe,Eastern Europe
-Poland,India,4,Eastern Europe,Southern Asia
-Latvia,India,1,Northern Europe,Southern Asia
-Ireland,Indonesia,2,Northern Europe,South-Eastern Asia
-Poland,Iran,1,Eastern Europe,Southern Asia
-Poland,Iraq,2,Eastern Europe,Western Asia
-Poland,Ireland,1,Eastern Europe,Northern Europe
-Poland,Italy,15,Eastern Europe,Southern Europe
-Ireland,Jamaica,1,Northern Europe,Latin America and the Caribbean
-Belgium,Jordan,1,Western Europe,Western Asia
-Belgium,Kazakhstan,1,Western Europe,Central Asia
-Poland,Kazakhstan,36,Eastern Europe,Central Asia
-Latvia,Kazakhstan,5,Northern Europe,Central Asia
-Poland,Kyrgyzstan,3,Eastern Europe,Central Asia
-Czech Republic,Latvia,1,Eastern Europe,Northern Europe
-Poland,Latvia,7,Eastern Europe,Northern Europe
-Poland,Libya,5,Eastern Europe,Northern Africa
-Poland,Lithuania,42,Eastern Europe,Northern Europe
-Latvia,Lithuania,7,Northern Europe,Northern Europe
-Poland,Mexico,2,Eastern Europe,Latin America and the Caribbean
-Czech Republic,Mongolia,2,Eastern Europe,Eastern Asia
-Poland,Mongolia,27,Eastern Europe,Eastern Asia
-Czech Republic,Netherlands,1,Eastern Europe,Western Europe
-Poland,Netherlands,2,Eastern Europe,Western Europe
-Poland,Norway,1,Eastern Europe,Northern Europe
-Belgium,Panama,1,Western Europe,Latin America and the Caribbean
-Latvia,Poland,4,Northern Europe,Eastern Europe
-New Zealand,Portugal,1,Australia and New Zealand,Southern Europe
-Poland,Portugal,4,Eastern Europe,Southern Europe
-Chile,Republic of Moldova,2,Latin America and the Caribbean,Eastern Europe
-Poland,Romania,7,Eastern Europe,Eastern Europe
-Poland,Russian Federation,182,Eastern Europe,Eastern Europe
-Latvia,Russian Federation,259,Northern Europe,Eastern Europe
-Ireland,Saint Lucia,2,Northern Europe,Latin America and the Caribbean
-Israel,Saudi Arabia,1,Western Asia,Western Asia
-Poland,Serbia,2,Eastern Europe,Southern Europe
-Chile,Serbia,1,Latin America and the Caribbean,Southern Europe
-Latvia,Serbia,1,Northern Europe,Southern Europe
-Poland,Slovak Republic,52,Eastern Europe,Eastern Europe
-Poland,Spain,6,Eastern Europe,Southern Europe
-Belgium,Sri Lanka,1,Western Europe,Southern Asia
-Czech Republic,Sweden,1,Eastern Europe,Northern Europe
-Hungary,Sweden,1,Eastern Europe,Northern Europe
-Poland,Sweden,4,Eastern Europe,Northern Europe
-Poland,Switzerland,2,Eastern Europe,Western Europe
-Poland,Syria,4,Eastern Europe,Western Asia
-Latvia,Tajikistan,1,Northern Europe,Central Asia
-Poland,Turkey,3,Eastern Europe,Western Asia
-Ireland,Uganda,1,Northern Europe,Sub-Saharan Africa
-Poland,Ukraine,1000,Eastern Europe,Eastern Europe
-Latvia,Ukraine,32,Northern Europe,Eastern Europe
-Poland,United Kingdom,7,Eastern Europe,Northern Europe
-Poland,United States,2,Eastern Europe,Northern America
-Poland,Uzbekistan,8,Eastern Europe,Central Asia
-Chile,Uzbekistan,2,Latin America and the Caribbean,Central Asia
-Latvia,Uzbekistan,2,Northern Europe,Central Asia
-Poland,Venezuela,2,Eastern Europe,Latin America and the Caribbean
-France,Israel,2,Western Europe,Western Asia
-France,Tajikistan,2,Western Europe,Central Asia
-Switzerland,Ghana,1,Western Europe,Sub-Saharan Africa
-Austria,Georgia,1,Western Europe,Western Asia
-Austria,Latvia,3,Western Europe,Northern Europe
-Switzerland,Turkmenistan,1,Western Europe,Central Asia
-Poland,Republic of Moldova,9,Eastern Europe,Eastern Europe
-Ireland,Honduras,1,Northern Europe,Latin America and the Caribbean
-Austria,Ireland,1,Western Europe,Northern Europe
-Estonia,Netherlands,1,Northern Europe,Western Europe
-Switzerland,Grenada,1,Western Europe,Latin America and the Caribbean
-Estonia,Syria,1,Northern Europe,Western Asia
-Lithuania,Morocco,1,Northern Europe,Northern Africa
-Switzerland,Indonesia,1,Western Europe,South-Eastern Asia
-Slovenia,United Kingdom,1,Southern Europe,Northern Europe
-Ireland,Mauritius,1,Northern Europe,Sub-Saharan Africa
-Slovenia,United States,1,Southern Europe,Northern America
-New Zealand,Democratic People's Republic of Korea,3,Australia and New Zealand,Eastern Asia
-Switzerland,Burundi,1,Western Europe,Sub-Saharan Africa
-Lithuania,Egypt,1,Northern Europe,Northern Africa
-Switzerland,Benin,1,Western Europe,Sub-Saharan Africa
-Chile,Slovak Republic,1,Latin America and the Caribbean,Eastern Europe
-Slovenia,Australia,1,Southern Europe,Australia and New Zealand
-Poland,Nepal,1,Eastern Europe,Southern Asia
-Poland,Croatia,1,Eastern Europe,Southern Europe
-Estonia,Czech Republic,1,Northern Europe,Eastern Europe
-Hungary,Mongolia,1,Eastern Europe,Eastern Asia
-Poland,Philippines,1,Eastern Europe,South-Eastern Asia
-Canada,Qatar,1,Northern America,Western Asia
-Switzerland,Democratic Republic of the Congo,2,Western Europe,Sub-Saharan Africa
-Latvia,Venezuela,1,Northern Europe,Latin America and the Caribbean
-Ireland,Dominica,1,Northern Europe,Latin America and the Caribbean
-Lithuania,Iran,1,Northern Europe,Southern Asia
-Austria,Cyprus,1,Western Europe,Western Asia
-Latvia,Kyrgyzstan,2,Northern Europe,Central Asia
-Israel,Serbia,1,Western Asia,Southern Europe
-France,Yemen,1,Western Europe,Western Asia
-Switzerland,Bangladesh,2,Western Europe,Southern Asia
-Australia,Bangladesh,820,Australia and New Zealand,Southern Asia
-Lithuania,France,1,Northern Europe,Western Europe
-Czech Republic,United Kingdom,1,Eastern Europe,Northern Europe
-Israel,Cyprus,1,Western Asia,Western Asia
-Chile,Finland,1,Latin America and the Caribbean,Northern Europe
-Czech Republic,Croatia,1,Eastern Europe,Southern Europe
-Ireland,Antigua and Barbuda,1,Northern Europe,Latin America and the Caribbean
-Ireland,Saint Kitts and Nevis,3,Northern Europe,Latin America and the Caribbean
-Ireland,Israel,1,Northern Europe,Western Asia
-Switzerland,Thailand,1,Western Europe,South-Eastern Asia
-Chile,Australia,1,Latin America and the Caribbean,Australia and New Zealand
-Czech Republic,Colombia,1,Eastern Europe,Latin America and the Caribbean
-Czech Republic,Bolivia,1,Eastern Europe,Latin America and the Caribbean
-Australia,Pakistan,1139,Australia and New Zealand,Southern Asia
-Czech Republic,Albania,1,Eastern Europe,Southern Europe
-France,Papua New Guinea,1,Western Europe,Melanesia
-Germany,Botswana,1,Western Europe,Sub-Saharan Africa
-Switzerland,Chinese Taipei,1,Western Europe,Eastern Asia
-Belgium,Democratic Republic of the Congo,8,Western Europe,Sub-Saharan Africa
-Germany,Djibouti,1,Western Europe,Sub-Saharan Africa
-Germany,Bhutan,1,Western Europe,Southern Asia
-Latvia,United Kingdom,1,Northern Europe,Northern Europe
-Canada,Chinese Taipei,65,Northern America,Eastern Asia
-Germany,Maldives,1,Western Europe,Southern Asia
-Germany,Chinese Taipei,18,Western Europe,Eastern Asia
+code_to,country_to,code_from,country_from,number,subregion_to,subregion_from
+CAN,Canada,AFG,Afghanistan,5,Northern America,Southern Asia
+FRA,France,AFG,Afghanistan,12,Western Europe,Southern Asia
+DEU,Germany,AFG,Afghanistan,153,Western Europe,Southern Asia
+NZL,New Zealand,AFG,Afghanistan,0,Australia and New Zealand,Southern Asia
+NOR,Norway,AFG,Afghanistan,22,Northern Europe,Southern Asia
+CHE,Switzerland,AFG,Afghanistan,6,Western Europe,Southern Asia
+GBR,United Kingdom,AFG,Afghanistan,53,Northern Europe,Southern Asia
+BEL,Belgium,ALB,Albania,2,Western Europe,Southern Europe
+CAN,Canada,ALB,Albania,24,Northern America,Southern Europe
+FRA,France,ALB,Albania,15,Western Europe,Southern Europe
+DEU,Germany,ALB,Albania,570,Western Europe,Southern Europe
+IRL,Ireland,ALB,Albania,2,Northern Europe,Southern Europe
+NZL,New Zealand,ALB,Albania,1,Australia and New Zealand,Southern Europe
+NOR,Norway,ALB,Albania,1,Northern Europe,Southern Europe
+CHE,Switzerland,ALB,Albania,13,Western Europe,Southern Europe
+GBR,United Kingdom,ALB,Albania,27,Northern Europe,Southern Europe
+SVN,Slovenia,ALB,Albania,3,Southern Europe,Southern Europe
+BEL,Belgium,DZA,Algeria,34,Western Europe,Northern Africa
+CAN,Canada,DZA,Algeria,107,Northern America,Northern Africa
+FRA,France,DZA,Algeria,3824,Western Europe,Northern Africa
+DEU,Germany,DZA,Algeria,90,Western Europe,Northern Africa
+IRL,Ireland,DZA,Algeria,2,Northern Europe,Northern Africa
+NOR,Norway,DZA,Algeria,6,Northern Europe,Northern Africa
+CHE,Switzerland,DZA,Algeria,110,Western Europe,Northern Africa
+GBR,United Kingdom,DZA,Algeria,39,Northern Europe,Northern Africa
+ISR,Israel,DZA,Algeria,6,Western Asia,Northern Africa
+DEU,Germany,AND,Andorra,0,Western Europe,Southern Europe
+DEU,Germany,AGO,Angola,3,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,AGO,Angola,1,Northern Europe,Sub-Saharan Africa
+CAN,Canada,ATG,Antigua and Barbuda,40,Northern America,Latin America and the Caribbean
+NZL,New Zealand,ATG,Antigua and Barbuda,0,Australia and New Zealand,Latin America and the Caribbean
+GBR,United Kingdom,ATG,Antigua and Barbuda,12,Northern Europe,Latin America and the Caribbean
+BEL,Belgium,ARG,Argentina,20,Western Europe,Latin America and the Caribbean
+CAN,Canada,ARG,Argentina,137,Northern America,Latin America and the Caribbean
+FRA,France,ARG,Argentina,199,Western Europe,Latin America and the Caribbean
+DEU,Germany,ARG,Argentina,40,Western Europe,Latin America and the Caribbean
+HUN,Hungary,ARG,Argentina,3,Eastern Europe,Latin America and the Caribbean
+IRL,Ireland,ARG,Argentina,12,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,ARG,Argentina,10,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,ARG,Argentina,5,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,ARG,Argentina,64,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,ARG,Argentina,70,Northern Europe,Latin America and the Caribbean
+CHL,Chile,ARG,Argentina,582,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,ARG,Argentina,349,Western Asia,Latin America and the Caribbean
+SVN,Slovenia,ARG,Argentina,5,Southern Europe,Latin America and the Caribbean
+BEL,Belgium,ARM,Armenia,4,Western Europe,Western Asia
+CAN,Canada,ARM,Armenia,13,Northern America,Western Asia
+CZE,Czech Republic,ARM,Armenia,1,Eastern Europe,Western Asia
+FRA,France,ARM,Armenia,37,Western Europe,Western Asia
+DEU,Germany,ARM,Armenia,216,Western Europe,Western Asia
+HUN,Hungary,ARM,Armenia,1,Eastern Europe,Western Asia
+IRL,Ireland,ARM,Armenia,1,Northern Europe,Western Asia
+NOR,Norway,ARM,Armenia,2,Northern Europe,Western Asia
+CHE,Switzerland,ARM,Armenia,4,Western Europe,Western Asia
+GBR,United Kingdom,ARM,Armenia,28,Northern Europe,Western Asia
+EST,Estonia,ARM,Armenia,1,Northern Europe,Western Asia
+BEL,Belgium,AUS,Australia,5,Western Europe,Australia and New Zealand
+CAN,Canada,AUS,Australia,590,Northern America,Australia and New Zealand
+FRA,France,AUS,Australia,3,Western Europe,Australia and New Zealand
+DEU,Germany,AUS,Australia,20,Western Europe,Australia and New Zealand
+IRL,Ireland,AUS,Australia,119,Northern Europe,Australia and New Zealand
+NZL,New Zealand,AUS,Australia,533,Australia and New Zealand,Australia and New Zealand
+NOR,Norway,AUS,Australia,87,Northern Europe,Australia and New Zealand
+CHE,Switzerland,AUS,Australia,11,Western Europe,Australia and New Zealand
+GBR,United Kingdom,AUS,Australia,522,Northern Europe,Australia and New Zealand
+ISR,Israel,AUS,Australia,80,Western Asia,Australia and New Zealand
+BEL,Belgium,AUT,Austria,27,Western Europe,Western Europe
+CAN,Canada,AUT,Austria,33,Northern America,Western Europe
+CZE,Czech Republic,AUT,Austria,4,Eastern Europe,Western Europe
+FRA,France,AUT,Austria,34,Western Europe,Western Europe
+DEU,Germany,AUT,Austria,2012,Western Europe,Western Europe
+HUN,Hungary,AUT,Austria,5,Eastern Europe,Western Europe
+IRL,Ireland,AUT,Austria,7,Northern Europe,Western Europe
+NZL,New Zealand,AUT,Austria,13,Australia and New Zealand,Western Europe
+NOR,Norway,AUT,Austria,74,Northern Europe,Western Europe
+CHE,Switzerland,AUT,Austria,815,Western Europe,Western Europe
+GBR,United Kingdom,AUT,Austria,91,Northern Europe,Western Europe
+CHL,Chile,AUT,Austria,1,Latin America and the Caribbean,Western Europe
+ISR,Israel,AUT,Austria,20,Western Asia,Western Europe
+SVN,Slovenia,AUT,Austria,18,Southern Europe,Western Europe
+CAN,Canada,AZE,Azerbaijan,2,Northern America,Western Asia
+CZE,Czech Republic,AZE,Azerbaijan,4,Eastern Europe,Western Asia
+FRA,France,AZE,Azerbaijan,3,Western Europe,Western Asia
+DEU,Germany,AZE,Azerbaijan,646,Western Europe,Western Asia
+HUN,Hungary,AZE,Azerbaijan,1,Eastern Europe,Western Asia
+NOR,Norway,AZE,Azerbaijan,5,Northern Europe,Western Asia
+CHE,Switzerland,AZE,Azerbaijan,2,Western Europe,Western Asia
+GBR,United Kingdom,AZE,Azerbaijan,16,Northern Europe,Western Asia
+EST,Estonia,AZE,Azerbaijan,4,Northern Europe,Western Asia
+ISR,Israel,AZE,Azerbaijan,6,Western Asia,Western Asia
+CAN,Canada,BHS,Bahamas,1,Northern America,Latin America and the Caribbean
+CAN,Canada,BHR,Bahrain,21,Northern America,Western Asia
+DEU,Germany,BHR,Bahrain,8,Western Europe,Western Asia
+IRL,Ireland,BHR,Bahrain,21,Northern Europe,Western Asia
+GBR,United Kingdom,BHR,Bahrain,55,Northern Europe,Western Asia
+CAN,Canada,BGD,Bangladesh,138,Northern America,Southern Asia
+FRA,France,BGD,Bangladesh,3,Western Europe,Southern Asia
+DEU,Germany,BGD,Bangladesh,9,Western Europe,Southern Asia
+IRL,Ireland,BGD,Bangladesh,44,Northern Europe,Southern Asia
+NZL,New Zealand,BGD,Bangladesh,43,Australia and New Zealand,Southern Asia
+NOR,Norway,BGD,Bangladesh,16,Northern Europe,Southern Asia
+GBR,United Kingdom,BGD,Bangladesh,654,Northern Europe,Southern Asia
+CAN,Canada,BRB,Barbados,7,Northern America,Latin America and the Caribbean
+NZL,New Zealand,BRB,Barbados,3,Australia and New Zealand,Latin America and the Caribbean
+BEL,Belgium,BLR,Belarus,1,Western Europe,Eastern Europe
+CAN,Canada,BLR,Belarus,33,Northern America,Eastern Europe
+CZE,Czech Republic,BLR,Belarus,34,Eastern Europe,Eastern Europe
+FRA,France,BLR,Belarus,30,Western Europe,Eastern Europe
+DEU,Germany,BLR,Belarus,438,Western Europe,Eastern Europe
+IRL,Ireland,BLR,Belarus,17,Northern Europe,Eastern Europe
+NZL,New Zealand,BLR,Belarus,2,Australia and New Zealand,Eastern Europe
+NOR,Norway,BLR,Belarus,22,Northern Europe,Eastern Europe
+CHE,Switzerland,BLR,Belarus,8,Western Europe,Eastern Europe
+GBR,United Kingdom,BLR,Belarus,62,Northern Europe,Eastern Europe
+EST,Estonia,BLR,Belarus,7,Northern Europe,Eastern Europe
+ISR,Israel,BLR,Belarus,5,Western Asia,Eastern Europe
+SVN,Slovenia,BLR,Belarus,3,Southern Europe,Eastern Europe
+AUT,Austria,BEL,Belgium,3,Western Europe,Western Europe
+CAN,Canada,BEL,Belgium,110,Northern America,Western Europe
+FRA,France,BEL,Belgium,1821,Western Europe,Western Europe
+DEU,Germany,BEL,Belgium,274,Western Europe,Western Europe
+IRL,Ireland,BEL,Belgium,16,Northern Europe,Western Europe
+NZL,New Zealand,BEL,Belgium,27,Australia and New Zealand,Western Europe
+NOR,Norway,BEL,Belgium,40,Northern Europe,Western Europe
+CHE,Switzerland,BEL,Belgium,194,Western Europe,Western Europe
+GBR,United Kingdom,BEL,Belgium,129,Northern Europe,Western Europe
+CHL,Chile,BEL,Belgium,9,Latin America and the Caribbean,Western Europe
+ISR,Israel,BEL,Belgium,47,Western Asia,Western Europe
+CAN,Canada,BLZ,Belize,12,Northern America,Latin America and the Caribbean
+NOR,Norway,BLZ,Belize,2,Northern Europe,Latin America and the Caribbean
+GBR,United Kingdom,BLZ,Belize,1,Northern Europe,Latin America and the Caribbean
+BEL,Belgium,BEN,Benin,1,Western Europe,Sub-Saharan Africa
+CAN,Canada,BEN,Benin,3,Northern America,Sub-Saharan Africa
+FRA,France,BEN,Benin,101,Western Europe,Sub-Saharan Africa
+DEU,Germany,BEN,Benin,4,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,BEN,Benin,1,Northern Europe,Sub-Saharan Africa
+CHE,Switzerland,BTN,Bhutan,1,Western Europe,Southern Asia
+BEL,Belgium,BOL,Bolivia,4,Western Europe,Latin America and the Caribbean
+CAN,Canada,BOL,Bolivia,3,Northern America,Latin America and the Caribbean
+FRA,France,BOL,Bolivia,7,Western Europe,Latin America and the Caribbean
+DEU,Germany,BOL,Bolivia,47,Western Europe,Latin America and the Caribbean
+IRL,Ireland,BOL,Bolivia,4,Northern Europe,Latin America and the Caribbean
+NOR,Norway,BOL,Bolivia,7,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,BOL,Bolivia,9,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,BOL,Bolivia,6,Northern Europe,Latin America and the Caribbean
+CHL,Chile,BOL,Bolivia,580,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,BOL,Bolivia,6,Western Asia,Latin America and the Caribbean
+BEL,Belgium,BIH,Bosnia and Herzegovina,2,Western Europe,Southern Europe
+CAN,Canada,BIH,Bosnia and Herzegovina,38,Northern America,Southern Europe
+CZE,Czech Republic,BIH,Bosnia and Herzegovina,6,Eastern Europe,Southern Europe
+FRA,France,BIH,Bosnia and Herzegovina,9,Western Europe,Southern Europe
+DEU,Germany,BIH,Bosnia and Herzegovina,470,Western Europe,Southern Europe
+HUN,Hungary,BIH,Bosnia and Herzegovina,2,Eastern Europe,Southern Europe
+NZL,New Zealand,BIH,Bosnia and Herzegovina,2,Australia and New Zealand,Southern Europe
+NOR,Norway,BIH,Bosnia and Herzegovina,60,Northern Europe,Southern Europe
+CHE,Switzerland,BIH,Bosnia and Herzegovina,59,Western Europe,Southern Europe
+GBR,United Kingdom,BIH,Bosnia and Herzegovina,28,Northern Europe,Southern Europe
+SVN,Slovenia,BIH,Bosnia and Herzegovina,92,Southern Europe,Southern Europe
+BEL,Belgium,BRA,Brazil,17,Western Europe,Latin America and the Caribbean
+CAN,Canada,BRA,Brazil,194,Northern America,Latin America and the Caribbean
+FRA,France,BRA,Brazil,71,Western Europe,Latin America and the Caribbean
+DEU,Germany,BRA,Brazil,126,Western Europe,Latin America and the Caribbean
+IRL,Ireland,BRA,Brazil,13,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,BRA,Brazil,8,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,BRA,Brazil,16,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,BRA,Brazil,43,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,BRA,Brazil,109,Northern Europe,Latin America and the Caribbean
+CHL,Chile,BRA,Brazil,61,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,BRA,Brazil,98,Western Asia,Latin America and the Caribbean
+DEU,Germany,BRN,Brunei Darussalam,3,Western Europe,South-Eastern Asia
+GBR,United Kingdom,BRN,Brunei Darussalam,0,Northern Europe,South-Eastern Asia
+AUT,Austria,BGR,Bulgaria,26,Western Europe,Eastern Europe
+BEL,Belgium,BGR,Bulgaria,105,Western Europe,Eastern Europe
+CAN,Canada,BGR,Bulgaria,66,Northern America,Eastern Europe
+CZE,Czech Republic,BGR,Bulgaria,19,Eastern Europe,Eastern Europe
+FRA,France,BGR,Bulgaria,455,Western Europe,Eastern Europe
+DEU,Germany,BGR,Bulgaria,1497,Western Europe,Eastern Europe
+HUN,Hungary,BGR,Bulgaria,8,Eastern Europe,Eastern Europe
+IRL,Ireland,BGR,Bulgaria,127,Northern Europe,Eastern Europe
+NZL,New Zealand,BGR,Bulgaria,12,Australia and New Zealand,Eastern Europe
+NOR,Norway,BGR,Bulgaria,61,Northern Europe,Eastern Europe
+CHE,Switzerland,BGR,Bulgaria,92,Western Europe,Eastern Europe
+GBR,United Kingdom,BGR,Bulgaria,352,Northern Europe,Eastern Europe
+CHL,Chile,BGR,Bulgaria,6,Latin America and the Caribbean,Eastern Europe
+ISR,Israel,BGR,Bulgaria,64,Western Asia,Eastern Europe
+SVN,Slovenia,BGR,Bulgaria,38,Southern Europe,Eastern Europe
+BEL,Belgium,BFA,Burkina Faso,1,Western Europe,Sub-Saharan Africa
+CAN,Canada,BFA,Burkina Faso,1,Northern America,Sub-Saharan Africa
+FRA,France,BFA,Burkina Faso,15,Western Europe,Sub-Saharan Africa
+DEU,Germany,BFA,Burkina Faso,4,Western Europe,Sub-Saharan Africa
+BEL,Belgium,BDI,Burundi,3,Western Europe,Sub-Saharan Africa
+CAN,Canada,BDI,Burundi,2,Northern America,Sub-Saharan Africa
+FRA,France,BDI,Burundi,40,Western Europe,Sub-Saharan Africa
+DEU,Germany,BDI,Burundi,3,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,BDI,Burundi,5,Northern Europe,Sub-Saharan Africa
+CAN,Canada,KHM,Cambodia,1,Northern America,South-Eastern Asia
+FRA,France,KHM,Cambodia,35,Western Europe,South-Eastern Asia
+DEU,Germany,KHM,Cambodia,0,Western Europe,South-Eastern Asia
+NZL,New Zealand,KHM,Cambodia,2,Australia and New Zealand,South-Eastern Asia
+BEL,Belgium,CMR,Cameroon,2,Western Europe,Sub-Saharan Africa
+CAN,Canada,CMR,Cameroon,8,Northern America,Sub-Saharan Africa
+FRA,France,CMR,Cameroon,65,Western Europe,Sub-Saharan Africa
+DEU,Germany,CMR,Cameroon,179,Western Europe,Sub-Saharan Africa
+IRL,Ireland,CMR,Cameroon,1,Northern Europe,Sub-Saharan Africa
+CHE,Switzerland,CMR,Cameroon,8,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,CMR,Cameroon,12,Northern Europe,Sub-Saharan Africa
+AUS,Australia,CAN,Canada,125,Australia and New Zealand,Northern America
+BEL,Belgium,CAN,Canada,3,Western Europe,Northern America
+FRA,France,CAN,Canada,36,Western Europe,Northern America
+DEU,Germany,CAN,Canada,74,Western Europe,Northern America
+IRL,Ireland,CAN,Canada,7,Northern Europe,Northern America
+NZL,New Zealand,CAN,Canada,86,Australia and New Zealand,Northern America
+NOR,Norway,CAN,Canada,3,Northern Europe,Northern America
+CHE,Switzerland,CAN,Canada,8,Western Europe,Northern America
+GBR,United Kingdom,CAN,Canada,42,Northern Europe,Northern America
+CHL,Chile,CAN,Canada,3,Latin America and the Caribbean,Northern America
+ISR,Israel,CAN,Canada,53,Western Asia,Northern America
+CAN,Canada,CAF,Central African Republic,0,Northern America,Sub-Saharan Africa
+FRA,France,CAF,Central African Republic,15,Western Europe,Sub-Saharan Africa
+DEU,Germany,CAF,Central African Republic,3,Western Europe,Sub-Saharan Africa
+DEU,Germany,TCD,Chad,1,Western Europe,Sub-Saharan Africa
+BEL,Belgium,CHL,Chile,8,Western Europe,Latin America and the Caribbean
+CAN,Canada,CHL,Chile,40,Northern America,Latin America and the Caribbean
+FRA,France,CHL,Chile,14,Western Europe,Latin America and the Caribbean
+DEU,Germany,CHL,Chile,43,Western Europe,Latin America and the Caribbean
+NZL,New Zealand,CHL,Chile,4,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,CHL,Chile,1,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,CHL,Chile,6,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,CHL,Chile,24,Northern Europe,Latin America and the Caribbean
+EST,Estonia,CHL,Chile,1,Northern Europe,Latin America and the Caribbean
+ISR,Israel,CHL,Chile,25,Western Asia,Latin America and the Caribbean
+AUS,Australia,CHN,China,673,Australia and New Zealand,Eastern Asia
+BEL,Belgium,CHN,China,2,Western Europe,Eastern Asia
+CAN,Canada,CHN,China,414,Northern America,Eastern Asia
+FRA,France,CHN,China,56,Western Europe,Eastern Asia
+DEU,Germany,CHN,China,223,Western Europe,Eastern Asia
+HUN,Hungary,CHN,China,1,Eastern Europe,Eastern Asia
+IRL,Ireland,CHN,China,53,Northern Europe,Eastern Asia
+NZL,New Zealand,CHN,China,74,Australia and New Zealand,Eastern Asia
+NOR,Norway,CHN,China,23,Northern Europe,Eastern Asia
+CHE,Switzerland,CHN,China,16,Western Europe,Eastern Asia
+GBR,United Kingdom,CHN,China,229,Northern Europe,Eastern Asia
+BEL,Belgium,COL,Colombia,20,Western Europe,Latin America and the Caribbean
+CAN,Canada,COL,Colombia,170,Northern America,Latin America and the Caribbean
+FRA,France,COL,Colombia,61,Western Europe,Latin America and the Caribbean
+DEU,Germany,COL,Colombia,248,Western Europe,Latin America and the Caribbean
+IRL,Ireland,COL,Colombia,15,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,COL,Colombia,6,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,COL,Colombia,3,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,COL,Colombia,38,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,COL,Colombia,80,Northern Europe,Latin America and the Caribbean
+CHL,Chile,COL,Colombia,2107,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,COL,Colombia,28,Western Asia,Latin America and the Caribbean
+CHE,Switzerland,COM,Comoros,1,Western Europe,Sub-Saharan Africa
+BEL,Belgium,COG,Congo,0,Western Europe,Sub-Saharan Africa
+CAN,Canada,COG,Congo,3,Northern America,Sub-Saharan Africa
+FRA,France,COG,Congo,125,Western Europe,Sub-Saharan Africa
+DEU,Germany,COG,Congo,4,Western Europe,Sub-Saharan Africa
+IRL,Ireland,COG,Congo,1,Northern Europe,Sub-Saharan Africa
+NOR,Norway,COG,Congo,1,Northern Europe,Sub-Saharan Africa
+CHE,Switzerland,COG,Congo,3,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,COG,Congo,3,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,COK,Cook Islands,0,Australia and New Zealand,Polynesia
+GBR,United Kingdom,COK,Cook Islands,1,Northern Europe,Polynesia
+BEL,Belgium,CRI,Costa Rica,1,Western Europe,Latin America and the Caribbean
+CAN,Canada,CRI,Costa Rica,14,Northern America,Latin America and the Caribbean
+FRA,France,CRI,Costa Rica,1,Western Europe,Latin America and the Caribbean
+IRL,Ireland,CRI,Costa Rica,1,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,CRI,Costa Rica,1,Australia and New Zealand,Latin America and the Caribbean
+CHE,Switzerland,CRI,Costa Rica,2,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,CRI,Costa Rica,2,Northern Europe,Latin America and the Caribbean
+CHL,Chile,CRI,Costa Rica,9,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,CRI,Costa Rica,6,Western Asia,Latin America and the Caribbean
+BEL,Belgium,CIV,Côte d'Ivoire,1,Western Europe,Sub-Saharan Africa
+CAN,Canada,CIV,Côte d'Ivoire,1,Northern America,Sub-Saharan Africa
+FRA,France,CIV,Côte d'Ivoire,121,Western Europe,Sub-Saharan Africa
+DEU,Germany,CIV,Côte d'Ivoire,3,Western Europe,Sub-Saharan Africa
+NOR,Norway,CIV,Côte d'Ivoire,2,Northern Europe,Sub-Saharan Africa
+CHE,Switzerland,CIV,Côte d'Ivoire,2,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,CIV,Côte d'Ivoire,3,Northern Europe,Sub-Saharan Africa
+AUT,Austria,HRV,Croatia,58,Western Europe,Southern Europe
+BEL,Belgium,HRV,Croatia,12,Western Europe,Southern Europe
+CAN,Canada,HRV,Croatia,40,Northern America,Southern Europe
+FRA,France,HRV,Croatia,20,Western Europe,Southern Europe
+DEU,Germany,HRV,Croatia,412,Western Europe,Southern Europe
+HUN,Hungary,HRV,Croatia,4,Eastern Europe,Southern Europe
+IRL,Ireland,HRV,Croatia,82,Northern Europe,Southern Europe
+NZL,New Zealand,HRV,Croatia,9,Australia and New Zealand,Southern Europe
+NOR,Norway,HRV,Croatia,29,Northern Europe,Southern Europe
+CHE,Switzerland,HRV,Croatia,85,Western Europe,Southern Europe
+GBR,United Kingdom,HRV,Croatia,89,Northern Europe,Southern Europe
+CHL,Chile,HRV,Croatia,1,Latin America and the Caribbean,Southern Europe
+EST,Estonia,HRV,Croatia,1,Northern Europe,Southern Europe
+SVN,Slovenia,HRV,Croatia,322,Southern Europe,Southern Europe
+BEL,Belgium,CUB,Cuba,30,Western Europe,Latin America and the Caribbean
+CAN,Canada,CUB,Cuba,57,Northern America,Latin America and the Caribbean
+FRA,France,CUB,Cuba,55,Western Europe,Latin America and the Caribbean
+DEU,Germany,CUB,Cuba,13,Western Europe,Latin America and the Caribbean
+IRL,Ireland,CUB,Cuba,23,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,CUB,Cuba,5,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,CUB,Cuba,24,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,CUB,Cuba,17,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,CUB,Cuba,41,Northern Europe,Latin America and the Caribbean
+CHL,Chile,CUB,Cuba,1455,Latin America and the Caribbean,Latin America and the Caribbean
+DEU,Germany,CYP,Cyprus,246,Western Europe,Western Asia
+AUT,Austria,CZE,Czech Republic,74,Western Europe,Eastern Europe
+BEL,Belgium,CZE,Czech Republic,50,Western Europe,Eastern Europe
+CAN,Canada,CZE,Czech Republic,125,Northern America,Eastern Europe
+FRA,France,CZE,Czech Republic,83,Western Europe,Eastern Europe
+DEU,Germany,CZE,Czech Republic,908,Western Europe,Eastern Europe
+HUN,Hungary,CZE,Czech Republic,17,Eastern Europe,Eastern Europe
+IRL,Ireland,CZE,Czech Republic,122,Northern Europe,Eastern Europe
+NZL,New Zealand,CZE,Czech Republic,16,Australia and New Zealand,Eastern Europe
+NOR,Norway,CZE,Czech Republic,307,Northern Europe,Eastern Europe
+CHE,Switzerland,CZE,Czech Republic,113,Western Europe,Eastern Europe
+GBR,United Kingdom,CZE,Czech Republic,708,Northern Europe,Eastern Europe
+ISR,Israel,CZE,Czech Republic,29,Western Asia,Eastern Europe
+SVN,Slovenia,CZE,Czech Republic,6,Southern Europe,Eastern Europe
+CAN,Canada,PRK,Democratic People's Republic of Korea,20,Northern America,Eastern Asia
+DEU,Germany,PRK,Democratic People's Republic of Korea,10,Western Europe,Eastern Asia
+CAN,Canada,COD,Democratic Republic of the Congo,61,Northern America,Sub-Saharan Africa
+FRA,France,COD,Democratic Republic of the Congo,104,Western Europe,Sub-Saharan Africa
+DEU,Germany,COD,Democratic Republic of the Congo,2,Western Europe,Sub-Saharan Africa
+IRL,Ireland,COD,Democratic Republic of the Congo,1,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,COD,Democratic Republic of the Congo,1,Australia and New Zealand,Sub-Saharan Africa
+NOR,Norway,COD,Democratic Republic of the Congo,1,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,COD,Democratic Republic of the Congo,7,Northern Europe,Sub-Saharan Africa
+AUT,Austria,DNK,Denmark,3,Western Europe,Northern Europe
+BEL,Belgium,DNK,Denmark,15,Western Europe,Northern Europe
+CAN,Canada,DNK,Denmark,3,Northern America,Northern Europe
+FRA,France,DNK,Denmark,8,Western Europe,Northern Europe
+DEU,Germany,DNK,Denmark,41,Western Europe,Northern Europe
+IRL,Ireland,DNK,Denmark,3,Northern Europe,Northern Europe
+NZL,New Zealand,DNK,Denmark,15,Australia and New Zealand,Northern Europe
+NOR,Norway,DNK,Denmark,1081,Northern Europe,Northern Europe
+CHE,Switzerland,DNK,Denmark,12,Western Europe,Northern Europe
+GBR,United Kingdom,DNK,Denmark,41,Northern Europe,Northern Europe
+CHL,Chile,DNK,Denmark,2,Latin America and the Caribbean,Northern Europe
+ISR,Israel,DNK,Denmark,5,Western Asia,Northern Europe
+CAN,Canada,DMA,Dominica,142,Northern America,Latin America and the Caribbean
+NZL,New Zealand,DMA,Dominica,4,Australia and New Zealand,Latin America and the Caribbean
+GBR,United Kingdom,DMA,Dominica,7,Northern Europe,Latin America and the Caribbean
+BEL,Belgium,DOM,Dominican Republic,3,Western Europe,Latin America and the Caribbean
+CAN,Canada,DOM,Dominican Republic,39,Northern America,Latin America and the Caribbean
+FRA,France,DOM,Dominican Republic,13,Western Europe,Latin America and the Caribbean
+DEU,Germany,DOM,Dominican Republic,22,Western Europe,Latin America and the Caribbean
+IRL,Ireland,DOM,Dominican Republic,5,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,DOM,Dominican Republic,3,Australia and New Zealand,Latin America and the Caribbean
+CHE,Switzerland,DOM,Dominican Republic,5,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,DOM,Dominican Republic,19,Northern Europe,Latin America and the Caribbean
+CHL,Chile,DOM,Dominican Republic,42,Latin America and the Caribbean,Latin America and the Caribbean
+BEL,Belgium,ECU,Ecuador,5,Western Europe,Latin America and the Caribbean
+CAN,Canada,ECU,Ecuador,7,Northern America,Latin America and the Caribbean
+FRA,France,ECU,Ecuador,12,Western Europe,Latin America and the Caribbean
+DEU,Germany,ECU,Ecuador,41,Western Europe,Latin America and the Caribbean
+NZL,New Zealand,ECU,Ecuador,1,Australia and New Zealand,Latin America and the Caribbean
+CHE,Switzerland,ECU,Ecuador,14,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,ECU,Ecuador,12,Northern Europe,Latin America and the Caribbean
+CHL,Chile,ECU,Ecuador,2767,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,ECU,Ecuador,4,Western Asia,Latin America and the Caribbean
+BEL,Belgium,EGY,Egypt,11,Western Europe,Northern Africa
+CAN,Canada,EGY,Egypt,1145,Northern America,Northern Africa
+CZE,Czech Republic,EGY,Egypt,2,Eastern Europe,Northern Africa
+FRA,France,EGY,Egypt,132,Western Europe,Northern Africa
+DEU,Germany,EGY,Egypt,1221,Western Europe,Northern Africa
+IRL,Ireland,EGY,Egypt,557,Northern Europe,Northern Africa
+NZL,New Zealand,EGY,Egypt,45,Australia and New Zealand,Northern Africa
+NOR,Norway,EGY,Egypt,12,Northern Europe,Northern Africa
+CHE,Switzerland,EGY,Egypt,25,Western Europe,Northern Africa
+GBR,United Kingdom,EGY,Egypt,2268,Northern Europe,Northern Africa
+EST,Estonia,EGY,Egypt,1,Northern Europe,Northern Africa
+ISR,Israel,EGY,Egypt,207,Western Asia,Northern Africa
+BEL,Belgium,SLV,El Salvador,5,Western Europe,Latin America and the Caribbean
+CAN,Canada,SLV,El Salvador,27,Northern America,Latin America and the Caribbean
+CZE,Czech Republic,SLV,El Salvador,1,Eastern Europe,Latin America and the Caribbean
+FRA,France,SLV,El Salvador,5,Western Europe,Latin America and the Caribbean
+IRL,Ireland,SLV,El Salvador,3,Northern Europe,Latin America and the Caribbean
+NOR,Norway,SLV,El Salvador,1,Northern Europe,Latin America and the Caribbean
+GBR,United Kingdom,SLV,El Salvador,1,Northern Europe,Latin America and the Caribbean
+CHL,Chile,SLV,El Salvador,5,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,SLV,El Salvador,1,Western Asia,Latin America and the Caribbean
+DEU,Germany,GNQ,Equatorial Guinea,0,Western Europe,Sub-Saharan Africa
+DEU,Germany,ERI,Eritrea,0,Western Europe,Sub-Saharan Africa
+CAN,Canada,EST,Estonia,5,Northern America,Northern Europe
+CZE,Czech Republic,EST,Estonia,2,Eastern Europe,Northern Europe
+FRA,France,EST,Estonia,6,Western Europe,Northern Europe
+DEU,Germany,EST,Estonia,42,Western Europe,Northern Europe
+HUN,Hungary,EST,Estonia,12,Eastern Europe,Northern Europe
+NOR,Norway,EST,Estonia,15,Northern Europe,Northern Europe
+CHE,Switzerland,EST,Estonia,5,Western Europe,Northern Europe
+GBR,United Kingdom,EST,Estonia,25,Northern Europe,Northern Europe
+ISR,Israel,EST,Estonia,30,Western Asia,Northern Europe
+CAN,Canada,ETH,Ethiopia,32,Northern America,Sub-Saharan Africa
+DEU,Germany,ETH,Ethiopia,30,Western Europe,Sub-Saharan Africa
+IRL,Ireland,ETH,Ethiopia,7,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,ETH,Ethiopia,1,Australia and New Zealand,Sub-Saharan Africa
+NOR,Norway,ETH,Ethiopia,12,Northern Europe,Sub-Saharan Africa
+CHE,Switzerland,ETH,Ethiopia,5,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,ETH,Ethiopia,20,Northern Europe,Sub-Saharan Africa
+ISR,Israel,ETH,Ethiopia,2,Western Asia,Sub-Saharan Africa
+CAN,Canada,FJI,Fiji,4,Northern America,Melanesia
+DEU,Germany,FJI,Fiji,0,Western Europe,Melanesia
+NZL,New Zealand,FJI,Fiji,61,Australia and New Zealand,Melanesia
+GBR,United Kingdom,FJI,Fiji,2,Northern Europe,Melanesia
+AUT,Austria,FIN,Finland,2,Western Europe,Northern Europe
+BEL,Belgium,FIN,Finland,8,Western Europe,Northern Europe
+CAN,Canada,FIN,Finland,3,Northern America,Northern Europe
+FRA,France,FIN,Finland,5,Western Europe,Northern Europe
+DEU,Germany,FIN,Finland,61,Western Europe,Northern Europe
+IRL,Ireland,FIN,Finland,4,Northern Europe,Northern Europe
+NZL,New Zealand,FIN,Finland,5,Australia and New Zealand,Northern Europe
+NOR,Norway,FIN,Finland,26,Northern Europe,Northern Europe
+CHE,Switzerland,FIN,Finland,6,Western Europe,Northern Europe
+GBR,United Kingdom,FIN,Finland,20,Northern Europe,Northern Europe
+EST,Estonia,FIN,Finland,25,Northern Europe,Northern Europe
+CAN,Canada,MKD,The former Yugoslav Republic of Macedonia,12,Northern America,Southern Europe
+CZE,Czech Republic,MKD,The former Yugoslav Republic of Macedonia,1,Eastern Europe,Southern Europe
+FRA,France,MKD,The former Yugoslav Republic of Macedonia,34,Western Europe,Southern Europe
+DEU,Germany,MKD,The former Yugoslav Republic of Macedonia,421,Western Europe,Southern Europe
+HUN,Hungary,MKD,The former Yugoslav Republic of Macedonia,1,Eastern Europe,Southern Europe
+IRL,Ireland,MKD,The former Yugoslav Republic of Macedonia,1,Northern Europe,Southern Europe
+NZL,New Zealand,MKD,The former Yugoslav Republic of Macedonia,5,Australia and New Zealand,Southern Europe
+NOR,Norway,MKD,The former Yugoslav Republic of Macedonia,7,Northern Europe,Southern Europe
+CHE,Switzerland,MKD,The former Yugoslav Republic of Macedonia,19,Western Europe,Southern Europe
+GBR,United Kingdom,MKD,The former Yugoslav Republic of Macedonia,13,Northern Europe,Southern Europe
+SVN,Slovenia,MKD,The former Yugoslav Republic of Macedonia,75,Southern Europe,Southern Europe
+AUT,Austria,FRA,France,3,Western Europe,Western Europe
+BEL,Belgium,FRA,France,1393,Western Europe,Western Europe
+CAN,Canada,FRA,France,431,Northern America,Western Europe
+DEU,Germany,FRA,France,360,Western Europe,Western Europe
+HUN,Hungary,FRA,France,1,Eastern Europe,Western Europe
+IRL,Ireland,FRA,France,26,Northern Europe,Western Europe
+NZL,New Zealand,FRA,France,18,Australia and New Zealand,Western Europe
+NOR,Norway,FRA,France,35,Northern Europe,Western Europe
+CHE,Switzerland,FRA,France,892,Western Europe,Western Europe
+GBR,United Kingdom,FRA,France,116,Northern Europe,Western Europe
+CHL,Chile,FRA,France,12,Latin America and the Caribbean,Western Europe
+ISR,Israel,FRA,France,500,Western Asia,Western Europe
+SVN,Slovenia,FRA,France,2,Southern Europe,Western Europe
+FRA,France,GAB,Gabon,28,Western Europe,Sub-Saharan Africa
+DEU,Germany,GAB,Gabon,10,Western Europe,Sub-Saharan Africa
+DEU,Germany,GMB,Gambia,1,Western Europe,Sub-Saharan Africa
+BEL,Belgium,GEO,Georgia,1,Western Europe,Western Asia
+CAN,Canada,GEO,Georgia,2,Northern America,Western Asia
+CZE,Czech Republic,GEO,Georgia,3,Eastern Europe,Western Asia
+DEU,Germany,GEO,Georgia,394,Western Europe,Western Asia
+IRL,Ireland,GEO,Georgia,1,Northern Europe,Western Asia
+NZL,New Zealand,GEO,Georgia,3,Australia and New Zealand,Western Asia
+CHE,Switzerland,GEO,Georgia,2,Western Europe,Western Asia
+GBR,United Kingdom,GEO,Georgia,27,Northern Europe,Western Asia
+EST,Estonia,GEO,Georgia,3,Northern Europe,Western Asia
+ISR,Israel,GEO,Georgia,16,Western Asia,Western Asia
+AUT,Austria,DEU,Germany,1460,Western Europe,Western Europe
+BEL,Belgium,DEU,Germany,447,Western Europe,Western Europe
+CAN,Canada,DEU,Germany,233,Northern America,Western Europe
+CZE,Czech Republic,DEU,Germany,11,Eastern Europe,Western Europe
+FRA,France,DEU,Germany,769,Western Europe,Western Europe
+HUN,Hungary,DEU,Germany,21,Eastern Europe,Western Europe
+IRL,Ireland,DEU,Germany,95,Northern Europe,Western Europe
+NZL,New Zealand,DEU,Germany,194,Australia and New Zealand,Western Europe
+NOR,Norway,DEU,Germany,1589,Northern Europe,Western Europe
+CHE,Switzerland,DEU,Germany,7136,Western Europe,Western Europe
+GBR,United Kingdom,DEU,Germany,1175,Northern Europe,Western Europe
+CHL,Chile,DEU,Germany,52,Latin America and the Caribbean,Western Europe
+EST,Estonia,DEU,Germany,6,Northern Europe,Western Europe
+ISR,Israel,DEU,Germany,500,Western Asia,Western Europe
+SVN,Slovenia,DEU,Germany,5,Southern Europe,Western Europe
+CAN,Canada,GHA,Ghana,52,Northern America,Sub-Saharan Africa
+DEU,Germany,GHA,Ghana,42,Western Europe,Sub-Saharan Africa
+IRL,Ireland,GHA,Ghana,2,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,GHA,Ghana,3,Australia and New Zealand,Sub-Saharan Africa
+GBR,United Kingdom,GHA,Ghana,231,Northern Europe,Sub-Saharan Africa
+AUT,Austria,GRC,Greece,16,Western Europe,Southern Europe
+BEL,Belgium,GRC,Greece,342,Western Europe,Southern Europe
+CAN,Canada,GRC,Greece,49,Northern America,Southern Europe
+FRA,France,GRC,Greece,257,Western Europe,Southern Europe
+DEU,Germany,GRC,Greece,2580,Western Europe,Southern Europe
+HUN,Hungary,GRC,Greece,2,Eastern Europe,Southern Europe
+IRL,Ireland,GRC,Greece,55,Northern Europe,Southern Europe
+NZL,New Zealand,GRC,Greece,2,Australia and New Zealand,Southern Europe
+NOR,Norway,GRC,Greece,20,Northern Europe,Southern Europe
+CHE,Switzerland,GRC,Greece,217,Western Europe,Southern Europe
+GBR,United Kingdom,GRC,Greece,1395,Northern Europe,Southern Europe
+ISR,Israel,GRC,Greece,22,Western Asia,Southern Europe
+CAN,Canada,GRD,Grenada,368,Northern America,Latin America and the Caribbean
+IRL,Ireland,GRD,Grenada,5,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,GRD,Grenada,4,Australia and New Zealand,Latin America and the Caribbean
+GBR,United Kingdom,GRD,Grenada,82,Northern Europe,Latin America and the Caribbean
+CAN,Canada,GTM,Guatemala,9,Northern America,Latin America and the Caribbean
+FRA,France,GTM,Guatemala,5,Western Europe,Latin America and the Caribbean
+DEU,Germany,GTM,Guatemala,26,Western Europe,Latin America and the Caribbean
+NOR,Norway,GTM,Guatemala,3,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,GTM,Guatemala,5,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,GTM,Guatemala,4,Northern Europe,Latin America and the Caribbean
+CHL,Chile,GTM,Guatemala,11,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,GTM,Guatemala,2,Western Asia,Latin America and the Caribbean
+BEL,Belgium,GIN,Guinea,1,Western Europe,Sub-Saharan Africa
+CAN,Canada,GIN,Guinea,1,Northern America,Sub-Saharan Africa
+FRA,France,GIN,Guinea,71,Western Europe,Sub-Saharan Africa
+DEU,Germany,GIN,Guinea,3,Western Europe,Sub-Saharan Africa
+CHE,Switzerland,GIN,Guinea,3,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,GIN,Guinea,1,Northern Europe,Sub-Saharan Africa
+DEU,Germany,GNB,Guinea-Bissau,1,Western Europe,Sub-Saharan Africa
+CAN,Canada,GUY,Guyana,13,Northern America,Latin America and the Caribbean
+NOR,Norway,GUY,Guyana,2,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,GUY,Guyana,1,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,GUY,Guyana,16,Northern Europe,Latin America and the Caribbean
+BEL,Belgium,HTI,Haiti,1,Western Europe,Latin America and the Caribbean
+CAN,Canada,HTI,Haiti,69,Northern America,Latin America and the Caribbean
+FRA,France,HTI,Haiti,48,Western Europe,Latin America and the Caribbean
+DEU,Germany,HTI,Haiti,5,Western Europe,Latin America and the Caribbean
+IRL,Ireland,HTI,Haiti,8,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,HTI,Haiti,1,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,HTI,Haiti,1,Northern Europe,Latin America and the Caribbean
+CAN,Canada,HND,Honduras,3,Northern America,Latin America and the Caribbean
+FRA,France,HND,Honduras,2,Western Europe,Latin America and the Caribbean
+DEU,Germany,HND,Honduras,22,Western Europe,Latin America and the Caribbean
+NOR,Norway,HND,Honduras,1,Northern Europe,Latin America and the Caribbean
+GBR,United Kingdom,HND,Honduras,3,Northern Europe,Latin America and the Caribbean
+CHL,Chile,HND,Honduras,13,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,HND,Honduras,5,Western Asia,Latin America and the Caribbean
+AUT,Austria,HUN,Hungary,234,Western Europe,Eastern Europe
+BEL,Belgium,HUN,Hungary,60,Western Europe,Eastern Europe
+CAN,Canada,HUN,Hungary,96,Northern America,Eastern Europe
+CZE,Czech Republic,HUN,Hungary,2,Eastern Europe,Eastern Europe
+FRA,France,HUN,Hungary,91,Western Europe,Eastern Europe
+DEU,Germany,HUN,Hungary,1443,Western Europe,Eastern Europe
+IRL,Ireland,HUN,Hungary,271,Northern Europe,Eastern Europe
+NZL,New Zealand,HUN,Hungary,22,Australia and New Zealand,Eastern Europe
+NOR,Norway,HUN,Hungary,1196,Northern Europe,Eastern Europe
+CHE,Switzerland,HUN,Hungary,185,Western Europe,Eastern Europe
+GBR,United Kingdom,HUN,Hungary,531,Northern Europe,Eastern Europe
+CHL,Chile,HUN,Hungary,7,Latin America and the Caribbean,Eastern Europe
+ISR,Israel,HUN,Hungary,1251,Western Asia,Eastern Europe
+SVN,Slovenia,HUN,Hungary,20,Southern Europe,Eastern Europe
+CAN,Canada,ISL,Iceland,4,Northern America,Northern Europe
+FRA,France,ISL,Iceland,1,Western Europe,Northern Europe
+DEU,Germany,ISL,Iceland,8,Western Europe,Northern Europe
+IRL,Ireland,ISL,Iceland,1,Northern Europe,Northern Europe
+NZL,New Zealand,ISL,Iceland,1,Australia and New Zealand,Northern Europe
+NOR,Norway,ISL,Iceland,98,Northern Europe,Northern Europe
+CHE,Switzerland,ISL,Iceland,1,Western Europe,Northern Europe
+GBR,United Kingdom,ISL,Iceland,12,Northern Europe,Northern Europe
+AUS,Australia,IND,India,5336,Australia and New Zealand,Southern Asia
+BEL,Belgium,IND,India,4,Western Europe,Southern Asia
+CAN,Canada,IND,India,2163,Northern America,Southern Asia
+CZE,Czech Republic,IND,India,2,Eastern Europe,Southern Asia
+FRA,France,IND,India,13,Western Europe,Southern Asia
+DEU,Germany,IND,India,576,Western Europe,Southern Asia
+HUN,Hungary,IND,India,1,Eastern Europe,Southern Asia
+IRL,Ireland,IND,India,443,Northern Europe,Southern Asia
+NZL,New Zealand,IND,India,490,Australia and New Zealand,Southern Asia
+NOR,Norway,IND,India,45,Northern Europe,Southern Asia
+CHE,Switzerland,IND,India,11,Western Europe,Southern Asia
+GBR,United Kingdom,IND,India,15870,Northern Europe,Southern Asia
+ISR,Israel,IND,India,5,Western Asia,Southern Asia
+BEL,Belgium,IDN,Indonesia,1,Western Europe,South-Eastern Asia
+CAN,Canada,IDN,Indonesia,11,Northern America,South-Eastern Asia
+CZE,Czech Republic,IDN,Indonesia,1,Eastern Europe,South-Eastern Asia
+DEU,Germany,IDN,Indonesia,325,Western Europe,South-Eastern Asia
+NZL,New Zealand,IDN,Indonesia,3,Australia and New Zealand,South-Eastern Asia
+NOR,Norway,IDN,Indonesia,1,Northern Europe,South-Eastern Asia
+GBR,United Kingdom,IDN,Indonesia,7,Northern Europe,South-Eastern Asia
+BEL,Belgium,IRN,Iran,4,Western Europe,Southern Asia
+CAN,Canada,IRN,Iran,802,Northern America,Southern Asia
+FRA,France,IRN,Iran,73,Western Europe,Southern Asia
+DEU,Germany,IRN,Iran,1003,Western Europe,Southern Asia
+HUN,Hungary,IRN,Iran,1,Eastern Europe,Southern Asia
+IRL,Ireland,IRN,Iran,12,Northern Europe,Southern Asia
+NZL,New Zealand,IRN,Iran,9,Australia and New Zealand,Southern Asia
+NOR,Norway,IRN,Iran,40,Northern Europe,Southern Asia
+CHE,Switzerland,IRN,Iran,24,Western Europe,Southern Asia
+GBR,United Kingdom,IRN,Iran,331,Northern Europe,Southern Asia
+ISR,Israel,IRN,Iran,16,Western Asia,Southern Asia
+BEL,Belgium,IRQ,Iraq,18,Western Europe,Western Asia
+CAN,Canada,IRQ,Iraq,464,Northern America,Western Asia
+CZE,Czech Republic,IRQ,Iraq,1,Eastern Europe,Western Asia
+FRA,France,IRQ,Iraq,18,Western Europe,Western Asia
+DEU,Germany,IRQ,Iraq,398,Western Europe,Western Asia
+IRL,Ireland,IRQ,Iraq,168,Northern Europe,Western Asia
+NZL,New Zealand,IRQ,Iraq,106,Australia and New Zealand,Western Asia
+NOR,Norway,IRQ,Iraq,119,Northern Europe,Western Asia
+CHE,Switzerland,IRQ,Iraq,7,Western Europe,Western Asia
+GBR,United Kingdom,IRQ,Iraq,1236,Northern Europe,Western Asia
+ISR,Israel,IRQ,Iraq,7,Western Asia,Western Asia
+SVN,Slovenia,IRQ,Iraq,1,Southern Europe,Western Asia
+AUS,Australia,IRL,Ireland,1236,Australia and New Zealand,Northern Europe
+BEL,Belgium,IRL,Ireland,13,Western Europe,Northern Europe
+CAN,Canada,IRL,Ireland,1884,Northern America,Northern Europe
+FRA,France,IRL,Ireland,26,Western Europe,Northern Europe
+DEU,Germany,IRL,Ireland,35,Western Europe,Northern Europe
+NZL,New Zealand,IRL,Ireland,298,Australia and New Zealand,Northern Europe
+NOR,Norway,IRL,Ireland,261,Northern Europe,Northern Europe
+CHE,Switzerland,IRL,Ireland,8,Western Europe,Northern Europe
+GBR,United Kingdom,IRL,Ireland,1755,Northern Europe,Northern Europe
+ISR,Israel,IRL,Ireland,3,Western Asia,Northern Europe
+BEL,Belgium,ISR,Israel,1,Western Europe,Western Asia
+CAN,Canada,ISR,Israel,178,Northern America,Western Asia
+DEU,Germany,ISR,Israel,277,Western Europe,Western Asia
+NZL,New Zealand,ISR,Israel,15,Australia and New Zealand,Western Asia
+NOR,Norway,ISR,Israel,1,Northern Europe,Western Asia
+CHE,Switzerland,ISR,Israel,6,Western Europe,Western Asia
+GBR,United Kingdom,ISR,Israel,37,Northern Europe,Western Asia
+CHL,Chile,ISR,Israel,1,Latin America and the Caribbean,Western Asia
+AUT,Austria,ITA,Italy,48,Western Europe,Southern Europe
+BEL,Belgium,ITA,Italy,880,Western Europe,Southern Europe
+CAN,Canada,ITA,Italy,126,Northern America,Southern Europe
+CZE,Czech Republic,ITA,Italy,4,Eastern Europe,Southern Europe
+FRA,France,ITA,Italy,1620,Western Europe,Southern Europe
+DEU,Germany,ITA,Italy,1184,Western Europe,Southern Europe
+HUN,Hungary,ITA,Italy,2,Eastern Europe,Southern Europe
+IRL,Ireland,ITA,Italy,113,Northern Europe,Southern Europe
+NZL,New Zealand,ITA,Italy,22,Australia and New Zealand,Southern Europe
+NOR,Norway,ITA,Italy,43,Northern Europe,Southern Europe
+CHE,Switzerland,ITA,Italy,1165,Western Europe,Southern Europe
+GBR,United Kingdom,ITA,Italy,1152,Northern Europe,Southern Europe
+CHL,Chile,ITA,Italy,13,Latin America and the Caribbean,Southern Europe
+EST,Estonia,ITA,Italy,3,Northern Europe,Southern Europe
+ISR,Israel,ITA,Italy,1439,Western Asia,Southern Europe
+SVN,Slovenia,ITA,Italy,46,Southern Europe,Southern Europe
+CAN,Canada,JAM,Jamaica,192,Northern America,Latin America and the Caribbean
+NZL,New Zealand,JAM,Jamaica,2,Australia and New Zealand,Latin America and the Caribbean
+BEL,Belgium,JPN,Japan,3,Western Europe,Eastern Asia
+CAN,Canada,JPN,Japan,22,Northern America,Eastern Asia
+FRA,France,JPN,Japan,1,Western Europe,Eastern Asia
+DEU,Germany,JPN,Japan,56,Western Europe,Eastern Asia
+NZL,New Zealand,JPN,Japan,6,Australia and New Zealand,Eastern Asia
+NOR,Norway,JPN,Japan,1,Northern Europe,Eastern Asia
+GBR,United Kingdom,JPN,Japan,21,Northern Europe,Eastern Asia
+CAN,Canada,JOR,Jordan,58,Northern America,Western Asia
+FRA,France,JOR,Jordan,3,Western Europe,Western Asia
+DEU,Germany,JOR,Jordan,726,Western Europe,Western Asia
+IRL,Ireland,JOR,Jordan,21,Northern Europe,Western Asia
+NZL,New Zealand,JOR,Jordan,3,Australia and New Zealand,Western Asia
+NOR,Norway,JOR,Jordan,1,Northern Europe,Western Asia
+GBR,United Kingdom,JOR,Jordan,181,Northern Europe,Western Asia
+EST,Estonia,JOR,Jordan,1,Northern Europe,Western Asia
+ISR,Israel,JOR,Jordan,529,Western Asia,Western Asia
+CAN,Canada,KAZ,Kazakhstan,11,Northern America,Central Asia
+CZE,Czech Republic,KAZ,Kazakhstan,19,Eastern Europe,Central Asia
+DEU,Germany,KAZ,Kazakhstan,198,Western Europe,Central Asia
+IRL,Ireland,KAZ,Kazakhstan,4,Northern Europe,Central Asia
+NZL,New Zealand,KAZ,Kazakhstan,3,Australia and New Zealand,Central Asia
+NOR,Norway,KAZ,Kazakhstan,8,Northern Europe,Central Asia
+CHE,Switzerland,KAZ,Kazakhstan,7,Western Europe,Central Asia
+GBR,United Kingdom,KAZ,Kazakhstan,21,Northern Europe,Central Asia
+EST,Estonia,KAZ,Kazakhstan,2,Northern Europe,Central Asia
+ISR,Israel,KAZ,Kazakhstan,17,Western Asia,Central Asia
+CAN,Canada,KEN,Kenya,28,Northern America,Sub-Saharan Africa
+DEU,Germany,KEN,Kenya,44,Western Europe,Sub-Saharan Africa
+IRL,Ireland,KEN,Kenya,4,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,KEN,Kenya,4,Australia and New Zealand,Sub-Saharan Africa
+GBR,United Kingdom,KEN,Kenya,77,Northern Europe,Sub-Saharan Africa
+CAN,Canada,KWT,Kuwait,22,Northern America,Western Asia
+DEU,Germany,KWT,Kuwait,11,Western Europe,Western Asia
+IRL,Ireland,KWT,Kuwait,12,Northern Europe,Western Asia
+NZL,New Zealand,KWT,Kuwait,1,Australia and New Zealand,Western Asia
+GBR,United Kingdom,KWT,Kuwait,4,Northern Europe,Western Asia
+CAN,Canada,KGZ,Kyrgyzstan,6,Northern America,Central Asia
+CZE,Czech Republic,KGZ,Kyrgyzstan,8,Eastern Europe,Central Asia
+DEU,Germany,KGZ,Kyrgyzstan,66,Western Europe,Central Asia
+HUN,Hungary,KGZ,Kyrgyzstan,1,Eastern Europe,Central Asia
+IRL,Ireland,KGZ,Kyrgyzstan,3,Northern Europe,Central Asia
+NOR,Norway,KGZ,Kyrgyzstan,3,Northern Europe,Central Asia
+CHE,Switzerland,KGZ,Kyrgyzstan,2,Western Europe,Central Asia
+GBR,United Kingdom,KGZ,Kyrgyzstan,3,Northern Europe,Central Asia
+SVN,Slovenia,KGZ,Kyrgyzstan,2,Southern Europe,Central Asia
+FRA,France,LAO,Laos,3,Western Europe,South-Eastern Asia
+DEU,Germany,LAO,Laos,1,Western Europe,South-Eastern Asia
+BEL,Belgium,LVA,Latvia,18,Western Europe,Northern Europe
+CAN,Canada,LVA,Latvia,12,Northern America,Northern Europe
+FRA,France,LVA,Latvia,39,Western Europe,Northern Europe
+DEU,Germany,LVA,Latvia,300,Western Europe,Northern Europe
+IRL,Ireland,LVA,Latvia,61,Northern Europe,Northern Europe
+NZL,New Zealand,LVA,Latvia,1,Australia and New Zealand,Northern Europe
+NOR,Norway,LVA,Latvia,108,Northern Europe,Northern Europe
+CHE,Switzerland,LVA,Latvia,11,Western Europe,Northern Europe
+GBR,United Kingdom,LVA,Latvia,112,Northern Europe,Northern Europe
+CHL,Chile,LVA,Latvia,1,Latin America and the Caribbean,Northern Europe
+EST,Estonia,LVA,Latvia,12,Northern Europe,Northern Europe
+ISR,Israel,LVA,Latvia,86,Western Asia,Northern Europe
+BEL,Belgium,LBN,Lebanon,10,Western Europe,Western Asia
+CAN,Canada,LBN,Lebanon,182,Northern America,Western Asia
+FRA,France,LBN,Lebanon,248,Western Europe,Western Asia
+DEU,Germany,LBN,Lebanon,243,Western Europe,Western Asia
+IRL,Ireland,LBN,Lebanon,6,Northern Europe,Western Asia
+NZL,New Zealand,LBN,Lebanon,1,Australia and New Zealand,Western Asia
+NOR,Norway,LBN,Lebanon,2,Northern Europe,Western Asia
+CHE,Switzerland,LBN,Lebanon,8,Western Europe,Western Asia
+GBR,United Kingdom,LBN,Lebanon,40,Northern Europe,Western Asia
+DEU,Germany,LSO,Lesotho,0,Western Europe,Sub-Saharan Africa
+CAN,Canada,LBR,Liberia,3,Northern America,Sub-Saharan Africa
+DEU,Germany,LBR,Liberia,1,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,LBR,Liberia,4,Northern Europe,Sub-Saharan Africa
+CAN,Canada,LBY,Libya,480,Northern America,Northern Africa
+FRA,France,LBY,Libya,5,Western Europe,Northern Africa
+DEU,Germany,LBY,Libya,815,Western Europe,Northern Africa
+IRL,Ireland,LBY,Libya,124,Northern Europe,Northern Africa
+NZL,New Zealand,LBY,Libya,8,Australia and New Zealand,Northern Africa
+NOR,Norway,LBY,Libya,5,Northern Europe,Northern Africa
+CHE,Switzerland,LBY,Libya,4,Western Europe,Northern Africa
+GBR,United Kingdom,LBY,Libya,345,Northern Europe,Northern Africa
+AUT,Austria,LTU,Lithuania,2,Western Europe,Northern Europe
+BEL,Belgium,LTU,Lithuania,37,Western Europe,Northern Europe
+CAN,Canada,LTU,Lithuania,12,Northern America,Northern Europe
+FRA,France,LTU,Lithuania,51,Western Europe,Northern Europe
+DEU,Germany,LTU,Lithuania,409,Western Europe,Northern Europe
+HUN,Hungary,LTU,Lithuania,1,Eastern Europe,Northern Europe
+IRL,Ireland,LTU,Lithuania,67,Northern Europe,Northern Europe
+NZL,New Zealand,LTU,Lithuania,2,Australia and New Zealand,Northern Europe
+NOR,Norway,LTU,Lithuania,136,Northern Europe,Northern Europe
+CHE,Switzerland,LTU,Lithuania,30,Western Europe,Northern Europe
+GBR,United Kingdom,LTU,Lithuania,171,Northern Europe,Northern Europe
+EST,Estonia,LTU,Lithuania,3,Northern Europe,Northern Europe
+ISR,Israel,LTU,Lithuania,152,Western Asia,Northern Europe
+BEL,Belgium,LUX,Luxembourg,5,Western Europe,Western Europe
+FRA,France,LUX,Luxembourg,2,Western Europe,Western Europe
+DEU,Germany,LUX,Luxembourg,292,Western Europe,Western Europe
+CHE,Switzerland,LUX,Luxembourg,1,Western Europe,Western Europe
+CAN,Canada,MDG,Madagascar,8,Northern America,Sub-Saharan Africa
+FRA,France,MDG,Madagascar,370,Western Europe,Sub-Saharan Africa
+DEU,Germany,MDG,Madagascar,0,Western Europe,Sub-Saharan Africa
+CHE,Switzerland,MDG,Madagascar,7,Western Europe,Sub-Saharan Africa
+CAN,Canada,MWI,Malawi,2,Northern America,Sub-Saharan Africa
+DEU,Germany,MWI,Malawi,0,Western Europe,Sub-Saharan Africa
+IRL,Ireland,MWI,Malawi,1,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,MWI,Malawi,26,Northern Europe,Sub-Saharan Africa
+AUS,Australia,MYS,Malaysia,359,Australia and New Zealand,South-Eastern Asia
+CAN,Canada,MYS,Malaysia,15,Northern America,South-Eastern Asia
+DEU,Germany,MYS,Malaysia,24,Western Europe,South-Eastern Asia
+IRL,Ireland,MYS,Malaysia,18,Northern Europe,South-Eastern Asia
+NZL,New Zealand,MYS,Malaysia,20,Australia and New Zealand,South-Eastern Asia
+GBR,United Kingdom,MYS,Malaysia,99,Northern Europe,South-Eastern Asia
+ISR,Israel,MDV,Maldives,5,Western Asia,Southern Asia
+CAN,Canada,MLI,Mali,1,Northern America,Sub-Saharan Africa
+FRA,France,MLI,Mali,78,Western Europe,Sub-Saharan Africa
+DEU,Germany,MLI,Mali,3,Western Europe,Sub-Saharan Africa
+NOR,Norway,MLI,Mali,1,Northern Europe,Sub-Saharan Africa
+CHE,Switzerland,MLI,Mali,2,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,MLI,Mali,1,Northern Europe,Sub-Saharan Africa
+BEL,Belgium,MLT,Malta,6,Western Europe,Southern Europe
+CAN,Canada,MLT,Malta,3,Northern America,Southern Europe
+FRA,France,MLT,Malta,1,Western Europe,Southern Europe
+DEU,Germany,MLT,Malta,5,Western Europe,Southern Europe
+IRL,Ireland,MLT,Malta,9,Northern Europe,Southern Europe
+NZL,New Zealand,MLT,Malta,4,Australia and New Zealand,Southern Europe
+NOR,Norway,MLT,Malta,14,Northern Europe,Southern Europe
+GBR,United Kingdom,MLT,Malta,311,Northern Europe,Southern Europe
+DEU,Germany,MRT,Mauritania,2,Western Europe,Sub-Saharan Africa
+CAN,Canada,MUS,Mauritius,1,Northern America,Sub-Saharan Africa
+DEU,Germany,MUS,Mauritius,65,Western Europe,Sub-Saharan Africa
+NZL,New Zealand,MUS,Mauritius,3,Australia and New Zealand,Sub-Saharan Africa
+GBR,United Kingdom,MUS,Mauritius,23,Northern Europe,Sub-Saharan Africa
+BEL,Belgium,MEX,Mexico,4,Western Europe,Latin America and the Caribbean
+CAN,Canada,MEX,Mexico,187,Northern America,Latin America and the Caribbean
+FRA,France,MEX,Mexico,26,Western Europe,Latin America and the Caribbean
+DEU,Germany,MEX,Mexico,185,Western Europe,Latin America and the Caribbean
+HUN,Hungary,MEX,Mexico,1,Eastern Europe,Latin America and the Caribbean
+IRL,Ireland,MEX,Mexico,18,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,MEX,Mexico,5,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,MEX,Mexico,7,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,MEX,Mexico,34,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,MEX,Mexico,37,Northern Europe,Latin America and the Caribbean
+CHL,Chile,MEX,Mexico,36,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,MEX,Mexico,49,Western Asia,Latin America and the Caribbean
+FRA,France,MNG,Mongolia,3,Western Europe,Eastern Asia
+DEU,Germany,MNG,Mongolia,54,Western Europe,Eastern Asia
+NOR,Norway,MNG,Mongolia,1,Northern Europe,Eastern Asia
+GBR,United Kingdom,MNG,Mongolia,3,Northern Europe,Eastern Asia
+DEU,Germany,MNE,Montenegro,37,Western Europe,Southern Europe
+NOR,Norway,MNE,Montenegro,1,Northern Europe,Southern Europe
+SVN,Slovenia,MNE,Montenegro,6,Southern Europe,Southern Europe
+BEL,Belgium,MAR,Morocco,13,Western Europe,Northern Africa
+CAN,Canada,MAR,Morocco,45,Northern America,Northern Africa
+FRA,France,MAR,Morocco,916,Western Europe,Northern Africa
+DEU,Germany,MAR,Morocco,161,Western Europe,Northern Africa
+IRL,Ireland,MAR,Morocco,1,Northern Europe,Northern Africa
+CHE,Switzerland,MAR,Morocco,21,Western Europe,Northern Africa
+GBR,United Kingdom,MAR,Morocco,5,Northern Europe,Northern Africa
+ISR,Israel,MAR,Morocco,1,Western Asia,Northern Africa
+CAN,Canada,MOZ,Mozambique,1,Northern America,Sub-Saharan Africa
+FRA,France,MOZ,Mozambique,0,Western Europe,Sub-Saharan Africa
+DEU,Germany,MOZ,Mozambique,2,Western Europe,Sub-Saharan Africa
+CHE,Switzerland,MOZ,Mozambique,1,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,MOZ,Mozambique,2,Northern Europe,Sub-Saharan Africa
+CAN,Canada,MMR,Myanmar,22,Northern America,South-Eastern Asia
+DEU,Germany,MMR,Myanmar,1,Western Europe,South-Eastern Asia
+IRL,Ireland,MMR,Myanmar,5,Northern Europe,South-Eastern Asia
+NZL,New Zealand,MMR,Myanmar,16,Australia and New Zealand,South-Eastern Asia
+CHE,Switzerland,MMR,Myanmar,1,Western Europe,South-Eastern Asia
+GBR,United Kingdom,MMR,Myanmar,528,Northern Europe,South-Eastern Asia
+DEU,Germany,NAM,Namibia,2,Western Europe,Sub-Saharan Africa
+CAN,Canada,NPL,Nepal,8,Northern America,Southern Asia
+DEU,Germany,NPL,Nepal,68,Western Europe,Southern Asia
+NZL,New Zealand,NPL,Nepal,6,Australia and New Zealand,Southern Asia
+NOR,Norway,NPL,Nepal,1,Northern Europe,Southern Asia
+CHE,Switzerland,NPL,Nepal,2,Western Europe,Southern Asia
+GBR,United Kingdom,NPL,Nepal,235,Northern Europe,Southern Asia
+AUT,Austria,NLD,Netherlands,8,Western Europe,Western Europe
+BEL,Belgium,NLD,Netherlands,1296,Western Europe,Western Europe
+CAN,Canada,NLD,Netherlands,508,Northern America,Western Europe
+FRA,France,NLD,Netherlands,111,Western Europe,Western Europe
+DEU,Germany,NLD,Netherlands,636,Western Europe,Western Europe
+HUN,Hungary,NLD,Netherlands,1,Eastern Europe,Western Europe
+IRL,Ireland,NLD,Netherlands,33,Northern Europe,Western Europe
+NZL,New Zealand,NLD,Netherlands,114,Australia and New Zealand,Western Europe
+NOR,Norway,NLD,Netherlands,184,Northern Europe,Western Europe
+CHE,Switzerland,NLD,Netherlands,65,Western Europe,Western Europe
+GBR,United Kingdom,NLD,Netherlands,359,Northern Europe,Western Europe
+CHL,Chile,NLD,Netherlands,3,Latin America and the Caribbean,Western Europe
+ISR,Israel,NLD,Netherlands,33,Western Asia,Western Europe
+AUS,Australia,NZL,New Zealand,2156,Australia and New Zealand,Australia and New Zealand
+CAN,Canada,NZL,New Zealand,107,Northern America,Australia and New Zealand
+FRA,France,NZL,New Zealand,0,Western Europe,Australia and New Zealand
+DEU,Germany,NZL,New Zealand,4,Western Europe,Australia and New Zealand
+IRL,Ireland,NZL,New Zealand,27,Northern Europe,Australia and New Zealand
+CHE,Switzerland,NZL,New Zealand,1,Western Europe,Australia and New Zealand
+GBR,United Kingdom,NZL,New Zealand,186,Northern Europe,Australia and New Zealand
+CHL,Chile,NZL,New Zealand,1,Latin America and the Caribbean,Australia and New Zealand
+ISR,Israel,NZL,New Zealand,5,Western Asia,Australia and New Zealand
+CAN,Canada,NIC,Nicaragua,6,Northern America,Latin America and the Caribbean
+FRA,France,NIC,Nicaragua,3,Western Europe,Latin America and the Caribbean
+DEU,Germany,NIC,Nicaragua,16,Western Europe,Latin America and the Caribbean
+NOR,Norway,NIC,Nicaragua,3,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,NIC,Nicaragua,1,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,NIC,Nicaragua,1,Northern Europe,Latin America and the Caribbean
+CHL,Chile,NIC,Nicaragua,9,Latin America and the Caribbean,Latin America and the Caribbean
+BEL,Belgium,NER,Niger,1,Western Europe,Sub-Saharan Africa
+FRA,France,NER,Niger,15,Western Europe,Sub-Saharan Africa
+DEU,Germany,NER,Niger,1,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,NER,Niger,1,Northern Europe,Sub-Saharan Africa
+BEL,Belgium,NGA,Nigeria,1,Western Europe,Sub-Saharan Africa
+CAN,Canada,NGA,Nigeria,825,Northern America,Sub-Saharan Africa
+FRA,France,NGA,Nigeria,3,Western Europe,Sub-Saharan Africa
+DEU,Germany,NGA,Nigeria,93,Western Europe,Sub-Saharan Africa
+IRL,Ireland,NGA,Nigeria,265,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,NGA,Nigeria,12,Australia and New Zealand,Sub-Saharan Africa
+NOR,Norway,NGA,Nigeria,3,Northern Europe,Sub-Saharan Africa
+CHE,Switzerland,NGA,Nigeria,2,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,NGA,Nigeria,2831,Northern Europe,Sub-Saharan Africa
+ISR,Israel,NGA,Nigeria,2,Western Asia,Sub-Saharan Africa
+AUT,Austria,NOR,Norway,4,Western Europe,Northern Europe
+BEL,Belgium,NOR,Norway,1,Western Europe,Northern Europe
+CAN,Canada,NOR,Norway,4,Northern America,Northern Europe
+FRA,France,NOR,Norway,3,Western Europe,Northern Europe
+DEU,Germany,NOR,Norway,69,Western Europe,Northern Europe
+NZL,New Zealand,NOR,Norway,6,Australia and New Zealand,Northern Europe
+CHE,Switzerland,NOR,Norway,4,Western Europe,Northern Europe
+GBR,United Kingdom,NOR,Norway,10,Northern Europe,Northern Europe
+CHL,Chile,NOR,Norway,1,Latin America and the Caribbean,Northern Europe
+ISR,Israel,NOR,Norway,2,Western Asia,Northern Europe
+CAN,Canada,OMN,Oman,9,Northern America,Western Asia
+DEU,Germany,OMN,Oman,4,Western Europe,Western Asia
+IRL,Ireland,OMN,Oman,25,Northern Europe,Western Asia
+NZL,New Zealand,OMN,Oman,1,Australia and New Zealand,Western Asia
+GBR,United Kingdom,OMN,Oman,10,Northern Europe,Western Asia
+BEL,Belgium,PAK,Pakistan,4,Western Europe,Southern Asia
+CAN,Canada,PAK,Pakistan,1023,Northern America,Southern Asia
+FRA,France,PAK,Pakistan,4,Western Europe,Southern Asia
+DEU,Germany,PAK,Pakistan,67,Western Europe,Southern Asia
+IRL,Ireland,PAK,Pakistan,2037,Northern Europe,Southern Asia
+NZL,New Zealand,PAK,Pakistan,79,Australia and New Zealand,Southern Asia
+NOR,Norway,PAK,Pakistan,74,Northern Europe,Southern Asia
+CHE,Switzerland,PAK,Pakistan,9,Western Europe,Southern Asia
+GBR,United Kingdom,PAK,Pakistan,5922,Northern Europe,Southern Asia
+CAN,Canada,PAN,Panama,3,Northern America,Latin America and the Caribbean
+IRL,Ireland,PAN,Panama,1,Northern Europe,Latin America and the Caribbean
+NOR,Norway,PAN,Panama,1,Northern Europe,Latin America and the Caribbean
+GBR,United Kingdom,PAN,Panama,2,Northern Europe,Latin America and the Caribbean
+CHL,Chile,PAN,Panama,4,Latin America and the Caribbean,Latin America and the Caribbean
+NZL,New Zealand,PNG,Papua New Guinea,6,Australia and New Zealand,Melanesia
+GBR,United Kingdom,PNG,Papua New Guinea,3,Northern Europe,Melanesia
+CAN,Canada,PRY,Paraguay,5,Northern America,Latin America and the Caribbean
+FRA,France,PRY,Paraguay,19,Western Europe,Latin America and the Caribbean
+DEU,Germany,PRY,Paraguay,69,Western Europe,Latin America and the Caribbean
+NOR,Norway,PRY,Paraguay,1,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,PRY,Paraguay,2,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,PRY,Paraguay,2,Northern Europe,Latin America and the Caribbean
+CHL,Chile,PRY,Paraguay,12,Latin America and the Caribbean,Latin America and the Caribbean
+BEL,Belgium,PER,Peru,13,Western Europe,Latin America and the Caribbean
+CAN,Canada,PER,Peru,37,Northern America,Latin America and the Caribbean
+FRA,France,PER,Peru,45,Western Europe,Latin America and the Caribbean
+DEU,Germany,PER,Peru,100,Western Europe,Latin America and the Caribbean
+IRL,Ireland,PER,Peru,14,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,PER,Peru,5,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,PER,Peru,5,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,PER,Peru,23,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,PER,Peru,25,Northern Europe,Latin America and the Caribbean
+CHL,Chile,PER,Peru,154,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,PER,Peru,12,Western Asia,Latin America and the Caribbean
+AUS,Australia,PHL,Philippines,614,Australia and New Zealand,South-Eastern Asia
+BEL,Belgium,PHL,Philippines,2,Western Europe,South-Eastern Asia
+CAN,Canada,PHL,Philippines,263,Northern America,South-Eastern Asia
+DEU,Germany,PHL,Philippines,25,Western Europe,South-Eastern Asia
+IRL,Ireland,PHL,Philippines,14,Northern Europe,South-Eastern Asia
+NZL,New Zealand,PHL,Philippines,43,Australia and New Zealand,South-Eastern Asia
+NOR,Norway,PHL,Philippines,16,Northern Europe,South-Eastern Asia
+CHE,Switzerland,PHL,Philippines,3,Western Europe,South-Eastern Asia
+GBR,United Kingdom,PHL,Philippines,90,Northern Europe,South-Eastern Asia
+CHL,Chile,PHL,Philippines,1,Latin America and the Caribbean,South-Eastern Asia
+ISR,Israel,PHL,Philippines,2,Western Asia,South-Eastern Asia
+AUT,Austria,POL,Poland,20,Western Europe,Eastern Europe
+BEL,Belgium,POL,Poland,88,Western Europe,Eastern Europe
+CAN,Canada,POL,Poland,569,Northern America,Eastern Europe
+CZE,Czech Republic,POL,Poland,37,Eastern Europe,Eastern Europe
+FRA,France,POL,Poland,256,Western Europe,Eastern Europe
+DEU,Germany,POL,Poland,1781,Western Europe,Eastern Europe
+HUN,Hungary,POL,Poland,8,Eastern Europe,Eastern Europe
+IRL,Ireland,POL,Poland,282,Northern Europe,Eastern Europe
+NZL,New Zealand,POL,Poland,36,Australia and New Zealand,Eastern Europe
+NOR,Norway,POL,Poland,2110,Northern Europe,Eastern Europe
+CHE,Switzerland,POL,Poland,188,Western Europe,Eastern Europe
+GBR,United Kingdom,POL,Poland,914,Northern Europe,Eastern Europe
+EST,Estonia,POL,Poland,1,Northern Europe,Eastern Europe
+ISR,Israel,POL,Poland,203,Western Asia,Eastern Europe
+SVN,Slovenia,POL,Poland,5,Southern Europe,Eastern Europe
+AUT,Austria,PRT,Portugal,1,Western Europe,Southern Europe
+BEL,Belgium,PRT,Portugal,102,Western Europe,Southern Europe
+CAN,Canada,PRT,Portugal,15,Northern America,Southern Europe
+FRA,France,PRT,Portugal,114,Western Europe,Southern Europe
+DEU,Germany,PRT,Portugal,194,Western Europe,Southern Europe
+IRL,Ireland,PRT,Portugal,15,Northern Europe,Southern Europe
+NOR,Norway,PRT,Portugal,8,Northern Europe,Southern Europe
+CHE,Switzerland,PRT,Portugal,69,Western Europe,Southern Europe
+GBR,United Kingdom,PRT,Portugal,127,Northern Europe,Southern Europe
+CHL,Chile,PRT,Portugal,2,Latin America and the Caribbean,Southern Europe
+DEU,Germany,QAT,Qatar,2,Western Europe,Western Asia
+CAN,Canada,KOR,Republic of Korea,5,Northern America,Eastern Asia
+DEU,Germany,KOR,Republic of Korea,95,Western Europe,Eastern Asia
+NOR,Norway,KOR,Republic of Korea,3,Northern Europe,Eastern Asia
+CHE,Switzerland,KOR,Republic of Korea,1,Western Europe,Eastern Asia
+GBR,United Kingdom,KOR,Republic of Korea,2,Northern Europe,Eastern Asia
+BEL,Belgium,MDA,Republic of Moldova,11,Western Europe,Eastern Europe
+CAN,Canada,MDA,Republic of Moldova,19,Northern America,Eastern Europe
+CZE,Czech Republic,MDA,Republic of Moldova,3,Eastern Europe,Eastern Europe
+FRA,France,MDA,Republic of Moldova,101,Western Europe,Eastern Europe
+DEU,Germany,MDA,Republic of Moldova,128,Western Europe,Eastern Europe
+IRL,Ireland,MDA,Republic of Moldova,10,Northern Europe,Eastern Europe
+NOR,Norway,MDA,Republic of Moldova,4,Northern Europe,Eastern Europe
+CHE,Switzerland,MDA,Republic of Moldova,9,Western Europe,Eastern Europe
+GBR,United Kingdom,MDA,Republic of Moldova,36,Northern Europe,Eastern Europe
+EST,Estonia,MDA,Republic of Moldova,4,Northern Europe,Eastern Europe
+ISR,Israel,MDA,Republic of Moldova,421,Western Asia,Eastern Europe
+AUT,Austria,ROU,Romania,62,Western Europe,Eastern Europe
+BEL,Belgium,ROU,Romania,1319,Western Europe,Eastern Europe
+CAN,Canada,ROU,Romania,333,Northern America,Eastern Europe
+CZE,Czech Republic,ROU,Romania,8,Eastern Europe,Eastern Europe
+FRA,France,ROU,Romania,4764,Western Europe,Eastern Europe
+DEU,Germany,ROU,Romania,3978,Western Europe,Eastern Europe
+HUN,Hungary,ROU,Romania,1870,Eastern Europe,Eastern Europe
+IRL,Ireland,ROU,Romania,715,Northern Europe,Eastern Europe
+NZL,New Zealand,ROU,Romania,19,Australia and New Zealand,Eastern Europe
+NOR,Norway,ROU,Romania,169,Northern Europe,Eastern Europe
+CHE,Switzerland,ROU,Romania,334,Western Europe,Eastern Europe
+GBR,United Kingdom,ROU,Romania,1129,Northern Europe,Eastern Europe
+CHL,Chile,ROU,Romania,12,Latin America and the Caribbean,Eastern Europe
+ISR,Israel,ROU,Romania,1636,Western Asia,Eastern Europe
+SVN,Slovenia,ROU,Romania,3,Southern Europe,Eastern Europe
+AUT,Austria,RUS,Russian Federation,1,Western Europe,Eastern Europe
+BEL,Belgium,RUS,Russian Federation,22,Western Europe,Eastern Europe
+CAN,Canada,RUS,Russian Federation,254,Northern America,Eastern Europe
+CZE,Czech Republic,RUS,Russian Federation,234,Eastern Europe,Eastern Europe
+FRA,France,RUS,Russian Federation,301,Western Europe,Eastern Europe
+DEU,Germany,RUS,Russian Federation,2091,Western Europe,Eastern Europe
+HUN,Hungary,RUS,Russian Federation,213,Eastern Europe,Eastern Europe
+IRL,Ireland,RUS,Russian Federation,49,Northern Europe,Eastern Europe
+NZL,New Zealand,RUS,Russian Federation,53,Australia and New Zealand,Eastern Europe
+NOR,Norway,RUS,Russian Federation,255,Northern Europe,Eastern Europe
+CHE,Switzerland,RUS,Russian Federation,106,Western Europe,Eastern Europe
+GBR,United Kingdom,RUS,Russian Federation,453,Northern Europe,Eastern Europe
+CHL,Chile,RUS,Russian Federation,73,Latin America and the Caribbean,Eastern Europe
+EST,Estonia,RUS,Russian Federation,97,Northern Europe,Eastern Europe
+ISR,Israel,RUS,Russian Federation,5896,Western Asia,Eastern Europe
+SVN,Slovenia,RUS,Russian Federation,9,Southern Europe,Eastern Europe
+BEL,Belgium,RWA,Rwanda,3,Western Europe,Sub-Saharan Africa
+CAN,Canada,RWA,Rwanda,4,Northern America,Sub-Saharan Africa
+FRA,France,RWA,Rwanda,11,Western Europe,Sub-Saharan Africa
+DEU,Germany,RWA,Rwanda,4,Western Europe,Sub-Saharan Africa
+CAN,Canada,KNA,Saint Kitts and Nevis,175,Northern America,Latin America and the Caribbean
+GBR,United Kingdom,KNA,Saint Kitts and Nevis,23,Northern Europe,Latin America and the Caribbean
+CAN,Canada,LCA,Saint Lucia,28,Northern America,Latin America and the Caribbean
+GBR,United Kingdom,LCA,Saint Lucia,9,Northern Europe,Latin America and the Caribbean
+CAN,Canada,VCT,Saint Vincent and the Grenadines,13,Northern America,Latin America and the Caribbean
+NZL,New Zealand,WSM,Samoa,1,Australia and New Zealand,Polynesia
+DEU,Germany,SMR,San Marino,0,Western Europe,Southern Europe
+DEU,Germany,STP,Sao Tome and Principe,0,Western Europe,Sub-Saharan Africa
+BEL,Belgium,SAU,Saudi Arabia,4,Western Europe,Western Asia
+CAN,Canada,SAU,Saudi Arabia,348,Northern America,Western Asia
+FRA,France,SAU,Saudi Arabia,1,Western Europe,Western Asia
+DEU,Germany,SAU,Saudi Arabia,411,Western Europe,Western Asia
+IRL,Ireland,SAU,Saudi Arabia,25,Northern Europe,Western Asia
+GBR,United Kingdom,SAU,Saudi Arabia,19,Northern Europe,Western Asia
+CAN,Canada,SEN,Senegal,5,Northern America,Sub-Saharan Africa
+FRA,France,SEN,Senegal,89,Western Europe,Sub-Saharan Africa
+DEU,Germany,SEN,Senegal,1,Western Europe,Sub-Saharan Africa
+CHE,Switzerland,SEN,Senegal,1,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,SEN,Senegal,2,Northern Europe,Sub-Saharan Africa
+DEU,Germany,SYC,Seychelles,0,Western Europe,Sub-Saharan Africa
+NZL,New Zealand,SYC,Seychelles,2,Australia and New Zealand,Sub-Saharan Africa
+DEU,Germany,SLE,Sierra Leone,9,Western Europe,Sub-Saharan Africa
+NZL,New Zealand,SLE,Sierra Leone,1,Australia and New Zealand,Sub-Saharan Africa
+CHE,Switzerland,SLE,Sierra Leone,3,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,SLE,Sierra Leone,19,Northern Europe,Sub-Saharan Africa
+BEL,Belgium,SRB,Serbia,9,Western Europe,Southern Europe
+CAN,Canada,SRB,Serbia,82,Northern America,Southern Europe
+CZE,Czech Republic,SRB,Serbia,3,Eastern Europe,Southern Europe
+DEU,Germany,SRB,Serbia,1364,Western Europe,Southern Europe
+HUN,Hungary,SRB,Serbia,53,Eastern Europe,Southern Europe
+IRL,Ireland,SRB,Serbia,6,Northern Europe,Southern Europe
+NZL,New Zealand,SRB,Serbia,22,Australia and New Zealand,Southern Europe
+NOR,Norway,SRB,Serbia,149,Northern Europe,Southern Europe
+CHE,Switzerland,SRB,Serbia,63,Western Europe,Southern Europe
+GBR,United Kingdom,SRB,Serbia,104,Northern Europe,Southern Europe
+SVN,Slovenia,SRB,Serbia,412,Southern Europe,Southern Europe
+CAN,Canada,SGP,Singapore,26,Northern America,South-Eastern Asia
+FRA,France,SGP,Singapore,1,Western Europe,South-Eastern Asia
+DEU,Germany,SGP,Singapore,6,Western Europe,South-Eastern Asia
+NZL,New Zealand,SGP,Singapore,29,Australia and New Zealand,South-Eastern Asia
+GBR,United Kingdom,SGP,Singapore,26,Northern Europe,South-Eastern Asia
+AUT,Austria,SVK,Slovak Republic,105,Western Europe,Eastern Europe
+BEL,Belgium,SVK,Slovak Republic,21,Western Europe,Eastern Europe
+CAN,Canada,SVK,Slovak Republic,62,Northern America,Eastern Europe
+CZE,Czech Republic,SVK,Slovak Republic,2218,Eastern Europe,Eastern Europe
+FRA,France,SVK,Slovak Republic,49,Western Europe,Eastern Europe
+DEU,Germany,SVK,Slovak Republic,1036,Western Europe,Eastern Europe
+HUN,Hungary,SVK,Slovak Republic,51,Eastern Europe,Eastern Europe
+IRL,Ireland,SVK,Slovak Republic,74,Northern Europe,Eastern Europe
+NZL,New Zealand,SVK,Slovak Republic,5,Australia and New Zealand,Eastern Europe
+NOR,Norway,SVK,Slovak Republic,407,Northern Europe,Eastern Europe
+CHE,Switzerland,SVK,Slovak Republic,45,Western Europe,Eastern Europe
+GBR,United Kingdom,SVK,Slovak Republic,184,Northern Europe,Eastern Europe
+SVN,Slovenia,SVK,Slovak Republic,4,Southern Europe,Eastern Europe
+AUT,Austria,SVN,Slovenia,50,Western Europe,Southern Europe
+BEL,Belgium,SVN,Slovenia,5,Western Europe,Southern Europe
+CAN,Canada,SVN,Slovenia,1,Northern America,Southern Europe
+DEU,Germany,SVN,Slovenia,67,Western Europe,Southern Europe
+HUN,Hungary,SVN,Slovenia,1,Eastern Europe,Southern Europe
+IRL,Ireland,SVN,Slovenia,3,Northern Europe,Southern Europe
+NOR,Norway,SVN,Slovenia,7,Northern Europe,Southern Europe
+CHE,Switzerland,SVN,Slovenia,18,Western Europe,Southern Europe
+GBR,United Kingdom,SVN,Slovenia,24,Northern Europe,Southern Europe
+ISR,Israel,SVN,Slovenia,44,Western Asia,Southern Europe
+CAN,Canada,SOM,Somalia,6,Northern America,Sub-Saharan Africa
+DEU,Germany,SOM,Somalia,4,Western Europe,Sub-Saharan Africa
+NZL,New Zealand,SOM,Somalia,0,Australia and New Zealand,Sub-Saharan Africa
+NOR,Norway,SOM,Somalia,1,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,SOM,Somalia,2,Northern Europe,Sub-Saharan Africa
+AUS,Australia,ZAF,South Africa,1846,Australia and New Zealand,Sub-Saharan Africa
+BEL,Belgium,ZAF,South Africa,59,Western Europe,Sub-Saharan Africa
+CAN,Canada,ZAF,South Africa,2651,Northern America,Sub-Saharan Africa
+FRA,France,ZAF,South Africa,2,Western Europe,Sub-Saharan Africa
+DEU,Germany,ZAF,South Africa,19,Western Europe,Sub-Saharan Africa
+IRL,Ireland,ZAF,South Africa,734,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,ZAF,South Africa,717,Australia and New Zealand,Sub-Saharan Africa
+NOR,Norway,ZAF,South Africa,4,Northern Europe,Sub-Saharan Africa
+CHE,Switzerland,ZAF,South Africa,15,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,ZAF,South Africa,1298,Northern Europe,Sub-Saharan Africa
+CHL,Chile,ZAF,South Africa,1,Latin America and the Caribbean,Sub-Saharan Africa
+ISR,Israel,ZAF,South Africa,121,Western Asia,Sub-Saharan Africa
+AUT,Austria,ESP,Spain,13,Western Europe,Southern Europe
+BEL,Belgium,ESP,Spain,313,Western Europe,Southern Europe
+CAN,Canada,ESP,Spain,69,Northern America,Southern Europe
+FRA,France,ESP,Spain,713,Western Europe,Southern Europe
+DEU,Germany,ESP,Spain,531,Western Europe,Southern Europe
+IRL,Ireland,ESP,Spain,108,Northern Europe,Southern Europe
+NZL,New Zealand,ESP,Spain,26,Australia and New Zealand,Southern Europe
+NOR,Norway,ESP,Spain,54,Northern Europe,Southern Europe
+CHE,Switzerland,ESP,Spain,180,Western Europe,Southern Europe
+GBR,United Kingdom,ESP,Spain,736,Northern Europe,Southern Europe
+CHL,Chile,ESP,Spain,111,Latin America and the Caribbean,Southern Europe
+EST,Estonia,ESP,Spain,1,Northern Europe,Southern Europe
+ISR,Israel,ESP,Spain,61,Western Asia,Southern Europe
+AUS,Australia,LKA,Sri Lanka,1659,Australia and New Zealand,Southern Asia
+CAN,Canada,LKA,Sri Lanka,238,Northern America,Southern Asia
+DEU,Germany,LKA,Sri Lanka,27,Western Europe,Southern Asia
+IRL,Ireland,LKA,Sri Lanka,7,Northern Europe,Southern Asia
+NZL,New Zealand,LKA,Sri Lanka,121,Australia and New Zealand,Southern Asia
+NOR,Norway,LKA,Sri Lanka,13,Northern Europe,Southern Asia
+GBR,United Kingdom,LKA,Sri Lanka,1200,Northern Europe,Southern Asia
+BEL,Belgium,SDN,Sudan,4,Western Europe,Northern Africa
+CAN,Canada,SDN,Sudan,64,Northern America,Northern Africa
+FRA,France,SDN,Sudan,3,Western Europe,Northern Africa
+DEU,Germany,SDN,Sudan,76,Western Europe,Northern Africa
+IRL,Ireland,SDN,Sudan,1295,Northern Europe,Northern Africa
+NZL,New Zealand,SDN,Sudan,14,Australia and New Zealand,Northern Africa
+NOR,Norway,SDN,Sudan,8,Northern Europe,Northern Africa
+GBR,United Kingdom,SDN,Sudan,936,Northern Europe,Northern Africa
+BEL,Belgium,SUR,Suriname,6,Western Europe,Latin America and the Caribbean
+CHE,Switzerland,SUR,Suriname,1,Western Europe,Latin America and the Caribbean
+CAN,Canada,SWZ,Swaziland,1,Northern America,Sub-Saharan Africa
+DEU,Germany,SWZ,Swaziland,0,Western Europe,Sub-Saharan Africa
+AUT,Austria,SWE,Sweden,9,Western Europe,Northern Europe
+BEL,Belgium,SWE,Sweden,9,Western Europe,Northern Europe
+CAN,Canada,SWE,Sweden,13,Northern America,Northern Europe
+FRA,France,SWE,Sweden,22,Western Europe,Northern Europe
+DEU,Germany,SWE,Sweden,80,Western Europe,Northern Europe
+IRL,Ireland,SWE,Sweden,4,Northern Europe,Northern Europe
+NZL,New Zealand,SWE,Sweden,23,Australia and New Zealand,Northern Europe
+NOR,Norway,SWE,Sweden,587,Northern Europe,Northern Europe
+CHE,Switzerland,SWE,Sweden,23,Western Europe,Northern Europe
+GBR,United Kingdom,SWE,Sweden,47,Northern Europe,Northern Europe
+CHL,Chile,SWE,Sweden,4,Latin America and the Caribbean,Northern Europe
+EST,Estonia,SWE,Sweden,6,Northern Europe,Northern Europe
+ISR,Israel,SWE,Sweden,7,Western Asia,Northern Europe
+AUT,Austria,CHE,Switzerland,57,Western Europe,Western Europe
+BEL,Belgium,CHE,Switzerland,61,Western Europe,Western Europe
+CAN,Canada,CHE,Switzerland,77,Northern America,Western Europe
+FRA,France,CHE,Switzerland,102,Western Europe,Western Europe
+DEU,Germany,CHE,Switzerland,208,Western Europe,Western Europe
+HUN,Hungary,CHE,Switzerland,1,Eastern Europe,Western Europe
+IRL,Ireland,CHE,Switzerland,7,Northern Europe,Western Europe
+NZL,New Zealand,CHE,Switzerland,13,Australia and New Zealand,Western Europe
+NOR,Norway,CHE,Switzerland,25,Northern Europe,Western Europe
+GBR,United Kingdom,CHE,Switzerland,54,Northern Europe,Western Europe
+CHL,Chile,CHE,Switzerland,7,Latin America and the Caribbean,Western Europe
+ISR,Israel,CHE,Switzerland,30,Western Asia,Western Europe
+BEL,Belgium,SYR,Syria,16,Western Europe,Western Asia
+CAN,Canada,SYR,Syria,147,Northern America,Western Asia
+CZE,Czech Republic,SYR,Syria,6,Eastern Europe,Western Asia
+FRA,France,SYR,Syria,1000,Western Europe,Western Asia
+DEU,Germany,SYR,Syria,3647,Western Europe,Western Asia
+HUN,Hungary,SYR,Syria,2,Eastern Europe,Western Asia
+IRL,Ireland,SYR,Syria,67,Northern Europe,Western Asia
+NZL,New Zealand,SYR,Syria,7,Australia and New Zealand,Western Asia
+NOR,Norway,SYR,Syria,19,Northern Europe,Western Asia
+CHE,Switzerland,SYR,Syria,31,Western Europe,Western Asia
+GBR,United Kingdom,SYR,Syria,391,Northern Europe,Western Asia
+CHL,Chile,SYR,Syria,4,Latin America and the Caribbean,Western Asia
+ISR,Israel,SYR,Syria,182,Western Asia,Western Asia
+CAN,Canada,TJK,Tajikistan,1,Northern America,Central Asia
+CZE,Czech Republic,TJK,Tajikistan,2,Eastern Europe,Central Asia
+DEU,Germany,TJK,Tajikistan,25,Western Europe,Central Asia
+NOR,Norway,TJK,Tajikistan,2,Northern Europe,Central Asia
+GBR,United Kingdom,TJK,Tajikistan,6,Northern Europe,Central Asia
+ISR,Israel,TJK,Tajikistan,32,Western Asia,Central Asia
+CAN,Canada,THA,Thailand,9,Northern America,South-Eastern Asia
+DEU,Germany,THA,Thailand,10,Western Europe,South-Eastern Asia
+NZL,New Zealand,THA,Thailand,0,Australia and New Zealand,South-Eastern Asia
+GBR,United Kingdom,THA,Thailand,7,Northern Europe,South-Eastern Asia
+BEL,Belgium,TGO,Togo,3,Western Europe,Sub-Saharan Africa
+CAN,Canada,TGO,Togo,1,Northern America,Sub-Saharan Africa
+FRA,France,TGO,Togo,140,Western Europe,Sub-Saharan Africa
+DEU,Germany,TGO,Togo,4,Western Europe,Sub-Saharan Africa
+CHE,Switzerland,TGO,Togo,2,Western Europe,Sub-Saharan Africa
+CAN,Canada,TTO,Trinidad and Tobago,29,Northern America,Latin America and the Caribbean
+IRL,Ireland,TTO,Trinidad and Tobago,7,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,TTO,Trinidad and Tobago,2,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,TTO,Trinidad and Tobago,1,Northern Europe,Latin America and the Caribbean
+BEL,Belgium,TUN,Tunisia,11,Western Europe,Northern Africa
+CAN,Canada,TUN,Tunisia,54,Northern America,Northern Africa
+FRA,France,TUN,Tunisia,834,Western Europe,Northern Africa
+DEU,Germany,TUN,Tunisia,428,Western Europe,Northern Africa
+CHE,Switzerland,TUN,Tunisia,33,Western Europe,Northern Africa
+GBR,United Kingdom,TUN,Tunisia,16,Northern Europe,Northern Africa
+ISR,Israel,TUN,Tunisia,6,Western Asia,Northern Africa
+BEL,Belgium,TUR,Turkey,13,Western Europe,Western Asia
+CAN,Canada,TUR,Turkey,56,Northern America,Western Asia
+FRA,France,TUR,Turkey,29,Western Europe,Western Asia
+DEU,Germany,TUR,Turkey,986,Western Europe,Western Asia
+HUN,Hungary,TUR,Turkey,4,Eastern Europe,Western Asia
+IRL,Ireland,TUR,Turkey,5,Northern Europe,Western Asia
+NZL,New Zealand,TUR,Turkey,5,Australia and New Zealand,Western Asia
+NOR,Norway,TUR,Turkey,14,Northern Europe,Western Asia
+CHE,Switzerland,TUR,Turkey,58,Western Europe,Western Asia
+GBR,United Kingdom,TUR,Turkey,107,Northern Europe,Western Asia
+ISR,Israel,TUR,Turkey,38,Western Asia,Western Asia
+DEU,Germany,TKM,Turkmenistan,16,Western Europe,Central Asia
+GBR,United Kingdom,TKM,Turkmenistan,4,Northern Europe,Central Asia
+CAN,Canada,UGA,Uganda,70,Northern America,Sub-Saharan Africa
+DEU,Germany,UGA,Uganda,13,Western Europe,Sub-Saharan Africa
+NZL,New Zealand,UGA,Uganda,0,Australia and New Zealand,Sub-Saharan Africa
+CHE,Switzerland,UGA,Uganda,1,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,UGA,Uganda,52,Northern Europe,Sub-Saharan Africa
+BEL,Belgium,UKR,Ukraine,7,Western Europe,Eastern Europe
+CAN,Canada,UKR,Ukraine,142,Northern America,Eastern Europe
+CZE,Czech Republic,UKR,Ukraine,564,Eastern Europe,Eastern Europe
+FRA,France,UKR,Ukraine,95,Western Europe,Eastern Europe
+DEU,Germany,UKR,Ukraine,1397,Western Europe,Eastern Europe
+HUN,Hungary,UKR,Ukraine,374,Eastern Europe,Eastern Europe
+IRL,Ireland,UKR,Ukraine,45,Northern Europe,Eastern Europe
+NZL,New Zealand,UKR,Ukraine,17,Australia and New Zealand,Eastern Europe
+NOR,Norway,UKR,Ukraine,100,Northern Europe,Eastern Europe
+CHE,Switzerland,UKR,Ukraine,36,Western Europe,Eastern Europe
+GBR,United Kingdom,UKR,Ukraine,330,Northern Europe,Eastern Europe
+CHL,Chile,UKR,Ukraine,12,Latin America and the Caribbean,Eastern Europe
+EST,Estonia,UKR,Ukraine,75,Northern Europe,Eastern Europe
+ISR,Israel,UKR,Ukraine,1387,Western Asia,Eastern Europe
+SVN,Slovenia,UKR,Ukraine,4,Southern Europe,Eastern Europe
+CAN,Canada,ARE,United Arab Emirates,34,Northern America,Western Asia
+DEU,Germany,ARE,United Arab Emirates,37,Western Europe,Western Asia
+IRL,Ireland,ARE,United Arab Emirates,15,Northern Europe,Western Asia
+GBR,United Kingdom,ARE,United Arab Emirates,92,Northern Europe,Western Asia
+AUS,Australia,GBR,United Kingdom,5892,Australia and New Zealand,Northern Europe
+AUT,Austria,GBR,United Kingdom,15,Western Europe,Northern Europe
+BEL,Belgium,GBR,United Kingdom,91,Western Europe,Northern Europe
+CAN,Canada,GBR,United Kingdom,2118,Northern America,Northern Europe
+FRA,France,GBR,United Kingdom,81,Western Europe,Northern Europe
+DEU,Germany,GBR,United Kingdom,194,Western Europe,Northern Europe
+IRL,Ireland,GBR,United Kingdom,766,Northern Europe,Northern Europe
+NZL,New Zealand,GBR,United Kingdom,3092,Australia and New Zealand,Northern Europe
+NOR,Norway,GBR,United Kingdom,143,Northern Europe,Northern Europe
+CHE,Switzerland,GBR,United Kingdom,48,Western Europe,Northern Europe
+CHL,Chile,GBR,United Kingdom,10,Latin America and the Caribbean,Northern Europe
+EST,Estonia,GBR,United Kingdom,3,Northern Europe,Northern Europe
+ISR,Israel,GBR,United Kingdom,209,Western Asia,Northern Europe
+CAN,Canada,TZA,United Republic of Tanzania,14,Northern America,Sub-Saharan Africa
+DEU,Germany,TZA,United Republic of Tanzania,4,Western Europe,Sub-Saharan Africa
+IRL,Ireland,TZA,United Republic of Tanzania,5,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,TZA,United Republic of Tanzania,3,Australia and New Zealand,Sub-Saharan Africa
+NOR,Norway,TZA,United Republic of Tanzania,1,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,TZA,United Republic of Tanzania,37,Northern Europe,Sub-Saharan Africa
+AUS,Australia,USA,United States,165,Australia and New Zealand,Northern America
+AUT,Austria,USA,United States,2,Western Europe,Northern America
+BEL,Belgium,USA,United States,4,Western Europe,Northern America
+CAN,Canada,USA,United States,1218,Northern America,Northern America
+FRA,France,USA,United States,7,Western Europe,Northern America
+DEU,Germany,USA,United States,243,Western Europe,Northern America
+HUN,Hungary,USA,United States,2,Eastern Europe,Northern America
+IRL,Ireland,USA,United States,41,Northern Europe,Northern America
+NZL,New Zealand,USA,United States,408,Australia and New Zealand,Northern America
+NOR,Norway,USA,United States,11,Northern Europe,Northern America
+CHE,Switzerland,USA,United States,86,Western Europe,Northern America
+GBR,United Kingdom,USA,United States,64,Northern Europe,Northern America
+CHL,Chile,USA,United States,5,Latin America and the Caribbean,Northern America
+EST,Estonia,USA,United States,1,Northern Europe,Northern America
+ISR,Israel,USA,United States,481,Western Asia,Northern America
+BEL,Belgium,URY,Uruguay,2,Western Europe,Latin America and the Caribbean
+CAN,Canada,URY,Uruguay,6,Northern America,Latin America and the Caribbean
+FRA,France,URY,Uruguay,12,Western Europe,Latin America and the Caribbean
+DEU,Germany,URY,Uruguay,3,Western Europe,Latin America and the Caribbean
+IRL,Ireland,URY,Uruguay,2,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,URY,Uruguay,3,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,URY,Uruguay,2,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,URY,Uruguay,7,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,URY,Uruguay,3,Northern Europe,Latin America and the Caribbean
+CHL,Chile,URY,Uruguay,347,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,URY,Uruguay,39,Western Asia,Latin America and the Caribbean
+CAN,Canada,UZB,Uzbekistan,8,Northern America,Central Asia
+CZE,Czech Republic,UZB,Uzbekistan,17,Eastern Europe,Central Asia
+DEU,Germany,UZB,Uzbekistan,119,Western Europe,Central Asia
+IRL,Ireland,UZB,Uzbekistan,1,Northern Europe,Central Asia
+NZL,New Zealand,UZB,Uzbekistan,0,Australia and New Zealand,Central Asia
+NOR,Norway,UZB,Uzbekistan,6,Northern Europe,Central Asia
+CHE,Switzerland,UZB,Uzbekistan,4,Western Europe,Central Asia
+GBR,United Kingdom,UZB,Uzbekistan,20,Northern Europe,Central Asia
+ISR,Israel,UZB,Uzbekistan,15,Western Asia,Central Asia
+BEL,Belgium,VEN,Venezuela,12,Western Europe,Latin America and the Caribbean
+CAN,Canada,VEN,Venezuela,31,Northern America,Latin America and the Caribbean
+FRA,France,VEN,Venezuela,31,Western Europe,Latin America and the Caribbean
+DEU,Germany,VEN,Venezuela,84,Western Europe,Latin America and the Caribbean
+IRL,Ireland,VEN,Venezuela,12,Northern Europe,Latin America and the Caribbean
+NZL,New Zealand,VEN,Venezuela,3,Australia and New Zealand,Latin America and the Caribbean
+NOR,Norway,VEN,Venezuela,4,Northern Europe,Latin America and the Caribbean
+CHE,Switzerland,VEN,Venezuela,11,Western Europe,Latin America and the Caribbean
+GBR,United Kingdom,VEN,Venezuela,38,Northern Europe,Latin America and the Caribbean
+CHL,Chile,VEN,Venezuela,2480,Latin America and the Caribbean,Latin America and the Caribbean
+ISR,Israel,VEN,Venezuela,22,Western Asia,Latin America and the Caribbean
+BEL,Belgium,VNM,Viet Nam,1,Western Europe,South-Eastern Asia
+CAN,Canada,VNM,Viet Nam,141,Northern America,South-Eastern Asia
+FRA,France,VNM,Viet Nam,63,Western Europe,South-Eastern Asia
+DEU,Germany,VNM,Viet Nam,58,Western Europe,South-Eastern Asia
+HUN,Hungary,VNM,Viet Nam,1,Eastern Europe,South-Eastern Asia
+NZL,New Zealand,VNM,Viet Nam,0,Australia and New Zealand,South-Eastern Asia
+NOR,Norway,VNM,Viet Nam,4,Northern Europe,South-Eastern Asia
+CHE,Switzerland,VNM,Viet Nam,5,Western Europe,South-Eastern Asia
+GBR,United Kingdom,VNM,Viet Nam,2,Northern Europe,South-Eastern Asia
+BEL,Belgium,YEM,Yemen,1,Western Europe,Western Asia
+CAN,Canada,YEM,Yemen,12,Northern America,Western Asia
+CZE,Czech Republic,YEM,Yemen,1,Eastern Europe,Western Asia
+DEU,Germany,YEM,Yemen,248,Western Europe,Western Asia
+IRL,Ireland,YEM,Yemen,19,Northern Europe,Western Asia
+NOR,Norway,YEM,Yemen,2,Northern Europe,Western Asia
+GBR,United Kingdom,YEM,Yemen,53,Northern Europe,Western Asia
+CAN,Canada,ZMB,Zambia,19,Northern America,Sub-Saharan Africa
+DEU,Germany,ZMB,Zambia,0,Western Europe,Sub-Saharan Africa
+IRL,Ireland,ZMB,Zambia,1,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,ZMB,Zambia,9,Australia and New Zealand,Sub-Saharan Africa
+GBR,United Kingdom,ZMB,Zambia,47,Northern Europe,Sub-Saharan Africa
+AUS,Australia,ZWE,Zimbabwe,190,Australia and New Zealand,Sub-Saharan Africa
+CAN,Canada,ZWE,Zimbabwe,45,Northern America,Sub-Saharan Africa
+DEU,Germany,ZWE,Zimbabwe,6,Western Europe,Sub-Saharan Africa
+IRL,Ireland,ZWE,Zimbabwe,7,Northern Europe,Sub-Saharan Africa
+NZL,New Zealand,ZWE,Zimbabwe,36,Australia and New Zealand,Sub-Saharan Africa
+CHE,Switzerland,ZWE,Zimbabwe,1,Western Europe,Sub-Saharan Africa
+GBR,United Kingdom,ZWE,Zimbabwe,164,Northern Europe,Sub-Saharan Africa
+FRA,France,GEO,Georgia,13,Western Europe,Western Asia
+GBR,United Kingdom,AND,Andorra,0,Northern Europe,Southern Europe
+GBR,United Kingdom,BHS,Bahamas,0,Northern Europe,Latin America and the Caribbean
+GBR,United Kingdom,BRB,Barbados,1,Northern Europe,Latin America and the Caribbean
+GBR,United Kingdom,BTN,Bhutan,0,Northern Europe,Southern Asia
+GBR,United Kingdom,BWA,Botswana,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,BFA,Burkina Faso,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,KHM,Cambodia,0,Northern Europe,South-Eastern Asia
+GBR,United Kingdom,CPV,Cape Verde,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,CAF,Central African Republic,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,TCD,Chad,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,COM,Comoros,0,Northern Europe,Sub-Saharan Africa
+ISR,Israel,HRV,Croatia,3,Western Asia,Southern Europe
+FRA,France,CYP,Cyprus,1,Western Europe,Western Asia
+GBR,United Kingdom,CYP,Cyprus,0,Northern Europe,Western Asia
+GBR,United Kingdom,PRK,Democratic People's Republic of Korea,0,Northern Europe,Eastern Asia
+GBR,United Kingdom,DJI,Djibouti,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,GNQ,Equatorial Guinea,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,ERI,Eritrea,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,GAB,Gabon,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,GMB,Gambia,2,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,GNB,Guinea-Bissau,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,JAM,Jamaica,25,Northern Europe,Latin America and the Caribbean
+HUN,Hungary,KAZ,Kazakhstan,1,Eastern Europe,Central Asia
+GBR,United Kingdom,KIR,Kiribati,0,Northern Europe,Micronesia
+ISR,Israel,KWT,Kuwait,1,Western Asia,Western Asia
+FRA,France,KGZ,Kyrgyzstan,1,Western Europe,Central Asia
+GBR,United Kingdom,LAO,Laos,0,Northern Europe,South-Eastern Asia
+GBR,United Kingdom,LSO,Lesotho,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,LUX,Luxembourg,0,Northern Europe,Western Europe
+GBR,United Kingdom,MDG,Madagascar,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,MDV,Maldives,0,Northern Europe,Southern Asia
+GBR,United Kingdom,MHL,Marshall Islands,0,Northern Europe,Micronesia
+GBR,United Kingdom,MRT,Mauritania,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,FSM,Micronesia,0,Northern Europe,Micronesia
+GBR,United Kingdom,MCO,Monaco,0,Northern Europe,Western Europe
+CAN,Canada,MNG,Mongolia,1,Northern America,Eastern Asia
+GBR,United Kingdom,MNE,Montenegro,0,Northern Europe,Southern Europe
+GBR,United Kingdom,NAM,Namibia,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,NRU,Nauru,0,Northern Europe,Micronesia
+GBR,United Kingdom,NIU,Niue,0,Northern Europe,Polynesia
+ISR,Israel,PAK,Pakistan,3,Western Asia,Southern Asia
+GBR,United Kingdom,PLW,Palau,0,Northern Europe,Micronesia
+ISR,Israel,PAN,Panama,1,Western Asia,Latin America and the Caribbean
+ISR,Israel,PRY,Paraguay,5,Western Asia,Latin America and the Caribbean
+GBR,United Kingdom,QAT,Qatar,0,Northern Europe,Western Asia
+GBR,United Kingdom,RWA,Rwanda,2,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,VCT,Saint Vincent and the Grenadines,0,Northern Europe,Latin America and the Caribbean
+CAN,Canada,WSM,Samoa,1,Northern America,Polynesia
+GBR,United Kingdom,WSM,Samoa,0,Northern Europe,Polynesia
+GBR,United Kingdom,SMR,San Marino,0,Northern Europe,Southern Europe
+GBR,United Kingdom,STP,Sao Tome and Principe,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,SYC,Seychelles,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,SLB,Solomon Islands,0,Northern Europe,Melanesia
+ISR,Israel,SDN,Sudan,8,Western Asia,Northern Africa
+GBR,United Kingdom,SUR,Suriname,0,Northern Europe,Latin America and the Caribbean
+GBR,United Kingdom,SJM,Svalbard and Jan Mayen Islands,0,Northern Europe,Northern Europe
+GBR,United Kingdom,SWZ,Swaziland,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,TLS,Timor-Leste,0,Northern Europe,South-Eastern Asia
+GBR,United Kingdom,TGO,Togo,0,Northern Europe,Sub-Saharan Africa
+GBR,United Kingdom,TON,Tonga,0,Northern Europe,Polynesia
+GBR,United Kingdom,TTO,Trinidad and Tobago,1,Northern Europe,Latin America and the Caribbean
+ISR,Israel,TKM,Turkmenistan,5,Western Asia,Central Asia
+GBR,United Kingdom,TUV,Tuvalu,0,Northern Europe,Polynesia
+FRA,France,ARE,United Arab Emirates,0,Western Europe,Western Asia
+HUN,Hungary,GBR,United Kingdom,2,Eastern Europe,Northern Europe
+GBR,United Kingdom,VUT,Vanuatu,0,Northern Europe,Melanesia
+ISR,Israel,YEM,Yemen,2,Western Asia,Western Asia
+LTU,Lithuania,BLR,Belarus,26,Northern Europe,Eastern Europe
+LTU,Lithuania,CAN,Canada,1,Northern Europe,Northern America
+LTU,Lithuania,EST,Estonia,6,Northern Europe,Northern Europe
+LTU,Lithuania,KAZ,Kazakhstan,2,Northern Europe,Central Asia
+LTU,Lithuania,LVA,Latvia,1,Northern Europe,Northern Europe
+LTU,Lithuania,RUS,Russian Federation,19,Northern Europe,Eastern Europe
+LTU,Lithuania,UKR,Ukraine,10,Northern Europe,Eastern Europe
+LTU,Lithuania,USA,United States,2,Northern Europe,Northern America
+BEL,Belgium,AFG,Afghanistan,6,Western Europe,Southern Asia
+CZE,Czech Republic,AFG,Afghanistan,3,Eastern Europe,Southern Asia
+POL,Poland,AFG,Afghanistan,1,Eastern Europe,Southern Asia
+POL,Poland,ARG,Argentina,1,Eastern Europe,Latin America and the Caribbean
+POL,Poland,ARM,Armenia,8,Eastern Europe,Western Asia
+ISR,Israel,ARM,Armenia,22,Western Asia,Western Asia
+LVA,Latvia,ARM,Armenia,1,Northern Europe,Western Asia
+POL,Poland,AUS,Australia,1,Eastern Europe,Australia and New Zealand
+POL,Poland,AUT,Austria,15,Eastern Europe,Western Europe
+POL,Poland,AZE,Azerbaijan,2,Eastern Europe,Western Asia
+LVA,Latvia,AZE,Azerbaijan,1,Northern Europe,Western Asia
+LTU,Lithuania,AZE,Azerbaijan,1,Northern Europe,Western Asia
+HUN,Hungary,BLR,Belarus,2,Eastern Europe,Eastern Europe
+POL,Poland,BLR,Belarus,299,Eastern Europe,Eastern Europe
+LVA,Latvia,BLR,Belarus,55,Northern Europe,Eastern Europe
+POL,Poland,BEL,Belgium,3,Eastern Europe,Western Europe
+SVN,Slovenia,BRA,Brazil,1,Southern Europe,Latin America and the Caribbean
+POL,Poland,BGR,Bulgaria,57,Eastern Europe,Eastern Europe
+POL,Poland,BDI,Burundi,2,Eastern Europe,Sub-Saharan Africa
+BEL,Belgium,KHM,Cambodia,1,Western Europe,South-Eastern Asia
+POL,Poland,KHM,Cambodia,1,Eastern Europe,South-Eastern Asia
+POL,Poland,CAN,Canada,3,Eastern Europe,Northern America
+FRA,France,TCD,Chad,1,Western Europe,Sub-Saharan Africa
+CZE,Czech Republic,CHL,Chile,1,Eastern Europe,Latin America and the Caribbean
+POL,Poland,CHL,Chile,1,Eastern Europe,Latin America and the Caribbean
+POL,Poland,CHN,China,1,Eastern Europe,Eastern Asia
+CHL,Chile,CHN,China,1,Latin America and the Caribbean,Eastern Asia
+POL,Poland,COL,Colombia,1,Eastern Europe,Latin America and the Caribbean
+POL,Poland,CUB,Cuba,1,Eastern Europe,Latin America and the Caribbean
+POL,Poland,CZE,Czech Republic,55,Eastern Europe,Eastern Europe
+POL,Poland,DNK,Denmark,2,Eastern Europe,Northern Europe
+BEL,Belgium,DMA,Dominica,1,Western Europe,Latin America and the Caribbean
+POL,Poland,EGY,Egypt,5,Eastern Europe,Northern Africa
+BEL,Belgium,EST,Estonia,3,Western Europe,Northern Europe
+NZL,New Zealand,EST,Estonia,1,Australia and New Zealand,Northern Europe
+POL,Poland,EST,Estonia,1,Eastern Europe,Northern Europe
+LVA,Latvia,EST,Estonia,44,Northern Europe,Northern Europe
+POL,Poland,FIN,Finland,1,Eastern Europe,Northern Europe
+BEL,Belgium,MKD,The former Yugoslav Republic of Macedonia,2,Western Europe,Southern Europe
+POL,Poland,FRA,France,8,Eastern Europe,Western Europe
+POL,Poland,GEO,Georgia,4,Eastern Europe,Western Asia
+LVA,Latvia,GEO,Georgia,2,Northern Europe,Western Asia
+POL,Poland,DEU,Germany,58,Eastern Europe,Western Europe
+POL,Poland,GRC,Greece,1,Eastern Europe,Southern Europe
+EST,Estonia,GRC,Greece,1,Northern Europe,Southern Europe
+BEL,Belgium,GTM,Guatemala,2,Western Europe,Latin America and the Caribbean
+POL,Poland,HUN,Hungary,20,Eastern Europe,Eastern Europe
+POL,Poland,IND,India,4,Eastern Europe,Southern Asia
+LVA,Latvia,IND,India,1,Northern Europe,Southern Asia
+IRL,Ireland,IDN,Indonesia,2,Northern Europe,South-Eastern Asia
+POL,Poland,IRN,Iran,1,Eastern Europe,Southern Asia
+POL,Poland,IRQ,Iraq,2,Eastern Europe,Western Asia
+POL,Poland,IRL,Ireland,1,Eastern Europe,Northern Europe
+POL,Poland,ITA,Italy,15,Eastern Europe,Southern Europe
+IRL,Ireland,JAM,Jamaica,1,Northern Europe,Latin America and the Caribbean
+BEL,Belgium,JOR,Jordan,1,Western Europe,Western Asia
+BEL,Belgium,KAZ,Kazakhstan,1,Western Europe,Central Asia
+POL,Poland,KAZ,Kazakhstan,36,Eastern Europe,Central Asia
+LVA,Latvia,KAZ,Kazakhstan,5,Northern Europe,Central Asia
+POL,Poland,KGZ,Kyrgyzstan,3,Eastern Europe,Central Asia
+CZE,Czech Republic,LVA,Latvia,1,Eastern Europe,Northern Europe
+POL,Poland,LVA,Latvia,7,Eastern Europe,Northern Europe
+POL,Poland,LBY,Libya,5,Eastern Europe,Northern Africa
+POL,Poland,LTU,Lithuania,42,Eastern Europe,Northern Europe
+LVA,Latvia,LTU,Lithuania,7,Northern Europe,Northern Europe
+POL,Poland,MEX,Mexico,2,Eastern Europe,Latin America and the Caribbean
+CZE,Czech Republic,MNG,Mongolia,2,Eastern Europe,Eastern Asia
+POL,Poland,MNG,Mongolia,27,Eastern Europe,Eastern Asia
+CZE,Czech Republic,NLD,Netherlands,1,Eastern Europe,Western Europe
+POL,Poland,NLD,Netherlands,2,Eastern Europe,Western Europe
+POL,Poland,NOR,Norway,1,Eastern Europe,Northern Europe
+BEL,Belgium,PAN,Panama,1,Western Europe,Latin America and the Caribbean
+LVA,Latvia,POL,Poland,4,Northern Europe,Eastern Europe
+NZL,New Zealand,PRT,Portugal,1,Australia and New Zealand,Southern Europe
+POL,Poland,PRT,Portugal,4,Eastern Europe,Southern Europe
+CHL,Chile,MDA,Republic of Moldova,2,Latin America and the Caribbean,Eastern Europe
+POL,Poland,ROU,Romania,7,Eastern Europe,Eastern Europe
+POL,Poland,RUS,Russian Federation,182,Eastern Europe,Eastern Europe
+LVA,Latvia,RUS,Russian Federation,259,Northern Europe,Eastern Europe
+IRL,Ireland,LCA,Saint Lucia,2,Northern Europe,Latin America and the Caribbean
+ISR,Israel,SAU,Saudi Arabia,1,Western Asia,Western Asia
+POL,Poland,SRB,Serbia,2,Eastern Europe,Southern Europe
+CHL,Chile,SRB,Serbia,1,Latin America and the Caribbean,Southern Europe
+LVA,Latvia,SRB,Serbia,1,Northern Europe,Southern Europe
+POL,Poland,SVK,Slovak Republic,52,Eastern Europe,Eastern Europe
+POL,Poland,ESP,Spain,6,Eastern Europe,Southern Europe
+BEL,Belgium,LKA,Sri Lanka,1,Western Europe,Southern Asia
+CZE,Czech Republic,SWE,Sweden,1,Eastern Europe,Northern Europe
+HUN,Hungary,SWE,Sweden,1,Eastern Europe,Northern Europe
+POL,Poland,SWE,Sweden,4,Eastern Europe,Northern Europe
+POL,Poland,CHE,Switzerland,2,Eastern Europe,Western Europe
+POL,Poland,SYR,Syria,4,Eastern Europe,Western Asia
+LVA,Latvia,TJK,Tajikistan,1,Northern Europe,Central Asia
+POL,Poland,TUR,Turkey,3,Eastern Europe,Western Asia
+IRL,Ireland,UGA,Uganda,1,Northern Europe,Sub-Saharan Africa
+POL,Poland,UKR,Ukraine,1000,Eastern Europe,Eastern Europe
+LVA,Latvia,UKR,Ukraine,32,Northern Europe,Eastern Europe
+NZL,New Zealand,ARE,United Arab Emirates,0,Australia and New Zealand,Western Asia
+POL,Poland,GBR,United Kingdom,7,Eastern Europe,Northern Europe
+POL,Poland,USA,United States,2,Eastern Europe,Northern America
+POL,Poland,UZB,Uzbekistan,8,Eastern Europe,Central Asia
+CHL,Chile,UZB,Uzbekistan,2,Latin America and the Caribbean,Central Asia
+LVA,Latvia,UZB,Uzbekistan,2,Northern Europe,Central Asia
+POL,Poland,VEN,Venezuela,2,Eastern Europe,Latin America and the Caribbean
+FRA,France,ISR,Israel,2,Western Europe,Western Asia
+FRA,France,TJK,Tajikistan,2,Western Europe,Central Asia
+CAN,Canada,ERI,Eritrea,0,Northern America,Sub-Saharan Africa
+CAN,Canada,GNB,Guinea-Bissau,0,Northern America,Sub-Saharan Africa
+CAN,Canada,BRN,Brunei Darussalam,0,Northern America,South-Eastern Asia
+CAN,Canada,SUR,Suriname,0,Northern America,Latin America and the Caribbean
+CAN,Canada,NRU,Nauru,0,Northern America,Micronesia
+CAN,Canada,GNQ,Equatorial Guinea,0,Northern America,Sub-Saharan Africa
+CHE,Switzerland,GHA,Ghana,1,Western Europe,Sub-Saharan Africa
+AUT,Austria,GEO,Georgia,1,Western Europe,Western Asia
+AUT,Austria,LVA,Latvia,3,Western Europe,Northern Europe
+CHE,Switzerland,TKM,Turkmenistan,1,Western Europe,Central Asia
+CAN,Canada,LUX,Luxembourg,0,Northern America,Western Europe
+CAN,Canada,PNG,Papua New Guinea,0,Northern America,Melanesia
+CAN,Canada,STP,Sao Tome and Principe,0,Northern America,Sub-Saharan Africa
+POL,Poland,MDA,Republic of Moldova,9,Eastern Europe,Eastern Europe
+CAN,Canada,NAM,Namibia,0,Northern America,Sub-Saharan Africa
+IRL,Ireland,HND,Honduras,1,Northern Europe,Latin America and the Caribbean
+AUT,Austria,IRL,Ireland,1,Western Europe,Northern Europe
+EST,Estonia,NLD,Netherlands,1,Northern Europe,Western Europe
+CAN,Canada,SYC,Seychelles,0,Northern America,Sub-Saharan Africa
+CHE,Switzerland,GRD,Grenada,1,Western Europe,Latin America and the Caribbean
+CAN,Canada,MDV,Maldives,0,Northern America,Southern Asia
+EST,Estonia,SYR,Syria,1,Northern Europe,Western Asia
+LTU,Lithuania,MAR,Morocco,1,Northern Europe,Northern Africa
+CAN,Canada,LSO,Lesotho,0,Northern America,Sub-Saharan Africa
+CHE,Switzerland,IDN,Indonesia,1,Western Europe,South-Eastern Asia
+CAN,Canada,COM,Comoros,0,Northern America,Sub-Saharan Africa
+SVN,Slovenia,GBR,United Kingdom,1,Southern Europe,Northern Europe
+IRL,Ireland,MUS,Mauritius,1,Northern Europe,Sub-Saharan Africa
+CAN,Canada,SLE,Sierra Leone,0,Northern America,Sub-Saharan Africa
+CAN,Canada,KIR,Kiribati,0,Northern America,Micronesia
+SVN,Slovenia,USA,United States,1,Southern Europe,Northern America
+NZL,New Zealand,PRK,Democratic People's Republic of Korea,3,Australia and New Zealand,Eastern Asia
+CAN,Canada,SMR,San Marino,0,Northern America,Southern Europe
+CAN,Canada,TKM,Turkmenistan,0,Northern America,Central Asia
+CHE,Switzerland,BDI,Burundi,1,Western Europe,Sub-Saharan Africa
+LTU,Lithuania,EGY,Egypt,1,Northern Europe,Northern Africa
+CHE,Switzerland,BEN,Benin,1,Western Europe,Sub-Saharan Africa
+CAN,Canada,AND,Andorra,0,Northern America,Southern Europe
+CAN,Canada,MHL,Marshall Islands,0,Northern America,Micronesia
+CAN,Canada,BWA,Botswana,0,Northern America,Sub-Saharan Africa
+CAN,Canada,CYP,Cyprus,0,Northern America,Western Asia
+CHL,Chile,SVK,Slovak Republic,1,Latin America and the Caribbean,Eastern Europe
+CAN,Canada,BTN,Bhutan,0,Northern America,Southern Asia
+CAN,Canada,MNE,Montenegro,0,Northern America,Southern Europe
+SVN,Slovenia,AUS,Australia,1,Southern Europe,Australia and New Zealand
+POL,Poland,NPL,Nepal,1,Eastern Europe,Southern Asia
+POL,Poland,HRV,Croatia,1,Eastern Europe,Southern Europe
+CAN,Canada,TUV,Tuvalu,0,Northern America,Polynesia
+EST,Estonia,CZE,Czech Republic,1,Northern Europe,Eastern Europe
+HUN,Hungary,MNG,Mongolia,1,Eastern Europe,Eastern Asia
+CAN,Canada,AGO,Angola,0,Northern America,Sub-Saharan Africa
+CAN,Canada,MRT,Mauritania,0,Northern America,Sub-Saharan Africa
+POL,Poland,PHL,Philippines,1,Eastern Europe,South-Eastern Asia
+CAN,Canada,PLW,Palau,0,Northern America,Micronesia
+CAN,Canada,QAT,Qatar,1,Northern America,Western Asia
+CAN,Canada,TCD,Chad,0,Northern America,Sub-Saharan Africa
+CHE,Switzerland,COD,Democratic Republic of the Congo,2,Western Europe,Sub-Saharan Africa
+CAN,Canada,MCO,Monaco,0,Northern America,Western Europe
+LVA,Latvia,VEN,Venezuela,1,Northern Europe,Latin America and the Caribbean
+CAN,Canada,FSM,Micronesia,0,Northern America,Micronesia
+CAN,Canada,TLS,Timor-Leste,0,Northern America,South-Eastern Asia
+IRL,Ireland,DMA,Dominica,1,Northern Europe,Latin America and the Caribbean
+LTU,Lithuania,IRN,Iran,1,Northern Europe,Southern Asia
+AUT,Austria,CYP,Cyprus,1,Western Europe,Western Asia
+CAN,Canada,CPV,Cape Verde,0,Northern America,Sub-Saharan Africa
+CAN,Canada,DJI,Djibouti,0,Northern America,Sub-Saharan Africa
+CAN,Canada,TON,Tonga,0,Northern America,Polynesia
+CAN,Canada,GMB,Gambia,0,Northern America,Sub-Saharan Africa
+LVA,Latvia,KGZ,Kyrgyzstan,2,Northern Europe,Central Asia
+CAN,Canada,LAO,Laos,0,Northern America,South-Eastern Asia
+CAN,Canada,NER,Niger,0,Northern America,Sub-Saharan Africa
+ISR,Israel,SRB,Serbia,1,Western Asia,Southern Europe
+CAN,Canada,GAB,Gabon,0,Northern America,Sub-Saharan Africa
+CAN,Canada,VUT,Vanuatu,0,Northern America,Melanesia
+CAN,Canada,SLB,Solomon Islands,0,Northern America,Melanesia
+FRA,France,YEM,Yemen,1,Western Europe,Western Asia
+CHE,Switzerland,BGD,Bangladesh,2,Western Europe,Southern Asia
+AUS,Australia,BGD,Bangladesh,820,Australia and New Zealand,Southern Asia
+LTU,Lithuania,FRA,France,1,Northern Europe,Western Europe
+CZE,Czech Republic,GBR,United Kingdom,1,Eastern Europe,Northern Europe
+ISR,Israel,CYP,Cyprus,1,Western Asia,Western Asia
+CHL,Chile,FIN,Finland,1,Latin America and the Caribbean,Northern Europe
+CZE,Czech Republic,HRV,Croatia,1,Eastern Europe,Southern Europe
+IRL,Ireland,ATG,Antigua and Barbuda,1,Northern Europe,Latin America and the Caribbean
+IRL,Ireland,KNA,Saint Kitts and Nevis,3,Northern Europe,Latin America and the Caribbean
+IRL,Ireland,ISR,Israel,1,Northern Europe,Western Asia
+CHE,Switzerland,THA,Thailand,1,Western Europe,South-Eastern Asia
+CHL,Chile,AUS,Australia,1,Latin America and the Caribbean,Australia and New Zealand
+CZE,Czech Republic,COL,Colombia,1,Eastern Europe,Latin America and the Caribbean
+BEL,Belgium,CYP,Cyprus,0,Western Europe,Western Asia
+CZE,Czech Republic,BOL,Bolivia,1,Eastern Europe,Latin America and the Caribbean
+GRC,Greece,COK,Cook Islands,0,Southern Europe,Polynesia
+GRC,Greece,SJM,Svalbard and Jan Mayen Islands,0,Southern Europe,Northern Europe
+AUS,Australia,PAK,Pakistan,1139,Australia and New Zealand,Southern Asia
+CZE,Czech Republic,ALB,Albania,1,Eastern Europe,Southern Europe
+GRC,Greece,NIU,Niue,0,Southern Europe,Polynesia
+FRA,France,PNG,Papua New Guinea,1,Western Europe,Melanesia
+DEU,Germany,BWA,Botswana,1,Western Europe,Sub-Saharan Africa
+CHE,Switzerland,TWN,Chinese Taipei,1,Western Europe,Eastern Asia
+BEL,Belgium,COD,Democratic Republic of the Congo,8,Western Europe,Sub-Saharan Africa
+DEU,Germany,DJI,Djibouti,1,Western Europe,Sub-Saharan Africa
+DEU,Germany,BTN,Bhutan,1,Western Europe,Southern Asia
+CAN,Canada,SSD,South Sudan,0,Northern America,Sub-Saharan Africa
+LVA,Latvia,GBR,United Kingdom,1,Northern Europe,Northern Europe
+CAN,Canada,TWN,Chinese Taipei,65,Northern America,Eastern Asia
+DEU,Germany,MDV,Maldives,1,Western Europe,Southern Asia
+DEU,Germany,TWN,Chinese Taipei,18,Western Europe,Eastern Asia

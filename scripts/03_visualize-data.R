@@ -39,8 +39,10 @@ circos.par(cell.padding = c(0, 0, 0, 0),
 
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
                   xlim = cbind(subregion_details$xmin, 
-                               subregion_details$total) #set limits of the x axis for each sector between 0 and total flow
+                               subregion_details$xmax) #set limits of the x axis for each sector between 0 and total = xmax
 )
+
+options(scipen = 10) #prevent scientific notation on plot
 
 #### Plot sectors ####
 
@@ -93,19 +95,20 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          circos.axis(labels.cex = 1,
                                      lwd = 0.4,
                                      labels.niceFacing = TRUE,
-                                     major.tick.length = 0.1,
-                                     minor.ticks = 3
-                        )
-                         
+                                     major.tick.length = 0.2,
+                                     minor.ticks = 1,
+                                     major.at = seq(0, xlim[2] + 20000, by = 20000),
+                                     labels = scales::comma(seq(0, xlim[2] + 20000, by = 20000))
+                          )
+        
                        }
 )
-
 
 #### Plot links ####
 
 #transform flow_matrix into its long form and sort it 
 flow_matrix_long = melt(flow_matrix,
-                        value.name = "number"
+                        value.name = "number" #number of migrants
 )
 
 colnames(flow_matrix_long) = c("subregion_from",
@@ -118,12 +121,12 @@ flow_matrix_long = flow_matrix_long %>%
 
 #keep only the largest flows to increase readability
 flow_matrix_long = subset(flow_matrix_long, 
-                          number > quantile(number, 0.70)
+                          number > quantile(number, 0.50)
 )
 
-
-subregion_details$sum1 <- colSums(flow_matrix) #number of immigrants
-subregion_details$sum2 <- numeric(nrow(subregion_details)) #number of subregions
+#add plotting parameters that dynamically update the coordinates of circle links
+subregion_details$sum1 <- colSums(flow_matrix)
+subregion_details$sum2 <- numeric(nrow(subregion_details)) 
 
 #not yet clear why this is needed, but it prevents links from being plotted outside of range
 circos.par(track.margin = c(0, 0)) 

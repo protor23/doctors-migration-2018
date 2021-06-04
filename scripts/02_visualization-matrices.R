@@ -13,105 +13,116 @@ library(reshape2)
 
 #### Create the migration flow matrix ####
 
-#the planned visualization requires a matrix showing the number 
-#of immigrants and emigrants for all combinations of subregions
+#a matrix showing the number of migrants from all subregions to all subregions
 #this code is an adaptation of the instructions of Sander et al. (2014)
 
 #load data
 data = read_csv(here("data-processed/data.csv"))
 
+unique(data$subregion_to) == unique(data$subregion_from) #origin and destination subregions are different
+
 #find all subregions in the dataset
-factors = unique(c(unique(data$subregion_to), 
-                   unique(data$subregion_from)
-)
-)
+unique_subreg = unique(c(unique(data$subregion_to), unique(data$subregion_from)))
 
 #initialise flow matrix as a quadratic matrix with all values of 0 
-x = rep(0, length(factors)^2)
-row_n = factors #row names for matrix
-col_n = factors #column names for matrix
+x = rep(0, length(unique_subreg)^2)
+row_n = unique_subreg #row names for matrix - treat as origin subregions
+col_n = unique_subreg #column names for matrix - treat as destination subregions
 
 flow_matrix = matrix(x, 
-                     nrow = length(factors), 
+                     nrow = length(unique_subreg), 
                      byrow = TRUE,
                      dimnames = list(row_n, col_n)
 ) #create matrix
 
-#get number of immigrants and emigrants per subregion 
-subregions = data[ , 3:5] #retrieve subregions and number of migrants from dataset
-
-subregions = subregions %>%
+#get number of immigrants/emigrants at subregion level
+subregions = data %>%
   group_by(subregion_from, subregion_to) %>%
-  summarize(no = sum(number)) #number of total migrants per subregion
+  summarize(subregion_number = sum(number))
 
 #convert subregions dataframe into wide format
-
 subregions = dcast(subregions,
                    subregion_from ~ subregion_to, #origin subregions as rows
-                   value.var = "no"
+                   value.var = "subregion_number"
 ) #convert into wide format
 
 #set rownames to subregion_from to facilitate indexing
 rownames(subregions) = subregions$subregion_from 
 
 #update flow_matrix with values from subregions
-for(i in factors) { #take each unique subregion
-  for(j in factors) { #combine it with all subregions
+for(i in unique_subreg) { #take each unique subregion
+  for(j in unique_subreg) { #combine it with all subregions
     flow_matrix[i, j] = ifelse( #for each combination
       (flow_matrix[i, j] != subregions[i, j] && #if subregions value is different from flow_matrix value
          !(is.na(subregions[i, j]))),  #providing subregions value is not missing
       subregions[i, j], #replace value in flow_matrix with subregions value 
-      0 #otherwise keep 0 in flow_matrix
+      flow_matrix[i, j] #otherwise keep 0 in flow_matrix
     )
   }
-}
+} 
 
-#replace all NAs in flow_matrix with 0 to mark the absence of migrants
+#replace all NAs caused by missing subregions in subregions data frame in flow_matrix with 0 
 flow_matrix[is.na(flow_matrix)] = 0
 
 #### Create the plotting details data frame #### 
 
-#the planned visualization requires a data frame assigning colours 
-#and other plotting parameters to all subregions
+#a data frame assiging plotting parameters to all subregions
 #this code is an adaptation of the instructions of Sander et al. (2014)
 
-#Compute number of emigrants per region
+#Compute number of emigrants per region 
 df_from = data %>%
   group_by(subregion_from) %>%
-  summarize(sum(number))
+  summarize(emig = sum(number))
 
 #Compute number of immigrants per region
 df_to = data %>%
   group_by(subregion_to) %>%
-  summarize(sum(number))
+  summarize(immig = sum(number))
 
-#Create subregion_details data frame with info about migrants and emigrants
+#Create subregion_details data frame with info about total migration flow (immigrants + emigrants)
 subregion_details = left_join(df_from, 
                               df_to, 
-                              by = c("subregion_from" = "subregion_to")
+                              by = c("subregion_from" = "subregion_to") 
 ) #join dataframes
 
-colnames(subregion_details) = c("subregion", "outer", "inner") #rename columns
+subregion_details = subregion_details %>%
+  rename(subregion = "subregion_from") #subregion_from was here because I left-joined df_to to df_from
+#however, subregion_details now includes details about individual subregions, rather than migration flow
+#hence the name change
+ 
+remove(df_from, df_to) #remove intermediary objects from the environment
 
-subregion_details$total = rowSums(subregion_details[ ,c("outer", "inner")], 
-                                  na.rm = TRUE) #add total migrants to datfram
+#calculate total migrants per subregion
+subregion_details$total = rowSums(subregion_details[ ,c("emig", "immig")], 
+                                  na.rm = TRUE)
 
+#eliminate subregions with very tiny numbers of migrants as they will muddle the plot
+(tiny_subreg = subset(subregion_details, 
+                      total < quantile(total, 0.3)
+)) #Micronesia and Polynesia had 0 and 3 migrants, respectively, with the next lowest value being 77
+#in included in the plot, they will reduce readability, hence I will remove them
+
+subregion_details = subregion_details[!(subregion_details$subregion %in% tiny_subreg$subregion), ]
+
+nrow(subregion_details) #15 subregions
 
 #Add rgb codes to each subregion
-subregion_details$rgb = c("255,0,0", "0,255,0", "0,0,255", 
-                          "255,255,0", "0,255,255", "255,0,255",
-                          "128,128,128", "128,0,0", "128,128,0", 
-                          "0,128,0", "128,0,128", "0,128,128",
-                          "0,0,128", "152,251,152", "30,144,255", 
-                          "138,43,226"
-) 
+
+rgb_pool =  c("255,0,0", "0,255,0", "0,0,255", 
+              "255,255,0", "0,255,255", "255,0,255",
+              "128,128,128", "128,0,0", "128,128,0", 
+              "0,128,0", "128,0,128", "0,128,128",
+              "0,0,128", "152,251,152", "30,144,255"
+) #Googled 15 rgb codes to enhance contrast
+ 
+subregion_details$rgb = rgb_pool[1:nrow(subregion_details)]
 
 #Split rgb codes into 3 variables - adapted from Sander et al. (2014)
 n = nrow(subregion_details)
 subregion_details = cbind(subregion_details, #split codes and treat them as numbers
                           matrix(as.numeric(unlist(strsplit(subregion_details$rgb, split = ","))), 
                                  nrow = n, byrow = TRUE 
-                          ) #arrange them in n columns in a matrix
+                          ) #arrange them in n rows in a matrix
 )
 
 subregion_details = subregion_details %>%
@@ -126,17 +137,18 @@ subregion_details$rcol = rgb(subregion_details$r,
                              subregion_details$g, 
                              subregion_details$b, 
                              max = 255
-)
+) #converted into HEX
 
 subregion_details$lcol = rgb(subregion_details$r, 
                              subregion_details$g, 
                              subregion_details$b, 
                              alpha = 150, #transparency index
                              max = 255
-)
+) #converted into HEX
 
-#add minimum number of migrants per subregion as 0
+#add plotting variables to dynamically adapt plot
 subregion_details$xmin = rep(0, nrow(subregion_details))
+subregion_details$xmax = subregion_details$total
 
 #replace NAs with 0 to reflect no migrants (and because the plotting function cannot handle NAs)
 subregion_details[is.na(subregion_details)] = 0
@@ -156,3 +168,5 @@ subregion_details$subregion = factor(subregion_details$subregion, #treat subregi
 
 flow_matrix = flow_matrix[levels(subregion_details$subregion), #order rows by total flow
                           levels(subregion_details$subregion)] #order columns by total flow
+
+subregion_details
