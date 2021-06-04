@@ -61,7 +61,8 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                                      labels = name, #name of subregion
                                      facing = "clockwise", 
                                      niceFacing = TRUE,
-                                     cex = 1.3 #scale text
+                                     cex = 1.3, #scale text
+                                     col = subregion_details$rcol[i]
                          )
                          
                          #plot a sector for each subregion
@@ -96,7 +97,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                                      lwd = 0.4,
                                      labels.niceFacing = TRUE,
                                      major.tick.length = 0.2,
-                                     minor.ticks = 1,
+                                     minor.ticks = 3,
                                      major.at = seq(0, xlim[2] + 20000, by = 20000),
                                      labels = scales::comma(seq(0, xlim[2] + 20000, by = 20000))
                           )

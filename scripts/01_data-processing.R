@@ -40,8 +40,7 @@ sub_reg = sub_reg[, c("name", "alpha-3", "sub-region")]
 sub_reg = sub_reg %>%
   rename(country = name,
          code = "alpha-3",
-         subregion = "sub-region"
-  )
+         subregion = "sub-region")
 
 #capitalise E in South-eastern Asia
 sub_reg$subregion = ifelse(sub_reg$subregion == "South-eastern Asia", 

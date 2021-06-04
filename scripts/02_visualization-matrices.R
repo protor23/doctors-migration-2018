@@ -24,7 +24,7 @@ unique(data$subregion_to) == unique(data$subregion_from) #origin and destination
 #find all subregions in the dataset
 unique_subreg = unique(c(unique(data$subregion_to), unique(data$subregion_from)))
 
-#initialise flow matrix as a quadratic matrix with all values of 0 
+#initialise flow matrix as a square matrix with all values of 0 
 x = rep(0, length(unique_subreg)^2)
 row_n = unique_subreg #row names for matrix - treat as origin subregions
 col_n = unique_subreg #column names for matrix - treat as destination subregions
@@ -96,32 +96,33 @@ remove(df_from, df_to) #remove intermediary objects from the environment
 subregion_details$total = rowSums(subregion_details[ ,c("emig", "immig")], 
                                   na.rm = TRUE)
 
+#Add rgb codes to each subregion
+
+rgb_pool =  c("30,144,255", "128,0,128","255,0,0", 
+              "0,255,0", "0,0,255", "218,165,32", 
+              "0,255,255", "188,143,143", "255,0,255", 
+              "128,128,128", "127,255,212", "128,0,0", 
+              "128,128,0", "0,128,0", "0,128,128", 
+              "0,0,128", "152,251,152" 
+) #Googled 17 rgb codes that enhance contrast; 17 = length(unique_subreg), hence the user can include all subregions in the plot
+ 
 #eliminate subregions with very tiny numbers of migrants as they will muddle the plot
 (tiny_subreg = subset(subregion_details, 
-                      total < quantile(total, 0.3)
+                      total < quantile(total, 0.2)
 )) #Micronesia and Polynesia had 0 and 3 migrants, respectively, with the next lowest value being 77
 #in included in the plot, they will reduce readability, hence I will remove them
 
 subregion_details = subregion_details[!(subregion_details$subregion %in% tiny_subreg$subregion), ]
 
-nrow(subregion_details) #15 subregions
-
-#Add rgb codes to each subregion
-
-rgb_pool =  c("255,0,0", "0,255,0", "0,0,255", 
-              "255,255,0", "0,255,255", "255,0,255",
-              "128,128,128", "128,0,0", "128,128,0", 
-              "0,128,0", "128,0,128", "0,128,128",
-              "0,0,128", "152,251,152", "30,144,255"
-) #Googled 15 rgb codes to enhance contrast
- 
+#select as many colours as needed
 subregion_details$rgb = rgb_pool[1:nrow(subregion_details)]
 
 #Split rgb codes into 3 variables - adapted from Sander et al. (2014)
 n = nrow(subregion_details)
 subregion_details = cbind(subregion_details, #split codes and treat them as numbers
                           matrix(as.numeric(unlist(strsplit(subregion_details$rgb, split = ","))), 
-                                 nrow = n, byrow = TRUE 
+                                 nrow = n, 
+                                 byrow = TRUE 
                           ) #arrange them in n rows in a matrix
 )
 
@@ -158,7 +159,7 @@ subregion_details[is.na(subregion_details)] = 0
 #the planned visualization will plot graphical elements in ascending order
 #this code is an adaptation of the instructions of Sander et al. (2014)
 
-#order subregion_details based on total migration flow
+#order subregion_details ascendently based on total migration flow
 subregion_details = subregion_details %>%
   arrange(total) %>% #order ascendently based on total
   mutate(order = c(1:nrow(subregion_details))) #add order variable to index position
@@ -168,5 +169,3 @@ subregion_details$subregion = factor(subregion_details$subregion, #treat subregi
 
 flow_matrix = flow_matrix[levels(subregion_details$subregion), #order rows by total flow
                           levels(subregion_details$subregion)] #order columns by total flow
-
-subregion_details
