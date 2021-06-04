@@ -62,7 +62,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                                      facing = "clockwise", 
                                      niceFacing = TRUE,
                                      cex = 1.3, #scale text
-                                     col = subregion_details$rcol[i]
+                                     col = subregion_details$rcol[i] #colour matching region label
                          )
                          
                          #plot a sector for each subregion
@@ -98,8 +98,8 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                                      labels.niceFacing = TRUE,
                                      major.tick.length = 0.2,
                                      minor.ticks = 3,
-                                     major.at = seq(0, xlim[2] + 20000, by = 20000),
-                                     labels = scales::comma(seq(0, xlim[2] + 20000, by = 20000))
+                                     major.at = seq(0, xlim[2] + 20000, by = 20000), #major ticks every 20000 units
+                                     labels = scales::comma(seq(0, xlim[2] + 20000, by = 20000)) #add commas to numbers
                           )
         
                        }
