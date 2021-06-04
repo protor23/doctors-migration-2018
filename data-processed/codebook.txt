@@ -1,0 +1,11 @@
+Processed data:
+
+to - country of origin
+
+from - destination country
+
+number* - the number of foreignly trained doctors who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications - this includes medical interns and residents.
+
+subregion_to - the subregion corresponding to the country of origin
+
+subregion_from - the subregion corresponding to the destination country

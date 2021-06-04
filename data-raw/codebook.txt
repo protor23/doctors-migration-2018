@@ -1,0 +1,13 @@
+Raw data: workforce-migration (
+
+Country - destination country
+
+Country of origin - self-explanatory
+
+Year - 2018, redundant column
+
+Value* - the number of foreignly trained doctors who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications - this includes medical interns and residents.
+
+NB. To replicate my data search, go to https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_WFMI#, and select var = foreign-trained-doctors-stock, year = 2018, in all OECD countries.
+
+Raw data: subregions - details at: https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes

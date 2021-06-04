@@ -9,6 +9,8 @@ output:
     highlight: tango
 ---
 
+<!-- Please do not change the location of the file, as this will prevent R from finding the path to the png visualization  -->
+
 ```{css echo = FALSE}
 pre code, pre, code {
   max-height: 350px !important;
@@ -20,17 +22,17 @@ pre code, pre, code {
 
 ## **Research Questions**
 
-* To which geographical regions do healthcare workers migrate?
+* To which geographical regions do foreign-trained doctors migrate?
 
-* From which geographical regions do healthcare workers emigrate?
+* From which geographical regions do foreign-trained doctors emigrate?
 
 * Are there any distinguishable patterns? For example:
-  + do healthcare workers from a certain region emigrate to a select few other regions?
-  + are there any regions to which healthcare workers do not emigrate?
+  + do doctors from a certain region emigrate to a select few other regions?
+  + are there any regions to which doctors do not emigrate?
 
 ## **Data Origin**
 
-I retrieved data from the [OECD website](https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_WFMI), where I downloaded migration information from all OECD countries in 2018. I subsequently retrieved a dataset linking countries with grographical subregions from [github](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv).
+I retrieved data from the [OECD website](https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_WFMI), where I downloaded migration information from all OECD countries in 2018. I subsequently retrieved a dataset linking countries with grographical subregions from [github](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv). 
 
 ```{r eval = TRUE, results = "hide", message = FALSE}
 library(readr)
@@ -40,7 +42,7 @@ wf_mig = read_csv(here("data-raw/workforce-migration.csv")) #migration data
 sub_reg = read_csv(here("data-raw/subregions.csv")) #subregions data
 ```
 
-The healthcare workforce migration data set includes the number of healthcare workers (doctors and nurses) who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications. 
+The healthcare workforce migration data set includes the number of foreignly trained doctors who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications - this includes medical interns and residents.
 
 ```{r messages = FALSE}
 head(wf_mig)
