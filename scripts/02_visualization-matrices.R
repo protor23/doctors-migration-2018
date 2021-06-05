@@ -94,14 +94,30 @@ remove(df_from, df_to) #remove intermediary objects from the environment
 subregion_details$total = rowSums(subregion_details[ ,c("emig", "immig")], 
                                   na.rm = TRUE)
 
-#add rgb codes to each subregion
+#order subregion_details ascendently based on total migration flow
+#the planned visualization will plot graphical elements in ascending order
+subregion_details = subregion_details %>%
+  arrange(total) %>% #order ascendently based on total
+  mutate(order = c(1:nrow(subregion_details))) #add order variable to index position
 
-rgb_pool =  c("255,0,0", "0,255,0", "0,0,255",
-              "124,252,0", "0,255,255", "255,0,255",
-              "128,0,0", "128,128,0", "0,128,0", 
-              "128,0,128","0,128,128","0,0,128",
-              "250,128,144", "100,149,237", "153,50,204",
-              "0,100,0", "255,215,0"
+#add rgb codes to each subregion
+rgb_pool =  c("255,0,0", #red
+              "0,255,0", #lime
+              "0,0,255", #blue
+              "148,0,211", #dark violet
+              "0,206,209", #dark turquoise
+              "255,0,255", #magenta
+              "128,0,0", #maroon
+              "255,99,71", #tomato
+              "128,128,0", #olive
+              "0,128,0", #green
+              "128,0,128", #purple
+              "0,128,128", #teal
+              "0,0,128", #navy
+              "250,128,144", #salmon
+              "100,149,237", #corn flower blue
+              "153,50,204", #dark orchid
+              "60,179,113" #medium sea green
 ) #googled 17 rgb codes that enhance contrast; 17 = length(unique_subreg)
  
 #eliminate subregions with tiny numbers of migrants as they will muddle the plot
@@ -111,7 +127,7 @@ rgb_pool =  c("255,0,0", "0,255,0", "0,0,255",
 
 subregion_details = subregion_details[!(subregion_details$subregion %in% tiny_subreg$subregion), ] #remove low-migrant subregions
 
-#select as many colours as needed
+#select as many colours as needed - they will be allocated in the order specified earlier
 subregion_details$rgb = rgb_pool[1:nrow(subregion_details)]
 
 #split rgb codes into 3 variables - adapted from Sander et al. (2014)
@@ -140,7 +156,7 @@ subregion_details$rcol = rgb(subregion_details$r,
 subregion_details$lcol = rgb(subregion_details$r, 
                              subregion_details$g, 
                              subregion_details$b, 
-                             alpha = 150, #transparency index
+                             alpha = 200, #transparency index
                              max = 255
 ) #converted into HEX
 
@@ -151,16 +167,7 @@ subregion_details$xmax = subregion_details$total
 #replace NAs with 0 to reflect no migrants (and because the plotting function cannot handle NAs)
 subregion_details[is.na(subregion_details)] = 0
 
-#### Order data ####
-
-#the planned visualization will plot graphical elements in ascending order
-#this code is an adaptation of the instructions of Sander et al. (2014)
-
-#order subregion_details ascendently based on total migration flow
-subregion_details = subregion_details %>%
-  arrange(total) %>% #order ascendently based on total
-  mutate(order = c(1:nrow(subregion_details))) #add order variable to index position
-
+#### Order flow_matrix ####
 subregion_details$subregion = factor(subregion_details$subregion, #treat subregion as factor
                                      levels = subregion_details$subregion) 
 
