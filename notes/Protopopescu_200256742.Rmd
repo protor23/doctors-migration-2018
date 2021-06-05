@@ -5,6 +5,8 @@ date: ""
 output: pdf_document
 ---
 
+<!-- Note you need to have LaTeX installed to knit this file to a pdf -->
+
 ## 1. Which topic did I find most useful or interesting? Explain why
 Git & Github, and the whole idea of version control - I learned how important having a systematic way to document, update, share and store code can be. It was something I thought only IT engineers needed to know because they work on large-scale projects. How wrong I was. I am sure it is highly important for collaborative projects, but it was really important for me working alone on my data project - it allowed me to see exactly what changes I made, where, and why, and enabled me to recover old versions of my code at relatively dramatic moments where I could not identify the cause of some errors. I think it is important to have a trail not only of my analysis (i.e., the code), but also my steps throughout the process (i.e., the version control system) to allow back-and-forth movements without compromising the integrity of my project or storing lots of versions in a local folder and getting awkwardly lost in them.
 
