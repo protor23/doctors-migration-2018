@@ -7,6 +7,10 @@ It presents a circular flow diagram illustrating the migration flow of foreingly
 * data-processed => data following my cleaning steps along with a codebook
 * data-raw => data before any cleaning along with a codebook detailing its origins and meaning
 * figs => the main data visualization saved as .png
+* notes => includes my reflection on my time on this project and the PSY6422 module more broadly
 * renv => this is a local library storing all the packages that I used in the project along with their dependencies
 * scripts => three separate scripts for data processing, intermediary building of visualization matrices needed for the final plot, and data visualization; if impatient, run the data-visualization script without paying attention to the first two - but open them in the RProject associated with the file, not independently, otherwise my code won't be able to find paths to relevant files
 * report.Rmd => a presentation of the process behind this data visualization, which can also be viewed using GitHub pages here: https://protor23.github.io/doctors-migration-2018/
+
+#NB
+When you download/clone my repository, make sure to open scripts after opening the R Project - you will be promted to load the packages encapsulated by the renv folder, so please press 'y' when prompted in the console. 
