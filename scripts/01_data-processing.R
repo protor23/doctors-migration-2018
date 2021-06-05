@@ -16,13 +16,14 @@ library(stringr)
 
 #### Load data ####
 
-wf_mig = read_csv(here("data-raw/workforce-migration.csv"))#migration data
-sub_reg = read_csv(here("data-raw/subregions.csv")) #subregions data
+wf_mig = read_csv(here("data-raw/workforce-migration.csv"))
+sub_reg = read_csv(here("data-raw/subregions.csv"))
 
-#### Basic data cleaning ####
+#### Data cleaning ####
 
 #wf_mig - keep relevant columns and rename them
 wf_mig = wf_mig[, c("COU", "Country", "CO2", "Country of origin", "Value")]
+
 wf_mig = wf_mig %>%
   rename(code_to = "COU",
          country_to = "Country",
@@ -48,34 +49,34 @@ sub_reg$subregion = ifelse(sub_reg$subregion == "South-eastern Asia",
                            sub_reg$subregion
 )
 
-#### Data cleaning - joining datasets ####
+#### Data processing ####
 
-#join wf_mig and sub_reg to get subregions for origin and destination countries
-#check whether all country codes in wf_mig are also present in sub_reg to allow the join
+#join wf_mig and sub_reg to assign subregions to botg origin and destination countries
 
 #find countries in wf_mig not included in sub_reg
-data.frame(unique(c(setdiff(wf_mig$code_to, sub_reg$code), setdiff(wf_mig$code_from, sub_reg$code)))) #0
+data.frame(unique(c(setdiff(wf_mig$code_to, sub_reg$code), setdiff(wf_mig$code_from, sub_reg$code)))) #0, the join can be done
 
 #join datasets based on country code
 data = left_join(wf_mig, sub_reg, 
                  by = c("code_to" = "code")
 ) #add subregions for destination countries
 
-data = rename(data, subregion_to =  subregion) #rename columns to maintain consistency
+data = rename(data, subregion_to =  subregion) #indicate they are destination subregions
 
 data = left_join(data, sub_reg, 
                  by = c("code_from" = "code")
-) #add subregions to origin countries
+) #add subregions for origin countries
 
-data = rename(data, subregion_from = subregion) #rename columns to maintain consistency
+data = rename(data, subregion_from = subregion) #indicate they are origin subregions
 
-#check for NAs in data 
+#check for missing data after the join
 sapply(data, 
        function(x) sum(is.na(x))
 ) #none
 
 #keep only relevant columns
-data = subset(data, select = -c(country.x, country.y)) #these were duplicates of origin and destination countries resulting from the join
+data = subset(data, select = -c(country.x, country.y)) 
+#these were duplicates of origin and destination countries resulting from the join
 
 #save final datafile
 write_csv(data,
