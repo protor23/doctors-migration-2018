@@ -100,17 +100,17 @@ subregion_details = subregion_details %>%
   arrange(total) %>% #order ascendently based on total
   mutate(order = c(1:nrow(subregion_details))) #add order variable to index position
 
-#add rgb codes to each subregion
+#define a pool of rgb colour codes
 rgb_pool =  c("255,0,0", #red
               "0,255,0", #lime
-              "0,0,255", #blue
+              "128,128,0", #olive   
               "148,0,211", #dark violet
               "0,206,209", #dark turquoise
               "255,0,255", #magenta
               "128,0,0", #maroon
               "255,99,71", #tomato
-              "128,128,0", #olive
               "0,128,0", #green
+              "0,0,255", #blue
               "128,0,128", #purple
               "0,128,128", #teal
               "0,0,128", #navy
