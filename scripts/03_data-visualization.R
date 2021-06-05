@@ -20,8 +20,8 @@ source(here("scripts/02_visualization-matrices.R"))
 #this code is an adaptation of the instructions of Sander et al. (2014)
 
 png(here("figs/01_migration-flow.png"),
-    width = 10,
-    height = 10,
+    width = 15,
+    height = 15,
     units = "cm",
     pointsize = 3,
     res = 2048) #open graphics device to save the plot later
@@ -29,14 +29,14 @@ png(here("figs/01_migration-flow.png"),
 circos.clear() #reset circular layout parameters - if not done, alterations to the code will build on the existing plot
 
 #set plotting parameters 
-par(mar = c(0, 0, 0, 0)) #margin values 
+par(mar = c(0, 0, 0, 0)) #margin around chart
 circos.par(cell.padding = c(0, 0, 0, 0), 
            track.margin = c(0, 0.1), 
-           start.degree = 90, #start plotting at 12 o'clock
+           start.degree = 45, #start plotting at 2 o'clock
            gap.degree = 2, #gap between circle sectors
            points.overflow.warning = FALSE, 
-           canvas.xlim = c(-1.7, 1.7), #size of circle
-           canvas.ylim = c(-1.7, 1.7)  #size of circle
+           canvas.xlim = c(-1.3, 1.3), #size of circle
+           canvas.ylim = c(-1.3, 1.3)  #size of circle
 )
 
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
@@ -50,7 +50,7 @@ options(scipen = 10) #prevent scientific notation on plot
 
 circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                        factors = subregion_details$subregion, 
-                       track.height = 0.2, 
+                       track.height = 0.1, 
                        panel.fun = function(x, y) { #for each new cell (i.e., intersection between sector and track)
                          name = get.cell.meta.data("sector.index") #retrieve cell meta data
                          i = get.cell.meta.data("sector.numeric.index")
@@ -59,11 +59,14 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          
                          #plot subregion names
                          circos.text(x = mean(xlim), #position text at middle of sector
-                                     y = ifelse(str_length(name) > 20, 3.5, 3), #distance of text from plot based on length of subregion name
+                                     y = ifelse(str_length(name) > 25, 4.5, 
+                                                ifelse(str_length(name) > 20, 4, 
+                                                       ifelse(str_length(name) >= 14, 3.3, 3))
+                                                ), #distance of text from plot based on length of subregion name
                                      labels = name, #name of subregion
                                      facing = "clockwise", 
                                      niceFacing = TRUE, #adjust text orientation to make it human readable
-                                     cex = 1.3, #scale text
+                                     cex = 1.7, #scale text
                                      col = subregion_details$rcol[i] #colour matching region label - less transparent colour
                          )
                          
@@ -95,10 +98,10 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          )
                          
                          #add axis to indicate migrant numbers
-                         circos.axis(labels.cex = 1, #size of label text
-                                     lwd = 0.4, #size of ticks
+                         circos.axis(labels.cex = 1.3, #size of label text
+                                     lwd = 0.5, #size of ticks
                                      labels.niceFacing = TRUE, #human-readable
-                                     major.tick.length = 0.2,
+                                     major.tick.length = 0.3,
                                      minor.ticks = 3,
                                      major.at = seq(0, xlim[2] + 20000, by = 20000), #major ticks every 20000 units
                                      labels = scales::comma(seq(0, xlim[2] + 20000, by = 20000)) #add commas to plotted numbers
