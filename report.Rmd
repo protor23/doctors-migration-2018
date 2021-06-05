@@ -1,7 +1,7 @@
 ---
 title: "Doctors' Migration in 2018"
 author: "Ruri Proto"
-date: "03/06/2021"
+date: "05/06/2021"
 output:
   html_document:
     toc: TRUE
@@ -12,7 +12,7 @@ output:
 
 ```{css echo = FALSE}
 pre code, pre, code {
-  max-height: 350px !important;
+  max-height: 250px !important;
   white-space: pre !important;
   overflow-y: scroll !important;
   word-break: keep-all !important;
@@ -31,7 +31,7 @@ pre code, pre, code {
 
 ## **Data Origin**
 
-I retrieved data from the [OECD website](https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_WFMI), where I downloaded migration information from all OECD countries in 2018. I subsequently retrieved a dataset linking countries with grographical subregions from [github](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv). 
+I retrieved data from the [OECD website](https://stats.oecd.org/Index.aspx?DataSetCode=HEALTH_WFMI), where I downloaded migration information from all OECD countries in 2018. I subsequently retrieved a dataset linking countries with geographical subregions from [github](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv). 
 
 ```{r eval = TRUE, results = "hide", message = FALSE}
 library(readr)
@@ -41,7 +41,7 @@ wf_mig = read_csv(here("data-raw/workforce-migration.csv")) #migration data
 sub_reg = read_csv(here("data-raw/subregions.csv")) #subregions data
 ```
 
-The healthcare workforce migration data set includes the number of foreignly trained doctors who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications - this includes medical interns and residents.
+The workforce migration data set includes the number of foreignly trained doctors who, in 2018, were registered or in the process of gaining registration to practise in a country other than the one in which they had obtained their medical education qualifications - this includes medical interns and residents.
 
 ```{r messages = FALSE}
 head(wf_mig)
@@ -57,14 +57,13 @@ head(sub_reg)
 
 You can see the full script [here](https://github.com/protor23/doctors-migration-2018/blob/main/scripts/01_data-processing.R) for a detailed explanation of all data processing steps taken. 
 
-I wanted my final dataset to include countries of origin/destination, corresponding subregions, and number of migrants. This required me to join `wf_mig` and `sub_reg` by ISO Alpha-3 codes for each country. These are standardised codes for countries, and thus can be treated as unique identifiers.
+I wanted my final dataset to include subregions of origin, destination subregions, and number of migrants. This required me to join `wf_mig` and `sub_reg` by [ISO Alpha-3 codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3). These are standardised codes for countries, and thus unique identifiers that function as joining keys.
 
 ### **Removing unnecessary data**
 I removed:
 
 * flows between identical countries (not interested in domestic migration)
-* unnecessary columns such as the year of migration (since data is solely from 2018) 
-* information about regions (since I was only interested in subregions).
+* unnecessary columns, e.g., the year of migration (since data is solely from 2018) or information about regions (since I was only interested in subregions).
 
 I also gave columns suggestive, shorter names. 
 
@@ -95,7 +94,7 @@ sub_reg = sub_reg %>%
 
 ### **Joining data frames**
 
-I allocated subregions to each country by joining `wf_mig` and `sub_reg` by country codes. I also provided helpful names to distinguish between origin and destination subregions.
+I allocated subregions to each country by joining `wf_mig` and `sub_reg` by country code. I also provided helpful names to distinguish between origin and destination subregions.
 
 ```{r eval = FALSE}
 #join datasets based on country code
@@ -103,13 +102,13 @@ data = left_join(wf_mig, sub_reg,
                  by = c("code_to" = "code")
 ) #add subregions for destination countries
 
-data = rename(data, subregion_to =  subregion) #rename columns to maintain consistency
+data = rename(data, subregion_to =  subregion) #destination subregion
 
 data = left_join(data, sub_reg, 
                  by = c("code_from" = "code")
 ) #add subregions to origin countries
 
-data = rename(data, subregion_from = subregion) #rename columns to maintain consistency
+data = rename(data, subregion_from = subregion) #subregion of origin
 ```
 
 ### **Evaluating the final dataset**
@@ -128,11 +127,11 @@ sapply(data,
 head(data)
 ```
 
-## **Intermediate data transformations**
+## **Data Transformations**
 
 The code for this work is [here](https://github.com/protor23/doctors-migration-2018/blob/main/scripts/02_visualization-matrices.R).
 
-The visualization I planned required two objects. 
+The visualization I planned followed the procedure of [Sander et al. (2014)](https://www.oeaw.ac.at/fileadmin/subsites/Institute/VID/PDF/Publications/Working_Papers/WP2014_02.pdf) and required two objects: 
 
 * `flow_matrix`  - a matrix containing the number of migrants between all combinations of subregions (origin subregions as rows, destination subregions as columns)
 
@@ -168,9 +167,9 @@ rownames(subregions) = subregions$subregion_from
 head(subregions)
 ```
 
-I initialized a flow matrix with all subregions as rows and columns which contained only 0s, treating rows as origin subregions and columns as destination subregions. I updated the values in the `flow_matrix` with the ones in `subregions`. 
+I initialized a flow matrix with all subregions as rows and columns which contained only 0s, treating rows as origin subregions and columns as destination subregions. 
 
-This approach ensured that all possible combinations of subregions were present in `flow_matrix`, even if they were absent in the `subregions` data set (because those combinations of subregions had 0 migration).
+I updated the values in the `flow_matrix` with the ones in `subregions`. This approach ensured that all possible combinations of subregions were present in `flow_matrix`, even if they were absent in the `subregions` data set. Absence would indicate those combinations of subregions had 0 migration levels.
 
 ```{r include = FALSE}
 #find all subregions in the dataset
@@ -216,30 +215,30 @@ head(flow_matrix)
 
 ### **The subregion details data frame** 
 
-This data frame included colours for circle sectors, circle links, and the total flow of migrants (immigrants + emigrants) in each country. Code for this section has been largely adapted from [Sander et al. (2014)](http://download.gsb.bund.de/BIB/global_flow/VID%20WP%20Visualising%20Migration%20Flow%20Data%20with%20Circular%20Plots.pdf). 
+This data frame included colours for circle sectors, circle links, and the total flow of migrants (immigrants + emigrants) in each country. Code for this section has been largely adapted from [Sander et al. (2014)](https://www.oeaw.ac.at/fileadmin/subsites/Institute/VID/PDF/Publications/Working_Papers/WP2014_02.pdf). 
 
-I added the number of emigrants, immigrants, and total migrants (emigrants + immigrants) for each subregion to the newly created `subregion_details` dataframe. 
+I added the number of emigrants, immigrants, and total migrants for each subregion to the newly created `subregion_details` dataframe. 
 
 ```{r}
-#Compute number of emigrants per region 
+#Compute number of emigrants per subregion 
 df_from = data %>%
   group_by(subregion_from) %>%
   summarize(emig = sum(number))
 
-#Compute number of immigrants per region
+#Compute number of immigrants per subregion
 df_to = data %>%
   group_by(subregion_to) %>%
   summarize(immig = sum(number))
 
-#Create subregion_details data frame with info about total migration flow (immigrants + emigrants)
+#create subregion_details data frame with info about total migration flow
 subregion_details = left_join(df_from, 
                               df_to, 
                               by = c("subregion_from" = "subregion_to") 
 )
 
 ##I am aware I could have done this by summing the rows and columns of `flow_matrix`
-#but I wanted to do things this way so that I could compare the two outputs 
-#and hopefully find they are identical as a way to check my work (they were!). 
+##but I wanted to do things this way so that I could compare the two outputs 
+##and hopefully find they are identical as a way to check my work (they were!). 
 ```
 
 Because circular plots offer limited space, I wanted to eliminate subregions with few migrants from the dataset, but also give the user the choice to include as many subregions as they want. In my case, I excluded subregions that had the bottom 20% number of total migrants. 
@@ -248,33 +247,43 @@ Because circular plots offer limited space, I wanted to eliminate subregions wit
 #eliminate subregions where the total number of migrants is below the given quantile
 (tiny_subreg = subset(subregion_details, 
                       total < quantile(total, 0.2) #user-defined quantile
-)) #Micronesia and Polynesia had 0 and 3 migrants, respectively
+))
 
 #remove tiny subregions from subregion_details
-subregion_details = subregion_details[!(subregion_details$subregion %in% tiny_subreg$subregion), ] #removed Micronesia and Polynesia
+subregion_details = subregion_details[!(subregion_details$subregion %in% tiny_subreg$subregion), ]
 ```
 
-I then assigned colours to each available subregion. This process runs automatically independently of how many subregions out of the 17 the user selects. 
+I then assigned colours to each available subregion after ordering them ascendently by the `total` number of migrants. This process runs automatically independently of how many subregions out of the total of 17 the user selects. 
 
 ```{r}
 #define a pool of colours for all subregions
-rgb_pool =  c("30,144,255", "128,0,128","255,0,0", 
-              "0,255,0", "0,0,255", "218,165,32", 
-              "0,255,255", "188,143,143", "255,0,255", 
-              "128,128,128", "127,255,212", "128,0,0", 
-              "128,128,0", "0,128,0", "0,128,128", 
-              "0,0,128", "152,251,152" 
-) #Googled 17 rgb codes of constrasting colours
+rgb_pool =  c("255,0,0", #red
+              "0,255,0", #lime
+              "0,0,255", #blue
+              "148,0,211", #dark violet
+              "0,206,209", #dark turquoise
+              "255,0,255", #magenta
+              "128,0,0", #maroon
+              "255,99,71", #tomato
+              "128,128,0", #olive
+              "0,128,0", #green
+              "128,0,128", #purple
+              "0,128,128", #teal
+              "0,0,128", #navy
+              "250,128,144", #salmon
+              "100,149,237", #corn flower blue
+              "153,50,204", #dark orchid
+              "60,179,113" #medium sea green
+) #googled 17 rgb codes that enhance contrast; 17 = length(unique_subreg)
 
 #select as many colours as needed depending on the amount of subregions included
-#17 max (because there are only 17 in the dataset)
 subregion_details$rgb = rgb_pool[1:nrow(subregion_details)]
 ```
 
-I then stored two versions of these colours, one of which had increased transparency for different elements of the graph. To accomplish this, I split colour codes into individual variables, and then used the `rgb` function to increase transparency and convert them into HEX codes.
+I then stored two versions of these colours in HEX format (one of which had increased transparency) for different elements of the graph. To accomplish this, I split colour codes into individual variables, and then used the `rgb` function to increase transparency and convert them into HEX codes.
 
 ```{r eval = FALSE}
-#Split rgb codes into 3 variables - adapted from Sander et al. (2014)
+#Split rgb codes into 3 variables
 n = nrow(subregion_details)
 subregion_details = cbind(subregion_details, #split codes and treat them as numbers
                           matrix(as.numeric(unlist(strsplit(subregion_details$rgb, split = ","))), 
@@ -289,7 +298,7 @@ subregion_details = subregion_details %>%
     b = '3',
   )
 
-#add two similar colours varying in transparency per subregion
+#increase transparency and transform into HEX codes
 subregion_details$rcol = rgb(subregion_details$r, 
                              subregion_details$g, 
                              subregion_details$b, 
@@ -302,10 +311,11 @@ subregion_details$lcol = rgb(subregion_details$r,
                              alpha = 200, #transparency index
                              max = 255
 )
-
 ```
 
-I also ordered the data frame ascendently by `total` number of migrants and added the `xmin = 0` and `xmax = subregion_details$total` columns which are plotting coordinates, and their use will become apparent in the next section. At the end, the `subregion_details` data frame looked like this:
+I also ordered rows in `subregion_details` ascendently by the `total` number of migrants to facilitate indexing later on, and added the `xmin = 0` and `xmax = subregion_details$total` columns which will demarcate axis limits in the plot (from 0 to total amount of migrants) for each subregion. 
+
+At the end, the `subregion_details` data frame looked like this:
 
 ```{r echo = FALSE, message = FALSE, results = "hide", warning = FALSE}
 source(here("scripts/02_visualization-matrices.R"))
@@ -315,14 +325,14 @@ source(here("scripts/02_visualization-matrices.R"))
 head(subregion_details)
 ```
 
-## **Data visualization**
+## **Data Visualization**
 The data visualization I have selected is a circular plot diagram and you can find the code [here](https://github.com/protor23/doctors-migration-2018/blob/main/scripts/03_data-visualization.R).
 
 ### **Background information**
 
-Essentially, this plot draws tracks on circles and splits them into sectors to reflect differences between subregions in migrant numbers. It also plotts links to illustrate the flow of migrants between subregions. This is a really nice way of condensing a lot of relevant information in a visually interesting, colourful, neat way. 
+Essentially, this plot draws tracks on a circle and splits them into sectors to reflect differences between subregions in migrant numbers. It also plots links to illustrate the flow of migrants between subregions. 
 
-Readers who are interested in the inner workings of the code should consult [Sander et al. (2014)](http://download.gsb.bund.de/BIB/global_flow/VID%20WP%20Visualising%20Migration%20Flow%20Data%20with%20Circular%20Plots.pdf) and [Gu (2020)](https://jokergoo.github.io/circlize_book/book/). I used both of these resources, but I prefer the latter because it offers an in-depth explanation of the `circlize` package.
+Readers who are interested in the inner workings of the code should consult [Sander et al. (2014)](https://www.oeaw.ac.at/fileadmin/subsites/Institute/VID/PDF/Publications/Working_Papers/WP2014_02.pdf) and [Gu (2020)](https://jokergoo.github.io/circlize_book/book/). I used both of these resources, but I prefer the latter because it offers an in-reasonable-depth explanation of the `circlize` package.
 
 ### **Preliminary circular plots**
 
@@ -339,12 +349,12 @@ circos.par(cell.padding = c(0, 0, 0, 0),
            start.degree = 90, #start plotting at 12 o'clock
            gap.degree = 2, #gap between circle sectors
            points.overflow.warning = FALSE, 
-           canvas.xlim = c(-1.7, 1.7), 
-           canvas.ylim = c(-1.7, 1.7) 
+           canvas.xlim = c(-1.7, 1.7), #circle size
+           canvas.ylim = c(-1.7, 1.7)  #circle size
 )
 ```
 
-I then initialized the layout to allocate subregions into sectors whose sizes are bounded by `xmin` and `xmax`. This approach ensures the relative size of sectors matches the relative migration flows for each subregion. 
+I then initialized the layout to allocate subregions into sectors whose sizes are bounded by `xmin` and `xmax`. This approach ensures the relative size of sectors matches the relative difference in migration for each subregion. 
 
 ```{r eval = FALSE}
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
@@ -358,7 +368,7 @@ The next step involved creating a plotting region to which I added graphics.
 ```{r include = FALSE}
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
                   xlim = cbind(subregion_details$xmin, 
-                               subregion_details$xmax) #set limits of the x axis for each sector between 0 and total = xmax
+                               subregion_details$xmax) #set limits of the x axis for each sector between 0 and xmax = total
 )
 ```
 
@@ -410,7 +420,9 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
 This plot shows the relative number of total migrants (immigrants + emigrants) for each subregion. I next added another track where:
 
 * the coloured portions represent relative numbers of emigrants per subregion
-* the white portions represent relative numbers of immigrants per subregion
+* the white portions represent relative numbers of immigrants per subregion.
+
+This was achieved by including the following code inside the `panel.fun()` function in the previous code chunk.
 
 ```{r eval = FALSE}
                          #distinguish between immigrants and emigrants in each subregion
@@ -491,7 +503,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
 ```
 
 ### **Final plot** 
-Next, I included links between origin subregions and destination subregions, in order to show migration patterns, and an axis to give an indication of actual migrant numbers. This required some further data processing to transform `flow_matrix` into its long format and add parameters to guide the position of links, `sums1` and `sums2`. This is explained in depth in the full script. 
+Next, I included links between origin subregions and destination subregions, in order to show migration patterns, and an axis to give an indication of actual migrant numbers. This required some further data processing to transform `flow_matrix` into its long format and add parameters to guide the position of links, `sums1` and `sums2`. 
 
 ```{r eval = FALSE}
 #plot links for each combination of regions
@@ -506,14 +518,14 @@ for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
                          subregion_details$sum1[i] + abs(flow_matrix[i, j])), #starting point of link
               
               sector.index2 = subregion_details$subregion[j], 
-              point2=c(subregion_details$sum2[j], 
+              point2 = c(subregion_details$sum2[j], 
                        subregion_details$sum2[j] + abs(flow_matrix[i, j])), #endpoint of link
               
               border = subregion_details$lcol[i],
               col = subregion_details$lcol[i], #use the more transparent colour to increase visibility
   )
   
-  #update sum1 and sum2 for use when plotting the next link
+  #update sum1 and sum2 to move along the circle into the next sector
   subregion_details$sum1[i] = subregion_details$sum1[i] + abs(flow_matrix[i, j]) 
   subregion_details$sum2[j] = subregion_details$sum2[j] + abs(flow_matrix[i, j])
 }
@@ -521,9 +533,9 @@ for(k in 1:nrow(flow_matrix_long)){ #for each row in the flow matrix
 
 As a result, I produced this plot - which is linked here as a png file because R output in this package looks horrendous. 
 
-The colour of links suggests their origin. Notice that immigration patterns are plotted through links starting in the emigrants section of the subregion (the second coloured arc inwards), and ending up in the immigrants section of another (or the same) subregion (the white arc continuing from the emigrant arc). The size of the link gives the amount of migrants moving from one subregion to another. 
+The colour of links suggests their origin. Notice that immigration patterns are plotted through links starting in the emigrants section of a subregion (the second coloured arc inwards), and ending up in the immigrants section of another (or the same) subregion (the white arc continuing from the emigrant arc). The size of the link gives the relative amount of migrants moving from one subregion to another. 
 
-For example, the migration flow in Southern Asia consists exclusively of emigrants, most of whom tend to go to Northern Europe, with far fewer going to Australia and New Zealand and Northern America. As we can see, immigrants from Southern Asia make up a sizeable chunk of the total amount of immigrants in Northern Europe (the pink ribbon corresponds to about 25,000 immigrants in Northern Europe out of a total of about 75,000, as demarcated by the white stripe of the sector). 
+For example, the migration flow in Southern Asia consists exclusively of emigrants, most of whom tend to go to Northern Europe, with far fewer going to Australia and New Zealand or Northern America. As we can see, immigrants from Southern Asia make up a sizeable chunk of the total amount of immigrants in Northern Europe (the pink ribbon corresponds to about 25,000 immigrants in Northern Europe out of a total of about 75,000, as demarcated by the white stripe of the sector). 
 
 ```{r pressure, echo=FALSE, out.width = '100%'}
 knitr::include_graphics("figs/01_migration-flow.png", error = FALSE)
@@ -533,7 +545,7 @@ knitr::include_graphics("figs/01_migration-flow.png", error = FALSE)
 
 Findings show that:
 
-* Western Europe has the most migrants, closely followed by Norther Europe and Eastern Europe. 
+* Western Europe has the most migrants, closely followed by Northern Europe and Eastern Europe. 
 
 * Whilst Western and Northern Europe have relatively low proportions of emigrants and high proportions of immigrants, this is completely the opposite in Eastern Europe. 
 
@@ -541,11 +553,13 @@ Findings show that:
 
 * Very few doctors emigrate to Eastern Europe. 
 
+## **Reflection**
+
 If I had more time to spend on this project:
 
-* I would attempt to fix the issue that causes some links to go ever so slightly beyond the borders for emigrants - yes, Northern Africa, I'm looking at you! I am still not sure what the reason for this is, but the `circlize` package still receives updates, so I will keep an eye on it.
+* I would fix the issue that causes some links to go ever so slightly beyond the borders for emigrants - yes, Northern Africa, I'm looking at you! I am still not sure what the reason for this is, but the `circlize` package still receives updates, so I will keep an eye on it.
 
-* I would try to figure out how to automatically adjust the distance between text and plot depending on the length of the string whilst avoiding hardcoding string length values.
+* I would figure out how to automatically adjust the distance between text and plot depending on the length of the string whilst avoiding hardcoding string length values.
 
 * I would extend this project beyond this plot to understand why healthcare workers migrate to specific subregions - Is it better pay? Is it the chance to work in specific areas of medicine?
 
@@ -557,10 +571,12 @@ If I had more time to spend on this project:
 
 To complete this project, I used several resources:
 
-* [Sander et al. (2014)](http://download.gsb.bund.de/BIB/global_flow/VID%20WP%20Visualising%20Migration%20Flow%20Data%20with%20Circular%20Plots.pdf) - the minds behind adapting circular plots to explore migration flows
+* [Sander et al. (2014)](https://www.oeaw.ac.at/fileadmin/subsites/Institute/VID/PDF/Publications/Working_Papers/WP2014_02.pdf) - the minds behind adapting circular plots to explore migration flows
 
 * [Gu (2020)](https://jokergoo.github.io/circlize_book/book/) - in-reasonable-depth resource for th `circlize` package
 
 * [stackoverflow.com](https://stackoverflow.com/) - I am gradeful to random skilled strangers for helping me learn new ways of doing things
+
+* [Xie et al. (2021)](https://bookdown.org/yihui/rmarkdown/) - fantastic, in-depth resource for tackling RMarkdown issues
 
 You can find my repository [here](https://github.com/protor23/doctors-migration-2018).
