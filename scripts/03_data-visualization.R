@@ -37,8 +37,8 @@ circos.par(cell.padding = c(0, 0, 0, 0),
            start.degree = 45, #start plotting at 2 o'clock
            gap.degree = 2, #gap between circle sectors
            points.overflow.warning = FALSE, 
-           canvas.xlim = c(-1.3, 1.3), #size of circle
-           canvas.ylim = c(-1.3, 1.3)  #size of circle
+           canvas.xlim = c(-1.5, 1.5), #size of circle
+           canvas.ylim = c(-1.5, 1.5)  #size of circle
 )
 
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
@@ -61,14 +61,14 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          
                          #plot subregion names
                          circos.text(x = mean(xlim), #position text at middle of sector
-                                     y = ifelse(str_length(name) > 25, 4.5, 
-                                                ifelse(str_length(name) > 20, 4, 
-                                                       ifelse(str_length(name) >= 14, 3.3, 3))
+                                     y = ifelse(str_length(name) > 25, 5.8, 
+                                                ifelse(str_length(name) > 20, 4.8, 
+                                                       ifelse(str_length(name) >= 14, 4.2, 3.9))
                                                 ), #distance of text from plot based on length of subregion name
                                      labels = name, #name of subregion
                                      facing = "clockwise", 
                                      niceFacing = TRUE, #adjust text orientation to make it human readable
-                                     cex = 1.7, #scale text
+                                     cex = 1.9, #scale text
                                      col = subregion_details$rcol[i] #colour matching region label - less transparent colour
                          )
                          
@@ -100,7 +100,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          )
                          
                          #add axis to indicate migrant numbers
-                         circos.axis(labels.cex = 1.3, #size of label text
+                         circos.axis(labels.cex = 1.5, #size of label text
                                      lwd = 0.5, #size of ticks
                                      labels.niceFacing = TRUE, #human-readable
                                      major.tick.length = 0.3,
