@@ -602,8 +602,8 @@ To complete this project, I used several resources:
 
 * [Gu (2020)](https://jokergoo.github.io/circlize_book/book/) - in-reasonable-depth resource for the `circlize` package
 
-* [stackoverflow.com](https://stackoverflow.com/) - I am gradeful to random skilled strangers for helping me learn new ways of doing things
+* [stackoverflow.com](https://stackoverflow.com/) - I am grateful to random skilled strangers for helping me learn new ways of doing things
 
-* [Xie et al. (2021)](https://bookdown.org/yihui/rmarkdown/) - fantasti resource for tackling RMarkdown issues
+* [Xie et al. (2021)](https://bookdown.org/yihui/rmarkdown/) - fantastic resource for tackling RMarkdown issues
 
 You can also find my repository [here](https://github.com/protor23/doctors-migration-2018).
