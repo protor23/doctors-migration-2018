@@ -592,7 +592,7 @@ If I had more time to spend on this project:
 
 * I would extend this project beyond this plot to understand why healthcare workers migrate to specific subregions - Is it better pay? Is it the chance to work in specific areas of medicine?
 
-* I would allow the user to choose what migration flows to exclude- the plot becomes difficult to interpret when too many links are present, so having the chance to plot all links corresponding to one subregion or combination of subregions could give a more nuance insight into migration patterns. This could be done in `Shiny`, but the `circlize` package can be beautifuly integrated with JavaScript as well to make this possible. 
+* I would allow the user to choose what migration flows to exclude - the plot becomes difficult to interpret when too many links are present, so having the chance to plot all links corresponding to one subregion or combination of subregions incrementally and then remove them as needed could enhance interpretability and give a more nuanced insight into migration patterns. This could be done in `Shiny`, but the `circlize` package can be beautifuly integrated with JavaScript as well to make this possible. 
 
 ## **Resources used**
 
@@ -604,6 +604,6 @@ To complete this project, I used several resources:
 
 * [stackoverflow.com](https://stackoverflow.com/) - I am gradeful to random skilled strangers for helping me learn new ways of doing things
 
-* [Xie et al. (2021)](https://bookdown.org/yihui/rmarkdown/) - fantastic, in-depth resource for tackling RMarkdown issues
+* [Xie et al. (2021)](https://bookdown.org/yihui/rmarkdown/) - fantasti resource for tackling RMarkdown issues
 
 You can also find my repository [here](https://github.com/protor23/doctors-migration-2018).
