@@ -360,8 +360,8 @@ circos.par(cell.padding = c(0, 0, 0, 0),
            start.degree = 45, #start plotting at 2 o'clock
            gap.degree = 2, #gap between circle sectors
            points.overflow.warning = FALSE, 
-           canvas.xlim = c(-1.3, 1.3), #size of circle
-           canvas.ylim = c(-1.3, 1.3)  #size of circle
+           canvas.xlim = c(-1, 1), #size of circle
+           canvas.ylim = c(-1, 1)  #size of circle
 )
 ```
 
@@ -370,11 +370,11 @@ I then initialized the layout to allocate subregions into sectors whose sizes ar
 ```{r eval = FALSE}
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
                   xlim = cbind(subregion_details$xmin, 
-                               subregion_details$xmax) #set limits of the x axis for each sector between 0 and total = xmax
+                               subregion_details$xmax) #set limits of the x axis for each sector between 0 and total migrant numbers = xmax
 )
 ```
 
-The next step involved creating a plotting region to which I added graphics. This first track is split into sectors reflecting the total amount of migrants per subregion.
+The next step involved creating a plotting region to which I added graphics. This first track is thus split into sectors reflecting the total amount of migrants per subregion.
 
 ```{r include = FALSE}
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
@@ -398,19 +398,6 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          xlim = get.cell.meta.data("xlim")
                          ylim = get.cell.meta.data("ylim")
                          
-                         #plot subregion names
-                         circos.text(x = mean(xlim), #position text at middle of sector
-                                     y = ifelse(str_length(name) > 25, 4.5, 
-                                                ifelse(str_length(name) > 20, 5, 
-                                                       ifelse(str_length(name) >= 14, 4.3, 4))
-                                                ), #distance from plot depending on length of character
-                                     labels = name, #name of subregion
-                                     facing = "clockwise", 
-                                     niceFacing = TRUE,
-                                     cex = 0.5, #scale text
-                                     col = subregion_details$rcol[i]
-                         )
-                         
                          #plot a sector for each subregion
                          circos.rect(xleft = xlim[1], 
                                      ybottom = ylim[1], 
@@ -424,12 +411,10 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
 )
 ```
 
-In this initial plot, we can see Western and Northern Europe have relatively similar amounts of total migrants (including both emigrants and immigrants). 
-
 I next added another track where:
 
-* the coloured portions represent relative numbers of emigrants per subregion
-* the white portions represent relative numbers of immigrants per subregion.
+* the coloured circle arcs represent relative numbers of emigrants per subregion
+* the white circle arcs represent relative numbers of immigrants per subregion.
 
 This was achieved by including the following code inside the `panel.fun()` function in the previous code chunk.
 
@@ -469,19 +454,6 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          i = get.cell.meta.data("sector.numeric.index")
                          xlim = get.cell.meta.data("xlim")
                          ylim = get.cell.meta.data("ylim")
-                         
-                         #plot subregion names
-                        circos.text(x = mean(xlim), #position text at middle of sector
-                                     y = ifelse(str_length(name) > 25, 4.5, 
-                                                ifelse(str_length(name) > 20, 5, 
-                                                       ifelse(str_length(name) >= 14, 4.3, 4))
-                                                ), #distance of text from plot based on length of subregion name
-                                     labels = name, #name of subregion
-                                     facing = "clockwise", 
-                                     niceFacing = TRUE, #adjust text orientation to make it human readable
-                                     cex = 0.5, #scale text
-                                     col = subregion_details$rcol[i] #colour matching region label - less transparent colour
-                         )
                          
                          #plot a sector for each subregion
                          circos.rect(xleft = xlim[1], 
@@ -524,6 +496,8 @@ This required some further data processing to:
 * add parameters to guide the position of links, `sums1` and `sums2`
 
 * keep only the largest migration flows to improve readability.
+
+The links were plotted with the following code:
 
 ```{r eval = FALSE}
 #plot links for each combination of regions
@@ -569,7 +543,9 @@ knitr::include_graphics("figs/01_migration-flow.png", error = FALSE)
 
 ## **Summary**
 
-Findings show that:
+Some insights revealed by the plot include:
+
+* Western Europe and Northern Europe have the largest number of immigrants.
 
 * Western Europe has the most migrants, closely followed by Northern Europe and Eastern Europe. 
 
