@@ -592,7 +592,7 @@ If I had more time to spend on this project:
 
 * I would extend this project beyond this plot to understand why healthcare workers migrate to specific subregions - Is it better pay? Is it the chance to work in specific areas of medicine?
 
-* I would allow the user to choose what migration flows to exclude - the plot becomes difficult to interpret when too many links are present, so having the chance to plot all links corresponding to one subregion or combination of subregions incrementally and then remove them as needed could enhance interpretability and give a more nuanced insight into migration patterns. This could be done in `Shiny`, but the `circlize` package can be beautifuly integrated with JavaScript as well to make this possible. 
+* I would allow the user to choose what migration flows to exclude - the plot becomes difficult to interpret when too many links are present, so having the chance to plot all links corresponding to one subregion or combination of subregions incrementally and then remove them as needed could enhance interpretability and give a more nuanced insight into migration patterns. This could be done in `Shiny`, but the `circlize` package can be beautifully integrated with JavaScript as well to make this possible. 
 
 ## **Resources used**
 
