@@ -51,7 +51,7 @@ sub_reg$subregion = ifelse(sub_reg$subregion == "South-eastern Asia",
 
 #### Data processing ####
 
-#join wf_mig and sub_reg to assign subregions to botg origin and destination countries
+#join wf_mig and sub_reg to assign subregions to both origin and destination countries
 
 #find countries in wf_mig not included in sub_reg
 data.frame(unique(c(setdiff(wf_mig$code_to, sub_reg$code), setdiff(wf_mig$code_from, sub_reg$code)))) #0, the join can be done

@@ -26,7 +26,7 @@ png(here("figs/01_migration-flow.png"),
     height = 15,
     units = "cm",
     pointsize = 3,
-    res = 2048) #open graphics device to save the plot later
+    res = 2048) #open graphics device and set image parameters
 
 circos.clear() #reset circular layout parameters - if not done, alterations to the code will build on the existing plot
 
@@ -43,7 +43,7 @@ circos.par(cell.padding = c(0, 0, 0, 0),
 
 circos.initialize(factors = subregion_details$subregion, #allocate sectors on circle to subregions
                   xlim = cbind(subregion_details$xmin, 
-                               subregion_details$xmax) #set limits of the x axis for each sector (between xmin = 0 and xmax = total migrant flow)
+                               subregion_details$xmax) #set limits of the x axis for each sector (0 to total)
 )
 
 options(scipen = 10) #prevent scientific notation on plot
@@ -84,7 +84,7 @@ circos.trackPlotRegion(ylim = c(0, 1), #y-axis limits for each sector
                          #distinguish between immigrants and emigrants in each subregion cell
                          circos.rect(xleft = xlim[1], 
                                      ybottom = ylim[1], 
-                                     xright = xlim[2] - rowSums(flow_matrix)[i], #total - emigrants
+                                     xright = xlim[2] - rowSums(flow_matrix)[i], #total - emigrants (hence it was necessary to sort it previously)
                                      ytop = ylim[1] + 0.3,
                                      col = "white", 
                                      border = "white"
@@ -123,7 +123,7 @@ colnames(flow_matrix_long) = c("subregion_from",
                                "subregion_to",
                                "number") #rename columns for consistency
 
-#sort descendently according to the number of migrants
+#sort in descending order according to the number of migrants
 flow_matrix_long = flow_matrix_long %>%
   arrange(desc(number)) 
 
@@ -155,10 +155,10 @@ for(k in 1:nrow(flow_matrix_long)){ #for each combination of subregions
                        subregion_details$sum2[j] + abs(flow_matrix[i, j])), #endpoint of link
               
               border = subregion_details$lcol[i],
-              col = subregion_details$lcol[i], #use the more transparent colour to see overlaps
+              col = subregion_details$lcol[i], #use the more transparent colour
   )
   
-  #update sum1 and sum2 - move on the circle to the next subregion sector
+  #update sum1 and sum2 - move on the circle to the next subregion sector when plotting the next link
   subregion_details$sum1[i] = subregion_details$sum1[i] + abs(flow_matrix[i, j]) 
   subregion_details$sum2[j] = subregion_details$sum2[j] + abs(flow_matrix[i, j])
 }

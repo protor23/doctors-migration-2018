@@ -15,7 +15,7 @@ library(dplyr)
 #### The migration flow matrix #### 
 #matrix containing number of migrants moving between all combination of subregions
 
-#the creation of this object is guided by Sander et al. (2014), but the data processing involved is mine
+#the creation of this object is guided by Sander et al. (2014), but the code for the data processing involved is mine
 
 #load data
 data = read_csv(here("data-processed/data.csv"))
@@ -32,7 +32,7 @@ flow_matrix = matrix(x,
                      nrow = length(unique_subreg), 
                      byrow = TRUE,
                      dimnames = list(row_n, col_n)
-) #create matrix
+)
 
 #get number of migrants at subregion level
 subregions = data %>%
@@ -65,15 +65,16 @@ for(i in unique_subreg) { #take each unique subregion
 flow_matrix[is.na(flow_matrix)] = 0
 
 #### The subregion plotting details data frame #### 
+
 #a data frame assiging plotting parameters to all subregions
 ##the creation of this object and the data processing involved is guided by Sander et al. (2014)
 
-#get number of emigrants per region 
+#get number of emigrants per subregion 
 df_from = data %>%
   group_by(subregion_from) %>%
   summarize(emig = sum(number))
 
-#get number of immigrants per region
+#get number of immigrants per subregion
 df_to = data %>%
   group_by(subregion_to) %>%
   summarize(immig = sum(number))
@@ -97,7 +98,7 @@ subregion_details$total = rowSums(subregion_details[ ,c("emig", "immig")],
 #order subregion_details ascendently based on total migration flow
 #the planned visualization will plot graphical elements in ascending order
 subregion_details = subregion_details %>%
-  arrange(total) %>% #order ascendently based on total
+  arrange(total) %>% #order in ascending order based on total
   mutate(order = c(1:nrow(subregion_details))) #add order variable to index position
 
 #define a pool of rgb colour codes
@@ -122,10 +123,10 @@ rgb_pool =  c("255,0,0", #red
  
 #eliminate subregions with tiny numbers of migrants as they will muddle the plot
 (tiny_subreg = subset(subregion_details, 
-                      total < quantile(total, 0.2)
+                      total < quantile(total, 0.2) #keep top 80%
 )) #select subregions whose total migrants number is in the bottom 20%
 
-subregion_details = subregion_details[!(subregion_details$subregion %in% tiny_subreg$subregion), ] #remove low-migrant subregions
+subregion_details = subregion_details[!(subregion_details$subregion %in% tiny_subreg$subregion), ] #remove tiny subregions
 
 #select as many colours as needed - they will be allocated in the order specified earlier
 subregion_details$rgb = rgb_pool[1:nrow(subregion_details)]
@@ -136,7 +137,7 @@ subregion_details = cbind(subregion_details, #split codes and treat them as numb
                           matrix(as.numeric(unlist(strsplit(subregion_details$rgb, split = ","))), 
                                  nrow = n, 
                                  byrow = TRUE 
-                          ) #arrange them in n rows in a matrix
+                          ) #arrange them in a matrix
 )
 
 subregion_details = subregion_details %>%
@@ -146,7 +147,7 @@ subregion_details = subregion_details %>%
     b = '3',
   )
 
-#add two similar colours varying in transparency per subregion - adapted from Sander et al. (2014)
+#add two similar colours varying in transparency per subregion
 subregion_details$rcol = rgb(subregion_details$r, 
                              subregion_details$g, 
                              subregion_details$b, 
@@ -160,7 +161,7 @@ subregion_details$lcol = rgb(subregion_details$r,
                              max = 255
 ) #converted into HEX
 
-#add plotting variables - thee will be axis boundaries for migrant numbers per subregion
+#add plotting variables - these will be axis boundaries for migrant numbers per subregion
 subregion_details$xmin = rep(0, nrow(subregion_details))
 subregion_details$xmax = subregion_details$total
 
@@ -168,6 +169,7 @@ subregion_details$xmax = subregion_details$total
 subregion_details[is.na(subregion_details)] = 0
 
 #### Order flow_matrix ####
+#needed to facilitate numerical indexing later
 subregion_details$subregion = factor(subregion_details$subregion, #treat subregion as factor
                                      levels = subregion_details$subregion) 
 
