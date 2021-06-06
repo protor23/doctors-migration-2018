@@ -1,3 +1,5 @@
+#please check the figs folder to retrieve the plot after running this script - it looks dreadful in R
+
 #### Packages used ####
 
 #install.packages("circlize")
