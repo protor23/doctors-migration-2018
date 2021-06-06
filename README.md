@@ -13,4 +13,4 @@ It presents a circular flow diagram illustrating the migration flow of foreingly
 * report.Rmd => a presentation of the process behind this data visualization, which can also be viewed using GitHub pages here: https://protor23.github.io/doctors-migration-2018/
 
 #NB
-When you download/clone my repository, make sure to open scripts after opening the R Project - you will be promted to load the packages encapsulated by the renv folder, so please follow the instructions presented to you in the console. 
+When you download/clone my repository, make sure to open scripts after opening the R Project - you will be prompted to load the packages in the renv folder, so please follow the instructions presented to you in the console. 
