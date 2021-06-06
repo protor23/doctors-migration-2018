@@ -6,7 +6,7 @@ It presents a circular flow diagram illustrating the migration flow of foreingly
 
 * data-processed => data following my cleaning steps along with a codebook
 * data-raw => data before any cleaning along with a codebook detailing its origins and meaning
-* figs => the main data visualization saved as .png
+* figs => the main data visualization saved as .png (please note the visualization is not presented in RStudio, but only saved automatically in this folder)
 * notes => includes my reflection on my time on this project and the PSY6422 module more broadly
 * renv => this is a local library storing all the packages that I used in the project along with their dependencies
 * scripts => three separate scripts for data processing, intermediary building of visualization matrices needed for the final plot, and data visualization; if impatient, run the data-visualization script without paying attention to the first two - but open them in the RProject associated with the file, not independently, otherwise my code won't be able to find paths to relevant files
