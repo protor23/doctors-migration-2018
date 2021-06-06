@@ -127,7 +127,7 @@ flow_matrix_long = flow_matrix_long %>%
 
 #keep only the largest flows to increase readability
 flow_matrix_long = subset(flow_matrix_long, 
-                          number > quantile(number, 0.65)
+                          number > quantile(number, 0.70)
 )
 
 #add plotting parameters that dynamically update the coordinates of circle links - see Sander et al. (2014)
